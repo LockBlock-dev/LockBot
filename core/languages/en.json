@@ -1,0 +1,70 @@
+{
+    "asciiMaxCaracters": "10 caracters maximum !",
+
+    "gamerometer1": " is ",
+    "gamerometer2": "% a gamer !",
+
+    "hack": "Did you really believe it ? :joy:",
+
+    "botInfoName": "Name of the Bot",
+    "botInfoServers": "Servers",
+    "botInfoMembers": "Members",
+    "botInfoCreationDate": "Creation Date",
+
+    "countMembers": "Members",
+
+    "profilePicture": "Avatar of",
+
+    "serverInfoName": "Name",
+    "serverInfoMembers": "Members",
+    "serverInfoCreationDate": "Creation Date",
+
+    "userInfoOnline": "Online",
+    "userInfoDnd": "Do Not Disturb",
+    "userInfoOffline": "Offline/Invisible",
+    "userInfoSupportOffline": "In the bed",
+    "userInfoUserActivityStateoffline": "Offline",
+    "userInfoSupportPhone": "Phone",
+    "userInfoUserIsNotBot": "Human",
+    "userInfoBoostYes": "Yes",
+    "userInfoBoostNo": "No",
+    "userInfoUserActivityTypePlaying": "Playing : ",
+    "userInfoUserActivityTypeListening": "Listening : ",
+    "userInfoUserActivityTypeWatching": "Watching : ",
+    "userInfoUserActivityTypeCustom": "Custom Status : ",
+    "userInfoUserActivityTypeOffline": "Offline : ",
+    "userInfoUserActivityTypeNull": "No activity",
+    "userInfoNickname": "Nickname",
+    "userInfoJoinedDate": "Joined Discord the",
+    "userInfoStatus": "Status",
+    "userInfoSupport": "Platform",
+    "userInfoActivity": "Activity",
+
+    "pingLatencyBot": "Bot latency : ",
+    "pingLatencyAPI": " ms, API latency : ",
+
+    "pollOptionsListLength": "10 choices maximum",
+    "pollSimpleTitle": "Poll :",
+
+    "sayDontEveryoneOrHere": "Don't make me mention the members of this discord: sob:",
+
+    "clearHowMany": "Specify a number of message to delete greater than 0 and less than 100 !",
+    "clearCount": " messages deleted !",
+
+    "prefixArgs": "A prefix can only be one argument !",
+    "prefixLengthMax": "The prefix is limited to 3 characters !",
+    "prefixNew": "New prefix : ",
+    "prefixNotString": "The prefix contains only letters or symbols !",
+
+    "langArgs": "Language is only an argument !",
+    "langNew": "New language : ",
+    "langTooLong": "Languages are only 2 characters long !",
+    "langUnknown": "This language is not available!",
+    "langNotString": "Languages only contain letters !",
+    
+    "messageEventBotPing": "Hello, I am a robot. I don't have steel legs or laser beams, but I can help you ! \nMy current prefix on this server is : ",
+    "messageEventMissingPermManageGuild": "you do not have the `MANAGE_GUILD` permission to execute this command !",
+    "messageEventMissingPermManageMessages": "you don't have the `MANAGE_MESSAGES` permission to execute this command !",
+    "messageEventCommandNeedArg": "You need an argument for this command, ",
+    "messageEventCommandUsage": "Here's how to use the command : "
+}

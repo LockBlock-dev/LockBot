@@ -1,0 +1,70 @@
+{
+    "asciiMaxCaracters": "10 caractères maximum !",
+
+    "gamerometer1": " est à ",
+    "gamerometer2": "% un(e) gamer|euse !",
+
+    "hack": "T'y as vraiment cru ? :joy:",
+
+    "botInfoName": "Nom du Bot",
+    "botInfoServers": "Serveurs",
+    "botInfoMembers": "Membres",
+    "botInfoCreationDate": "Date de création",
+
+    "countMembers": "Membres",
+    
+    "profilePicture": "Voici l'avatar de",
+
+    "serverInfoName": "Nom",
+    "serverInfoMembers": "Membres",
+    "serverInfoCreationDate": "Date de création",
+
+    "userInfoOnline": "En ligne",
+    "userInfoDnd": "Ne pas déranger",
+    "userInfoOffline": "Hors-ligne/invisible",
+    "userInfoSupportOffline": "Dans son lit",
+    "userInfoUserActivityStateoffline": "Hors-ligne",
+    "userInfoSupportPhone": "Téléphone",
+    "userInfoUserIsNotBot": "Humain",
+    "userInfoBoostYes": "Oui",
+    "userInfoBoostNo": "Non",
+    "userInfoUserActivityTypePlaying": "Joue à : ",
+    "userInfoUserActivityTypeListening": "Ecoute : ",
+    "userInfoUserActivityTypeWatching": "Regarde : ",
+    "userInfoUserActivityTypeCustom": "Statut customisé : ",
+    "userInfoUserActivityTypeOffline": "Hors-ligne : ",
+    "userInfoUserActivityTypeNull": "Aucune activité",
+    "userInfoNickname": "Surnom",
+    "userInfoJoinedDate": "A rejoins discord le",
+    "userInfoStatus": "Statut",
+    "userInfoSupport": "Plateforme",
+    "userInfoActivity": "Activité",
+
+    "pingLatencyBot": "Latence du bot : ",
+    "pingLatencyAPI": " ms, Latence de l'API : ",
+
+    "pollOptionsListLength": "10 choix maximum ",
+    "pollSimpleTitle": "Sondage :",
+
+    "sayDontEveryoneOrHere": "Ne me faîtes pas mentionner les membres de ce discord :sob:",
+
+    "clearHowMany": "Spécifier un nombre de message à supprimer supérieur à 0 et inférieur à 100 !",
+    "clearCount": " messages supprimés !",
+
+    "prefixArgs": "Un préfixe ne peut être constituer que d'un argument !",
+    "prefixLengthMax": "Le préfixe est limité à 3 caractères !",
+    "prefixNew": "Nouveau préfixe : ",
+    "prefixNotString": "Le préfixe ne contient que des lettres ou des symboles !",
+
+    "langArgs": "La langue n'est constituée que d'un argument !",
+    "langNew": "Nouvelle langue : ",
+    "langTooLong": "Les langues ne font que 2 caractères de long!",
+    "langUnknown": "Cette langue n'est pas disponible !",
+    "langNotString": "Les langues ne contiennent que des lettres !",
+    
+    "messageEventBotPing": "Bonjour, je suis un robot. Je n'ai pas de jambes en acier, ni de rayons laser, mais je peux vous aider ! \nMon prefix actuel sur ce serveur est : ",
+    "messageEventMissingPermManageGuild": "tu n'as pas la permission `MANAGE_GUILD` d'éxécuter cette commande !",
+    "messageEventMissingPermManageMessages": "tu n'as pas la permission `MANAGE_MESSAGES` d'éxécuter cette commande !",
+    "messageEventCommandNeedArg": "Il faut un argument pour cette commande, ",
+    "messageEventCommandUsage": "Voici comment utiliser la commande : "
+}
