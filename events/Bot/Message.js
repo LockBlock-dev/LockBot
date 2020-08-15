@@ -56,7 +56,7 @@ bot.on("message", async message => {
 
     else if (commandfile.help.isUserMod && !message.member.hasPermission('MANAGE_MESSAGES'))
   
-    return message.reply(messageEventMissingPermManageMessages)
+    return message.reply(lang.messageEventMissingPermManageMessages)
 
       if (commandfile.help.args && !args.length) {
         var noArgsReply = lang.messageEventCommandNeedArg + `<@${message.author.id}> !`
