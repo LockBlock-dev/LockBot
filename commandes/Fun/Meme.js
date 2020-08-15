@@ -1,8 +1,8 @@
 const { MESSAGES } = require("../../core/constants.js")
 const Discord = require("discord.js")
-const snekfetch = require("snekfetch")
+const got = require("got")
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (bot, message) => {
 
     const reddit = [
         "memes",
@@ -11,18 +11,21 @@ module.exports.run = async (bot, message, args) => {
 
     const subreddit = reddit[Math.floor(Math.random() * reddit.length)]
 
+    got("https://www.reddit.com/r/" + subreddit + ".json?sort=top&t=week").then(response => {
+    const content = JSON.parse(response.body)
+    const permalink = content[0].data.children[0].data.permalink
+    const memeUrl = `https://reddit.com${permalink}`
+    const memeImage = content[0].data.children[0].data.url
+    const memeTitle = content[0].data.children[0].data.title
+    const memeUpvotes = content[0].data.children[0].data.ups
+    const memeNumComments = content[0].data.children[0].data.num_comments
 
-    const { body } = await snekfetch
-            .get("https://www.reddit.com/r/" + subreddit + ".json?sort=top&t=week")
-            .query({ limit: 100 })
-    const allowed = body.data.children.filter(post => !post.data.over_18)
-    const randomnumber = Math.floor(Math.random() * allowed.length)
     const embed = new Discord.MessageEmbed()
-        .setTitle(allowed[randomnumber].data.title)
-        .setImage(allowed[randomnumber].data.url)
-        .setURL(allowed[randomnumber].data.url)
+        .setTitle(memeTitle)
+        .setImage(memeImage)
+        .setURL(memeUrl)
         .setColor("#FF8A33")
-        .setFooter("👍 " + allowed[randomnumber].data.ups + " | 💬 " + allowed[randomnumber].data.num_comments + " | © LockBot")
+        .setFooter("👍 " + memeUpvotes + " | 💬 " + memeNumComments + " | © LockBot")
         .setTimestamp()
 
     message.channel.send(embed)
