@@ -28,6 +28,7 @@ module.exports.run = async (bot, message) => {
         .setFooter("👍 " + memeUpvotes + " | 💬 " + memeNumComments + " | © LockBot")
         .setTimestamp()
 
+    })
     message.channel.send(embed)
 }
 
