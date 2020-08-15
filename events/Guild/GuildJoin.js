@@ -2,7 +2,7 @@ const bot = require("../../index.js")
 
 bot.on("guildCreate", guild => {
 
-    bot.user.setActivity(`&help | in ${bot.guilds.cache.size} servers`, { type: 'WATCHING' })
+    bot.user.setActivity(`+help | in ${bot.guilds.cache.size} servers`, { type: 'WATCHING' })
 
     var found = false
 
