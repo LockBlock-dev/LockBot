@@ -19,6 +19,7 @@ module.exports.run = async (bot, message) => {
     const memeTitle = content[0].data.children[0].data.title
     const memeUpvotes = content[0].data.children[0].data.ups
     const memeNumComments = content[0].data.children[0].data.num_comments
+    })
 
     const embed = new Discord.MessageEmbed()
         .setTitle(memeTitle)
@@ -27,8 +28,7 @@ module.exports.run = async (bot, message) => {
         .setColor("#FF8A33")
         .setFooter("👍 " + memeUpvotes + " | 💬 " + memeNumComments + " | © LockBot")
         .setTimestamp()
-
-    })
+        
     message.channel.send(embed)
 }
 
