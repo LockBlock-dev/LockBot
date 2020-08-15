@@ -54,7 +54,7 @@ bot.on("message", async message => {
   
     return message.reply(lang.messageEventMissingPermManageGuild)
 
-    if (commandfile.help.isUserMod && !message.member.hasPermission('MANAGE_MESSAGES'))
+    else if (commandfile.help.isUserMod && !message.member.hasPermission('MANAGE_MESSAGES'))
   
     return message.reply(lang.messageEventMissingPermManageMessages)
 
