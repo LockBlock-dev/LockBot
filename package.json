@@ -1,39 +1,38 @@
 {
-  "name": "LockBot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "lockbot",
+  "version": "2.0.0",
+  "description": "Discord Bot made by LockBlock",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.18.1",
     "auto-updater": "^1.0.2",
-    "axios": "^0.18.0",
-    "chalk": "^2.4.2",
     "child_process": "^1.0.2",
-    "discord.js": "^12.2.0",
-    "figlet": "^1.2.4",
+    "chalk": "^2.4.2",
+    "dotenv": "^8.2.0",
+    "discord.js": "^12.5.1",
+    "figlet": "^1.5.0",
     "fs": "^0.0.1-security",
-    "fs-readdir-recursive": "^1.1.0",
     "get-ip": "^2.0.0",
+    "fs-readdir-recursive": "^1.1.0",
     "got": "^9.6.0",
-    "humanize-duration": "^3.23.1",
+    "humanize-duration": "^3.25.0",
     "hwid": "^0.1.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.1",
     "nodejs": "^0.0.0",
     "oneclick-update": "^1.3.1",
     "snekfetch": "^4.0.4",
-    "superagent": "^5.1.0",
-    "webhook-discord": "^3.5.1"
+    "superagent": "^5.3.1",
+    "webhook-discord": "^3.7.7"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LockBlock-dev/LockBot.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "LockBlock",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LockBlock-dev/LockBot/issues"

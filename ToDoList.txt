@@ -1,3 +1,0 @@
-Améliorer la commande help
-Améliorer la commande hack
-Rajouter l'anglais

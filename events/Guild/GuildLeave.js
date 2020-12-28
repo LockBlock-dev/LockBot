@@ -7,7 +7,7 @@ bot.on('guildDelete', guild => {
 
 	const ID = guild.id
 
-	bot.user.setActivity(`&help | in ${bot.guilds.cache.size} servers`, { type: 'WATCHING' })
+	bot.user.setActivity(`+help | in ${bot.guilds.cache.size} servers`, { type: 'WATCHING' })
 
 	const settingsPath = path.join(__dirname, "../../core/guildSettings.json")
 	var GUILDS = JSON.parse(fs.readFileSync(settingsPath, "utf8"))

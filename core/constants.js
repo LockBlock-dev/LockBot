@@ -10,7 +10,6 @@ const MESSAGES = {
           description: "Invite the dev to a server",
           usage: '<Guild ID>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         },
         GUILDLEAVE: {
@@ -20,7 +19,6 @@ const MESSAGES = {
           description: "Make the bot leaves the Guild",
           usage: '<Guild ID>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         },
         RESTART: {
@@ -30,7 +28,6 @@ const MESSAGES = {
           description: "Restart the bot",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         },
         SPURGE: {
@@ -40,7 +37,6 @@ const MESSAGES = {
           description: "Clear only the bot messages",
           usage: '<amount>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         }
       },
@@ -53,7 +49,6 @@ const MESSAGES = {
           description: "Text to ASCII Art",
           usage: '<text>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         },
         EMOJIFY: {
@@ -63,7 +58,6 @@ const MESSAGES = {
           description: "Text to emotes",
           usage: '<text>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         },
         GAMER: {
@@ -73,7 +67,6 @@ const MESSAGES = {
           description: "Are you a gamer ?",
           usage: '<mention>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         },
         HACK: {
@@ -83,7 +76,6 @@ const MESSAGES = {
           description: "Corrupted",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         },
         FBI : {
@@ -93,7 +85,6 @@ const MESSAGES = {
           description: "FBI !",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         },
         MEME: {
@@ -103,7 +94,6 @@ const MESSAGES = {
           description: "Meme",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         }
       },
@@ -116,7 +106,6 @@ const MESSAGES = {
           description: "Members count",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         },
         SERVERINFO: {
@@ -126,7 +115,6 @@ const MESSAGES = {
           description: "Server Infos",
           usage: '',
             isUserAdmin: false,
-          isUserModo: false,
           args: false
         },
         USERINFO: {
@@ -136,7 +124,6 @@ const MESSAGES = {
           description: "User Infos",
           usage: '<mention>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         },
         BOTINFO: {
@@ -146,7 +133,6 @@ const MESSAGES = {
           description: "Bot Infos",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         },
         PROFILEPICTURE: {
@@ -156,7 +142,6 @@ const MESSAGES = {
           description: "Pfp",
           usage: '<mention>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         }
       },
@@ -278,7 +263,6 @@ const MESSAGES = {
           description: "Set the language",
           usage: '<fr> or <en>',
           isUserAdmin: true,
-          isUserModo: false,
           args: true
       },
         NUKE: {
@@ -288,7 +272,6 @@ const MESSAGES = {
           description: "Nuke a channel",
           usage: '',
           isUserAdmin: true,
-          isUserModo: false,
           args: false
       }
       }

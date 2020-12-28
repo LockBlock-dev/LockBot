@@ -11,7 +11,7 @@ function checkDays(date) {
 	
 module.exports.run = (bot, message, args) => {
 
-	const GUILDS = JSON.parse(fs.readFileSync("./core/guildSettings.json", "utf8"))
+    const GUILDS = JSON.parse(fs.readFileSync("./core/guildSettings.json", "utf8"))
     const langSet = GUILDS[message.guild.id].language
     const lang = require(`../../core/languages/${langSet}.json`)
 
