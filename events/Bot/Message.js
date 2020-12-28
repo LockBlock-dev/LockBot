@@ -55,13 +55,8 @@ bot.on("message", async message => {
     return message.reply(lang.messageEventMissingPermManageGuild)
     }
 
-<<<<<<< HEAD
-      if (commandfile.help.args && !args.length) {
-        var noArgsReply = lang.messageEventCommandNeedArg + `<@${message.author.id}> !`
-=======
     if (commandfile.help.args && !args.length) {
       var noArgsReply = lang.messageEventCommandNeedArg + `<@${message.author.id}> !`
->>>>>>> 1b8ca7a4ed82a8fc07a3c74754fc6dda59b5ce2f
   
     if (commandfile.help.usage) noArgsReply += `\n` + lang.messageEventCommandUsage + `\`${prefix}${commandfile.help.name} ${commandfile.help.usage}\``
   
