@@ -17,4 +17,4 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 ### Copyright
 
-I publish the source code for free, so please, don't steal it. Thanks.
+See the [license](/LICENSE)
