@@ -1,4 +1,4 @@
 node_modules
 .env
 bot.bat
-guildSettings.json
+/core/guildSettings.json
