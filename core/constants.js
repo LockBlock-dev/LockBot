@@ -99,15 +99,6 @@ const MESSAGES = {
       },
 
       INFOS: {
-        COUNT: {
-          name: "count",
-          aliases: ['mcount','membercount','memberscount'],
-          category: 'info',
-          description: "Members count",
-          usage: '',
-          isUserAdmin: false,
-          args: false
-        },
         SERVERINFO: {
           name: "si",
           aliases: ['serverinfos','sinfos','serverinfo','sinfo'],

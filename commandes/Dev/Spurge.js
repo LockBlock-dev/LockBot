@@ -17,15 +17,19 @@ module.exports.run = async (bot, message, args) => {
                 m.delete().catch(console.error)
                 deletedMessages++
             }
+
 			if (deletedMessages >= messagecount){return true}
-        })
+                            })
     }).then(() => {
-        if (deletedMessages === -1) deletedMessages = 0
+        if (deletedMessages === -1)
+            deletedMessages = 0
+
         message.channel.send(`${deletedMessages} messages deleted.`)
+        
         setTimeout(function(){
             m.delete()
-    }, 1000)
-    })
+        }, 1000)
+                })
 }
 
 

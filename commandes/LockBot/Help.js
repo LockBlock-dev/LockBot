@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
 const embed = new Discord.MessageEmbed()
 	.setDescription(`<@${message.author.id}>`)
 	.addField("Fun",`\`Ascii, Emojify, FBI, Gamerometer, Hack, Meme\``)
-	.addField("Infos",`\`BotInfos, MemberCount, ProfilePicture, ServerInfos, UserInfos\``)
+	.addField("Infos",`\`BotInfos, ProfilePicture, ServerInfos, UserInfos\``)
 	.addField("LockBot",`\`Help, Invite\``)
 	.addField("Misc",`\`Ping, Poll, Say\``)
 	.addField("Moderation",`\`Lang, Nuke, Prefix\``)
