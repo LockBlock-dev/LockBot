@@ -16,3 +16,5 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 • Run the bot by doing `node index.js`
 
 ### Copyright
+
+I publish the source code for free, so please, don't steal it. Thanks.
