@@ -236,16 +236,6 @@ const MESSAGES = {
       },
 
       MODERATION: {
-        CLEAR: {
-            name: "clear",
-            aliases: ['purge'],
-            category: 'moderation',
-            description: "Clear messages",
-            usage: '<count>',
-            isUserAdmin: false,
-            isUserModo: true,
-            args: true
-        },
         PREFIX: {
             name: "prefix",
             aliases: ['prefix','setprefix'],

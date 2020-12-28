@@ -50,18 +50,24 @@ bot.on("message", async message => {
     if (!commandfile)
       return
 
-    if (commandfile.help.isUserAdmin && !message.member.hasPermission('MANAGE_GUILD'))
+    if (commandfile.help.isUserAdmin && !message.member.hasPermission('MANAGE_GUILD')) {
   
     return message.reply(lang.messageEventMissingPermManageGuild)
+    }
 
+<<<<<<< HEAD
       if (commandfile.help.args && !args.length) {
         var noArgsReply = lang.messageEventCommandNeedArg + `<@${message.author.id}> !`
+=======
+    if (commandfile.help.args && !args.length) {
+      var noArgsReply = lang.messageEventCommandNeedArg + `<@${message.author.id}> !`
+>>>>>>> 1b8ca7a4ed82a8fc07a3c74754fc6dda59b5ce2f
   
-      if (commandfile.help.usage) noArgsReply += `\n` + lang.messageEventCommandUsage + `\`${prefix}${commandfile.help.name} ${commandfile.help.usage}\``
+    if (commandfile.help.usage) noArgsReply += `\n` + lang.messageEventCommandUsage + `\`${prefix}${commandfile.help.name} ${commandfile.help.usage}\``
   
-      return message.channel.send(noArgsReply)
-        }
+    return message.channel.send(noArgsReply)
+      }
   
   
-      if(commandfile) commandfile.run(bot, message, args)
+    if(commandfile) commandfile.run(bot, message, args)
 })
