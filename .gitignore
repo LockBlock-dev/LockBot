@@ -4,3 +4,4 @@ bot.bat
 core/guildSettings.json
 guildLog.js
 pm2 usage.txt
+package-lock.json
