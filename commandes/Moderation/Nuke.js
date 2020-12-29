@@ -11,8 +11,7 @@ module.exports.run = async (bot, message, args) => {
     const position = message.channel.position
     const guild = message.guild
 
-    nukedchannel.clone()
-    .then(nukedchannel.delete())
+    nukedchannel.clone().then(nukedchannel.delete())
 
     setTimeout(function(){ 
         const newClonedChannel = guild.channels.cache.find(channel => channel.name === nukelchannelname)
