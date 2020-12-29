@@ -17,6 +17,8 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 • In [core](/core), create a `guildSettings.json` file and put inside `{}`
 
+• At the root of the folder, create a `.env` file, and put the token inside : `DISCORD_TOKEN=`YOURTOKENHERE`
+
 • Run the bot by doing `node index.js`
 
 • You can configure default prefix and default language in [config.json](/config.json)
