@@ -15,6 +15,8 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 • Go to the LockBot folder and do `npm install`
 
+• In [core](/core), create a `guildSettings.json` file and put inside `{}`
+
 • Run the bot by doing `node index.js`
 
 • You can configure default prefix and default language in [config.json](/config.json)
