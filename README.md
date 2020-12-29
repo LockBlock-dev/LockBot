@@ -6,8 +6,6 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 ![Bot preview](/preview.png)
 
-You also need the Presence Gateway Intent for the userInfos command.
-
 
 ## How to use
 
