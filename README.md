@@ -27,6 +27,8 @@ You also need the Presence Gateway Intent for the userInfos command.
 
 • When the bot doesnt have settings for guilds (if no one talked yet in the guild), `say` command can crashes with a JSON parse error. In the future i'll do this part with a Database.
 
+• Sometimes [Message.js](/events/Bot/Message.js) print JSON parse error. At this moment i still don't know why, the bot still works after the error.
+
 
 ## Copyright
 
