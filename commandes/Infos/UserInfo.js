@@ -67,7 +67,7 @@ module.exports.run = (bot, message, args) => {
                 .setThumbnail(member.user.avatarURL({format:'png', dynamic:true, size:4096}))
                 .setDescription(`<@${member.user.id}>`)
                 .addField("ID", member.user.id,true)
-                .addField(lang.userInfoNickname, `${member.nickname !== null ? `${member.nickname}` : "Pas de surnom"}`, true)
+                .addField(lang.userInfoNickname, `${member.nickname !== null ? `${member.nickname}` : lang.userInfoNoNickname}`, true)
                 .addField(lang.userInfoJoinedDate, `${member.user.createdAt.toUTCString().substr(0, 16)} (${checkDays(member.user.createdAt)})`)
                 .addField("Bot ?", bot, true)
                 .addField(lang.userInfoStatus, status[member.user.presence.status], true)

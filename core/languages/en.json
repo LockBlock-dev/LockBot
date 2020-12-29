@@ -35,6 +35,7 @@
     "userInfoUserActivityTypeOffline": "Offline : ",
     "userInfoUserActivityTypeNull": "No activity",
     "userInfoNickname": "Nickname",
+    "userInfoNoNickname": "Not any",
     "userInfoJoinedDate": "Joined Discord the",
     "userInfoStatus": "Status",
     "userInfoSupport": "Platform",
