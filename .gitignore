@@ -3,3 +3,4 @@ node_modules
 bot.bat
 core/guildSettings.json
 guildLog.js
+pm2 usage.txt
