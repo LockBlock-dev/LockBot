@@ -221,30 +221,11 @@ const MESSAGES = {
           aliases: ['settings','paramètres','parametres','config'],
           category: 'moderation',
           description: "Modify guild settings",
-          usage: '<setting> <value>',
+          usage: '<prefix> <value> | <lang> <fr>/<en>',
           isUserAdmin: true,
           isUserModo: false,
           args: true
         },
-        PREFIX: {
-          name: "prefix",
-          aliases: ['prefix','setprefix'],
-          category: 'moderation',
-          description: "Set the prefix",
-          usage: '<new prefix>',
-          isUserAdmin: true,
-          isUserModo: false,
-          args: true
-        },
-        LANG: {
-          name: "lang",
-          aliases: ['lang','setlang','language','setlanguage'],
-          category: 'moderation',
-          description: "Set the language",
-          usage: '<fr> or <en>',
-          isUserAdmin: true,
-          args: true
-      },
         NUKE: {
           name: "nuke",
           aliases: ['nuke, clearall'],
