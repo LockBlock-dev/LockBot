@@ -1,6 +1,5 @@
 const { MESSAGES } = require("../../core/constants.js")
 const Discord = require("discord.js")
-const chalk = require("chalk")
 
 module.exports.run = async (bot, message, args) => {
     if (message.author.id !== "249899689028091904") return message.reply("LockBot isn't your bot !")
