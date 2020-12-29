@@ -21,7 +21,7 @@ You also need the Presence Gateway Intent for the userInfos command.
 
 • You can configure default prefix and default language in [config.json](/config.json)
 
-• To add any language, just go to [languages](/languages) folder, create a .json file and name with the ISO 3166-1 norm. Exemple : [en.json](/core/languages/en.json) for the international english.
+• To add any language, just go to [languages](/core/languages) folder, create a .json file and name with the ISO 3166-1 norm. Exemple : [en.json](/core/languages/en.json) for the international english.
 
 ## Potential bugs
 
