@@ -138,104 +138,84 @@ const MESSAGES = {
       },
 
       LOCKBOT: {
-          HELP: {
-            name: "help",
-            aliases: ['help'],
-            category: 'lockbot',
-            description: "Help me",
-            usage: '',
-            isUserAdmin: false,
-            isUserModo: false,
-            args: false
-          },
-          /*BUGREPORT: {
-            name: "bugreport",
-            aliases: ['bg','bugsreport','bugreports','bugsreports'],
-            category: 'lockbot',
-            description: "Envoie un rapport de bug",
-            usage: '<texte>',
-            isUserAdmin: false,
-            isUserModo: false,
-            args: true
-          },*/
-          INVITE: {
-            name: "invite",
-            aliases: ['link'],
-            category: 'lockbot',
-            description: "Invite link",
-            usage: '',
-            isUserAdmin: false,
-            isUserModo: false,
-            args: false
-          }
+        HELP: {
+          name: "help",
+          aliases: ['help'],
+          category: 'lockbot',
+          description: "Help me",
+          usage: '',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: false
+        },
+        INVITE: {
+          name: "invite",
+          aliases: ['link'],
+          category: 'lockbot',
+          description: "Invite link",
+          usage: '',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: false
+        }
       },
 
       MISC: {
-          PING: {
-            name: "ping",
-            aliases: ['ping'],
-            category: 'misc',
-            description: "Pong !",
-            usage: '',
-            isUserAdmin: false,
-            isUserModo: false,
-            args: false
-          },  
-          SAY: {
-            name: "say",
-            aliases: ['say'],
-            category: 'misc',
-            description: "Repeat text",
-            usage: '<text>',
-            isUserAdmin: false,
-            isUserModo: false,
-            args: true
-          },
-          POLL: {
-            name: "poll",
-            aliases: ['sondage'],
-            category: 'misc',
-            description: "Make a poll",
-            usage: '(Simple) <Question> | OR | (Multiple) <Question, answer 1, answer 2,etc> MAX 10',
-            isUserAdmin: false,
-            isUserModo: false,
-            args: true
-          }
+        PING: {
+          name: "ping",
+          aliases: ['ping'],
+          category: 'misc',
+          description: "Pong !",
+          usage: '',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: false
+        },  
+        SAY: {
+          name: "say",
+          aliases: ['say'],
+          category: 'misc',
+          description: "Repeat text",
+          usage: '<text>',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: true
+        },
+        POLL: {
+          name: "poll",
+          aliases: ['sondage'],
+          category: 'misc',
+          description: "Make a poll",
+          usage: '(Simple) <Question> | OR | (Multiple) <Question, answer 1, answer 2,etc> MAX 10',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: true
+        }
       },
 
       TECH: {
-        KEKE: {
-            name: "",
-            aliases: [''],
-            category: 'tech',
-            description: "",
-            usage: '',
-            isUserAdmin: false,
-            isUserModo: false,
-            args: false
-        },
-        KEK: {
-            name: "",
-            aliases: [''],
-            category: 'tech',
-            description: "",
-            usage: '',
-            isUserAdmin: false,
-            isUserModo: false,
-            args: false
+        NOTHING: {
+          name: "",
+          aliases: [''],
+          category: 'tech',
+          description: "",
+          usage: '',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: false
         }
       },
 
       MODERATION: {
         PREFIX: {
-            name: "prefix",
-            aliases: ['prefix','setprefix'],
-            category: 'moderation',
-            description: "Set the prefix",
-            usage: '<new prefix>',
-            isUserAdmin: true,
-            isUserModo: false,
-            args: true
+          name: "prefix",
+          aliases: ['prefix','setprefix'],
+          category: 'moderation',
+          description: "Set the prefix",
+          usage: '<new prefix>',
+          isUserAdmin: true,
+          isUserModo: false,
+          args: true
         },
         LANG: {
           name: "lang",
@@ -254,7 +234,7 @@ const MESSAGES = {
           usage: '',
           isUserAdmin: true,
           args: false
-      }
+        }
       }
     }
   }
