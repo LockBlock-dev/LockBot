@@ -1,7 +1,7 @@
 node_modules
-.env
-bot.bat
+*.env
+*.bat
 core/guildSettings.json
-guildLog.js
-pm2 usage.txt
+guildsLog.js
+*.txt
 package-lock.json

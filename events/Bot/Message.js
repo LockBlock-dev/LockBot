@@ -3,25 +3,16 @@ const config = require('../../config.json')
 const bot = require("../../index.js")
 const fs = require("fs")
 
+
 bot.on("message", async message => {
 
-  const GUILDS = JSON.parse(fs.readFileSync("./core/guildSettings.json", "utf8"))
-    
-    if (!GUILDS[message.guild.id]) {
-      GUILDS[message.guild.id] = {
-        name: [message.guild.name],
-        prefix: config.prefix,
-        language: config.lang
-      }
+  if(message.channel.type === "dm")
+    return
 
-      fs.writeFile("./core/guildSettings.json", JSON.stringify(GUILDS), function(err, result) {
-        if(err) console.log('error', err)
-      })
-    }
+  const settings = await bot.getGuild(message)
 
-  const prefix = GUILDS[message.guild.id].prefix
-  const langSet = GUILDS[message.guild.id].language
-  const lang = require(`../../core/languages/${langSet}.json`)
+  const prefix = settings.guildPrefix
+  const lang = require(`../../core/languages/${settings.guildLang}.json`)
 
   const mentionArgs = message.content.split(" ")
 
@@ -64,6 +55,6 @@ bot.on("message", async message => {
       }
   
   
-    if(commandfile) commandfile.run(bot, message, args)
+    if(commandfile) commandfile.run(bot, message, args, settings)
 
 })

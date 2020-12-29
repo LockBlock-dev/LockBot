@@ -1,7 +1,6 @@
 const bot = require("../../index.js")
 const fs = require("fs")
 const path = require('path')
-const { Message } = require("discord.js")
 
 bot.on('guildDelete', guild => {
 

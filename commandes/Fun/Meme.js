@@ -3,12 +3,11 @@ const Discord = require("discord.js")
 const fs = require("fs")
 const got = require("got")
 
-module.exports.run = async (bot, message) => {
+module.exports.run = async (bot, message, settings) => {
 
-    const GUILDS = JSON.parse(fs.readFileSync("./core/guildSettings.json", "utf8"))
-    const langSet = GUILDS[message.guild.id].language
+    const lang = require(`../../core/languages/${settings.guildLang}.json`)
 
-    if (langSet == "fr") {
+    if (lang == "fr") {
         var subreddit = "frenchmemes"
     } else {
         var subreddit = "memes"

@@ -2,11 +2,9 @@ const Discord = require("discord.js")
 const { MESSAGES } = require("../../core/constants.js")
 const fs = require("fs")
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (bot, message, args, settings) => {
 
-    const GUILDS = JSON.parse(fs.readFileSync("./core/guildSettings.json", "utf8"))
-    const langSet = GUILDS[message.guild.id].language
-    const lang = require(`../../core/languages/${langSet}.json`)
+    const lang = require(`../../core/languages/${settings.guildLang}.json`)
     
     var emojiList = ['1️⃣','2️⃣','3️⃣','4️⃣','5️⃣','6️⃣','7️⃣','8️⃣','9️⃣','🔟']
     const messageWithoutCmd = message.content.slice(6)

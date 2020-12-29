@@ -3,6 +3,15 @@ const MESSAGES = {
     COMMANDS: {
 
       DEV: {
+        EVAL: {
+          name: "eval",
+          aliases: [''],
+          category: 'lockbot',
+          description: "Execute a command",
+          usage: '',
+          isUserAdmin: false,
+          args: true
+        },
         GUILDINVITE: {
           name: "guildinvite",
           aliases: ['ginvite','gi'],
@@ -207,6 +216,16 @@ const MESSAGES = {
       },
 
       MODERATION: {
+        SETTINGS: {
+          name: "settings",
+          aliases: ['settings','paramètres','parametres','config'],
+          category: 'moderation',
+          description: "Modify guild settings",
+          usage: '<setting> <value>',
+          isUserAdmin: true,
+          isUserModo: false,
+          args: true
+        },
         PREFIX: {
           name: "prefix",
           aliases: ['prefix','setprefix'],

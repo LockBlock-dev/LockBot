@@ -10,11 +10,9 @@ function checkDays(date) {
         return days + (days == 1 ? " day" : " days") 
 	}
 	
-module.exports.run = (bot, message, args) => {
+module.exports.run = (bot, message, args, settings) => {
 
-        const GUILDS = JSON.parse(fs.readFileSync("./core/guildSettings.json", "utf8"))
-        const langSet = GUILDS[message.guild.id].language
-        const lang = require(`../../core/languages/${langSet}.json`)
+    const lang = require(`../../core/languages/${settings.guildLang}.json`)
 
 	
 		const embed = new Discord.MessageEmbed()
