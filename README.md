@@ -19,6 +19,10 @@ You also need the Presence Gateway Intent for the userInfos command.
 
 • Run the bot by doing `node index.js`
 
+• You can configure default prefix and default language in [config.json](/config.json)
+
+• To add any language, just go to [languages](/languages) folder, create a .json file and name with the ISO 3166-1 norm. Exemple : [en.json](/core/languages/en.json) for the international english.
+
 ## Potential bugs
 
 • When the bot doesnt have settings for guilds (if no one talked yet), `say` command can crashes with a JSON parse error. In the future i'll do this part with a Database.
