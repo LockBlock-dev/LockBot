@@ -1,5 +1,7 @@
 const mongoose = require("mongoose")
 const chalk = require("chalk")
+const { DBCONNECTION: connection } = require("../config.js")
+
 
 module.exports = {
     init: () => {
@@ -14,8 +16,7 @@ module.exports = {
             socketTimeoutMS: 45000, // CLose sockets after 45 seconds of inactivity
             family: 4 // Use IPv4, skip trying IPv6 
         }
-
-        mongoose.connect("mongodb://localhost:27017/LockBot", options).catch((error) => {console.error(error)})
+        mongoose.connect(connection.adress, options).catch((error) => {console.error(error)})
         mongoose.Promise = global.Promise
         mongoose.connection.on("connected", () => console.log(chalk.green("[Database] ") + chalk.bold("Mongoose") + " is online."))
     }
