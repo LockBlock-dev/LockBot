@@ -11,35 +11,18 @@
     "botInfoMembers": "Members",
     "botInfoCreationDate": "Creation Date",
 
-    "countMembers": "Members",
-
     "profilePicture": "Avatar of",
 
     "serverInfoName": "Name",
     "serverInfoMembers": "Members",
     "serverInfoCreationDate": "Creation Date",
 
-    "userInfoOnline": "Online",
-    "userInfoDnd": "Do Not Disturb",
-    "userInfoOffline": "Offline/Invisible",
-    "userInfoSupportOffline": "In the bed",
-    "userInfoUserActivityStateoffline": "Offline",
-    "userInfoSupportPhone": "Phone",
     "userInfoUserIsNotBot": "Human",
     "userInfoBoostYes": "Yes",
     "userInfoBoostNo": "No",
-    "userInfoUserActivityTypePlaying": "Playing : ",
-    "userInfoUserActivityTypeListening": "Listening : ",
-    "userInfoUserActivityTypeWatching": "Watching : ",
-    "userInfoUserActivityTypeCustom": "Custom Status : ",
-    "userInfoUserActivityTypeOffline": "Offline : ",
-    "userInfoUserActivityTypeNull": "No activity",
     "userInfoNickname": "Nickname",
     "userInfoNoNickname": "Not any",
     "userInfoJoinedDate": "Joined Discord the",
-    "userInfoStatus": "Status",
-    "userInfoSupport": "Platform",
-    "userInfoActivity": "Activity",
 
     "pingLatencyBot": "Bot latency : ",
     "pingLatencyAPI": " ms, API latency : ",
@@ -48,9 +31,6 @@
     "pollSimpleTitle": "Poll :",
 
     "sayDontEveryoneOrHere": "Don't make me mention the members of this discord: sob:",
-
-    "clearHowMany": "Specify a number of message to delete greater than 0 and less than 100 !",
-    "clearCount": " messages deleted !",
 
     "prefixArgs": "A prefix can only be one argument !",
     "prefixLengthMax": "The prefix is limited to 3 characters !",

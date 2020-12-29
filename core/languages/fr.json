@@ -10,8 +10,6 @@
     "botInfoServers": "Serveurs",
     "botInfoMembers": "Membres",
     "botInfoCreationDate": "Date de création",
-
-    "countMembers": "Membres",
     
     "profilePicture": "Voici l'avatar de",
 
@@ -19,27 +17,12 @@
     "serverInfoMembers": "Membres",
     "serverInfoCreationDate": "Date de création",
 
-    "userInfoOnline": "En ligne",
-    "userInfoDnd": "Ne pas déranger",
-    "userInfoOffline": "Hors-ligne/invisible",
-    "userInfoSupportOffline": "Dans son lit",
-    "userInfoUserActivityStateoffline": "Hors-ligne",
-    "userInfoSupportPhone": "Téléphone",
     "userInfoUserIsNotBot": "Humain",
     "userInfoBoostYes": "Oui",
     "userInfoBoostNo": "Non",
-    "userInfoUserActivityTypePlaying": "Joue à : ",
-    "userInfoUserActivityTypeListening": "Ecoute : ",
-    "userInfoUserActivityTypeWatching": "Regarde : ",
-    "userInfoUserActivityTypeCustom": "Statut customisé : ",
-    "userInfoUserActivityTypeOffline": "Hors-ligne : ",
-    "userInfoUserActivityTypeNull": "Aucune activité",
     "userInfoNickname": "Surnom",
     "userInfoNoNickname": "Aucun",
     "userInfoJoinedDate": "A rejoins discord le",
-    "userInfoStatus": "Statut",
-    "userInfoSupport": "Plateforme",
-    "userInfoActivity": "Activité",
 
     "pingLatencyBot": "Latence du bot : ",
     "pingLatencyAPI": " ms, Latence de l'API : ",
@@ -48,9 +31,6 @@
     "pollSimpleTitle": "Sondage :",
 
     "sayDontEveryoneOrHere": "Ne me faîtes pas mentionner les membres de ce discord :sob:",
-
-    "clearHowMany": "Spécifier un nombre de message à supprimer supérieur à 0 et inférieur à 100 !",
-    "clearCount": " messages supprimés !",
 
     "prefixArgs": "Un préfixe ne peut être constituer que d'un argument !",
     "prefixLengthMax": "Le préfixe est limité à 3 caractères !",
