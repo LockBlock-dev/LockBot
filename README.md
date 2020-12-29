@@ -8,7 +8,9 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 You also need the Presence Gateway Intent for the userInfos command.
 
+
 ## How to use
+
 • Download [NPM](https://www.npmjs.com/get-npm) and [NodeJS](https://nodejs.org)
 
 • Download the project or clone it
@@ -17,6 +19,11 @@ You also need the Presence Gateway Intent for the userInfos command.
 
 • Run the bot by doing `node index.js`
 
-### Copyright
+## Potential bugs
+
+• When the bot doesnt have settings for guilds (if no one talked yet), `say` command can crashes with a JSON parse error. In the future i'll do this part with a Database.
+
+
+## Copyright
 
 See the [license](/LICENSE).
