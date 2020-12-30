@@ -10,8 +10,13 @@ bot.on("message", async message => {
 
   const settings = await bot.getGuild(message)
 
-  const prefix = settings.guildPrefix
+  if (typeof settings === 'undefined') {
+    const err = new ReferenceError("Error while asking for guild settings in guid : "+ message.guild.id + " " + message.guild.name)
+    throw err
+  }
+  
   const lang = require(`../../core/languages/${settings.guildLang}.json`)
+  const prefix = settings.guildPrefix
 
   const mentionArgs = message.content.split(" ")
 
