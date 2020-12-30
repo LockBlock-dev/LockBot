@@ -19,7 +19,7 @@ bot.on("guildCreate", async guild => {
       }
       if(guild.me.permissionsIn(channel).has("SEND_MESSAGES") && guild.me.permissionsIn(channel).has("VIEW_CHANNEL")) {
         found = true
-        return channel.send("🇺🇸 Hello ! \nTo get started you can change my language and my prefix in your server ! \n \n🇫🇷 Bonjour ! \nPour commencer vous pouvez changer ma langue et mon préfixe dans votre serveur ! \n \n+prefix <prefix>  |  +lang <fr> or <en>")
+        return channel.send("🇺🇸 Hello ! \nTo get started you can change my language and my prefix in your server ! \n \n🇫🇷 Bonjour ! \nPour commencer vous pouvez changer ma langue et mon préfixe dans votre serveur ! \n \n+config prefix <prefix>  |  +config lang <fr> or <en>")
       }
   })
 })
