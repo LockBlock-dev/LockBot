@@ -12,15 +12,15 @@ function checkDays(date) {
 	
 module.exports.run = (bot, message, args, settings) => {
 
-    const lang = require(`../../core/languages/${settings.guildLang}.json`)
-
+	const lang = require(`../../core/languages/${settings.guildLang}.json`)
 	
+
 		const embed = new Discord.MessageEmbed()
 			.setAuthor(message.author.tag)
 			.addField(lang.serverInfoName, message.guild.name, true)
 			.addField("ID", message.guild.id, true)
 			.setThumbnail(message.guild.iconURL())
-			.addField("Owner", bot.users.cache.get(message.guild.ownerID).username, true)
+			.addField("Owner", `<@${message.guild.ownerID}>`, true)
 			.addField("Channels", message.guild.channels.cache.size, true)
 			.addField("Roles", message.guild.roles.cache.size, true)
 			.addField(lang.serverInfoMembers, message.guild.members.cache.size, true)

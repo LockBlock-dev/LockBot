@@ -3,8 +3,9 @@ const Discord = require("discord.js")
 const fs = require("fs")
 const got = require("got")
 
-module.exports.run = async (bot, message, settings) => {
+module.exports.run = async (bot, message) => {
 
+    const settings = await bot.getGuild(message)
     const lang = require(`../../core/languages/${settings.guildLang}.json`)
 
     if (lang == "fr") {

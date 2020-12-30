@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 const figlet = require("figlet")
 const fs = require("fs")
 
-module.exports.run = (bot, message, args) => {
+module.exports.run = (bot, message, args, settings) => {
 
     const lang = require(`../../core/languages/${settings.guildLang}.json`)
 
