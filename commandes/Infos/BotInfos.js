@@ -29,7 +29,7 @@ module.exports.run = (bot, message, args, settings) => {
         .addField(lang.botInfoMembers, usersize, true)
         .addField("API", "Discord.js V12", true)
         .addField(lang.botInfoCreationDate, `${bot.user.createdAt.toUTCString().substr(0, 16)} (${checkDays(bot.user.createdAt)})`, true)
-        .addField(lang.botInfosLanguages, "English, French, Espagnol, German")
+        .addField(lang.botInfosLanguages, "English, French, Spanish, German")
         .setColor("#FF8A33")
         .setFooter("© LockBot")
         .setTimestamp()
