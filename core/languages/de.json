@@ -1,0 +1,50 @@
+{
+    "asciiMaxCaracters": "Maximal 10 Zeichen !",
+
+    "gamerometer1": " ist ",
+    "gamerometer2": "% a gamer !",
+
+    "hack": "Hast du es wirklich geglaubt ? :joy:",
+
+    "botInfoName": "Name des Bots",
+    "botInfoServers": "Server",
+    "botInfoMembers": "Mitglieder",
+    "botInfoCreationDate": "Erstellungsdatum",
+
+    "profilePicture": "Avatar von",
+
+    "serverInfoName": "Name",
+    "serverInfoMembers": "Mitglieder",
+    "serverInfoCreationDate": "Erstellungsdatum",
+
+    "userInfoUserIsNotBot": "Human",
+    "userInfoBoostYes": "Ja",
+    "userInfoBoostNo": "Nein",
+    "userInfoNickname": "Nickname",
+    "userInfoNoNickname": "Not any",
+    "userInfoJoinedDate": "Discord the beigetreten",
+
+    "pingLatencyBot": "Bot-Latenz: ",
+    "pingLatencyAPI": " ms, API-Latenz: ",
+
+    "pollOptionsListLength": "Maximal 10 Auswahlmöglichkeiten",
+    "pollSimpleTitle": "Poll:",
+
+    "sayDontEveryoneOrHere": "Lassen Sie mich die Mitglieder dieser Zwietracht nicht erwähnen :sob:",
+
+    "configPrefixArgs": "Ein Präfix kann nur ein Argument sein!",
+    "configPrefixLengthMax": "Das Präfix ist auf 3 Zeichen begrenzt!",
+    "configPrefixNew": "Neues Präfix: ",
+    "configPrefixNotString": "Das Präfix enthält nur Buchstaben oder Symbole!",
+    "configLangArgs": "Sprache ist nur ein Argument!",
+    "configLangTooLong": "Sprachen sind nur 2 Zeichen lang!",
+    "configLangNew": "Neue Sprache: ",
+    "configLangUnknown": "Diese Sprache ist nicht verfügbar!",
+    "configLangNotString": "Sprachen enthalten nur Buchstaben!",
+    
+    "messageEventBotPing": "Hallo, ich bin ein Roboter. Ich habe keine Stahlbeine oder Laserstrahlen, aber ich kann Ihnen helfen ! \nMein aktuelles Präfix auf diesem Server lautet: ",
+    "messageEventMissingPermManageGuild": "Sie haben nicht die Berechtigung `MANAGE_GUILD` um diesen Befehl auszuführen !",
+    "messageEventMissingPermManageMessages": "Sie haben nicht die Berechtigung `MANAGE_MESSAGES` um diesen Befehl auszuführen !",
+    "messageEventCommandNeedArg": "Sie benötigen ein Argument für diesen Befehl",
+    "messageEventCommandUsage": "So verwenden Sie den Befehl: "
+}

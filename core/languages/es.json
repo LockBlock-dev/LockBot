@@ -4,7 +4,7 @@
     "gamerometer1": " es ",
     "gamerometer2": "% un gamer!",
 
-    "hack": "¿Realmente lo creíste?: alegría: ",
+    "hack": "¿Realmente lo creíste? :joy:",
 
     "botInfoName": "Nombre del bot",
     "botInfoServers": "Servidores",
@@ -25,7 +25,7 @@
     "userInfoJoinedDate": "Se unió a Discord el",
 
     "pingLatencyBot": "Latencia del bot: ",
-    "pingLatencyAPI": "ms, latencia de API: ",
+    "pingLatencyAPI": " ms, latencia de API: ",
 
     "pollOptionsListLength": "10 opciones como máximo",
     "pollSimpleTitle": "Encuesta :",
