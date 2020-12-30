@@ -3,6 +3,15 @@ const MESSAGES = {
     COMMANDS: {
 
       DEV: {
+        BROADCAST: {
+          name: "broadcast",
+          aliases: ['bc'],
+          category: 'lockbot',
+          description: "Say a message in every server where the bot is",
+          usage: '',
+          isUserAdmin: false,
+          args: true
+        },
         EVAL: {
           name: "eval",
           aliases: [''],
@@ -34,7 +43,7 @@ const MESSAGES = {
           name: "restart",
           aliases: ['restart'],
           category: 'lockbot',
-          description: "Restart the bot",
+          description: "Restart the bot (works only if you start the bot with pm2)",
           usage: '',
           isUserAdmin: false,
           args: false

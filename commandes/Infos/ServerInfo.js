@@ -23,7 +23,7 @@ module.exports.run = (bot, message, args, settings) => {
 			.addField("Owner", `<@${message.guild.ownerID}>`, true)
 			.addField("Channels", message.guild.channels.cache.size, true)
 			.addField("Roles", message.guild.roles.cache.size, true)
-			.addField(lang.serverInfoMembers, message.guild.members.cache.size, true)
+			.addField(lang.serverInfoMembers, message.guild.memberCount, true)
 			.addField("Emojis", message.guild.emojis.cache.size, true)
 			.addField("Region", message.guild.region.toUpperCase(), true)
 			.addField(lang.serverInfoCreationDate, `${message.channel.guild.createdAt.toUTCString().substr(0, 16)} (${checkDays(message.channel.guild.createdAt)})`, true)

@@ -13,7 +13,7 @@ bot.on("guildCreate", async guild => {
 
   var found = false
 
-  guild.channels.cache.forEach(function(channel, id) {
+  guild.channels.cache.forEach = channel => {
       if(found == true || channel.type != "text") {
         return
       }
@@ -21,5 +21,5 @@ bot.on("guildCreate", async guild => {
         found = true
         return channel.send("🇺🇸 Hello ! \nTo get started you can change my language and my prefix in your server ! \n \n🇫🇷 Bonjour ! \nPour commencer vous pouvez changer ma langue et mon préfixe dans votre serveur ! \n \n+config prefix <prefix>  |  +config lang <fr> or <en>")
       }
-  })
+  }
 })
