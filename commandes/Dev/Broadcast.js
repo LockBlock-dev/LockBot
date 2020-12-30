@@ -14,11 +14,11 @@ module.exports.run = async (bot, message, args) => {
 
     var found = false
 
-    guild.channels.cache.forEach = (channel) => {
+    message.guild.channels.cache.forEach = (channel) => {
       if(found == true || channel.type != "text") {
         return
       }
-      if(guild.me.permissionsIn(channel).has("SEND_MESSAGES") && guild.me.permissionsIn(channel).has("VIEW_CHANNEL")) {
+      if(message.guild.me.permissionsIn(channel).has("SEND_MESSAGES") && message.guild.me.permissionsIn(channel).has("VIEW_CHANNEL")) {
         found = true
         return channel.send(content)
       }
