@@ -12,6 +12,12 @@ bot.on("message", async message => {
 
   if (typeof settings === 'undefined') {
     const err = new ReferenceError("Error while asking for guild settings in guid : "+ message.guild.id + " " + message.guild.name)
+    const newGuild = {
+      guildID: message.guild.id,
+      guildName: message.guild.name
+    }
+  
+    await bot.createGuild(newGuild)
     throw err
   }
   
