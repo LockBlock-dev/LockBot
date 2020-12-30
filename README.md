@@ -31,6 +31,8 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 • I don't know if there are bugs now with the Database. All JSON bugs have been removed.
 
+• Languages are app translated, if you find any errors please tell me.
+
 
 ## Copyright
 
