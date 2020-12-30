@@ -1,7 +1,7 @@
 const { MESSAGES } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = async (bot, message, args, settings) => {
+module.exports.run = async (bot, message, settings) => {
 
 	const lang = require(`../../core/languages/${settings.guildLang}.json`)
 	

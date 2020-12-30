@@ -156,9 +156,19 @@ const MESSAGES = {
       },
 
       LOCKBOT: {
+        VOTE: {
+          name: "vote",
+          aliases: [''],
+          category: 'lockbot',
+          description: "Vote for the bot",
+          usage: '',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: false
+        },
         HELP: {
           name: "help",
-          aliases: ['help'],
+          aliases: [''],
           category: 'lockbot',
           description: "Help me",
           usage: '',
