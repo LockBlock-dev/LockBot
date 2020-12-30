@@ -1,0 +1,50 @@
+{
+    "asciiMaxCaracters": "¡10 caracteres como máximo!",
+
+    "gamerometer1": " es ",
+    "gamerometer2": "% un gamer!",
+
+    "hack": "¿Realmente lo creíste?: alegría: ",
+
+    "botInfoName": "Nombre del bot",
+    "botInfoServers": "Servidores",
+    "botInfoMembers": "Miembros",
+    "botInfoCreationDate": "Fecha de creación",
+
+    "profilePicture": "Avatar de",
+
+    "serverInfoName": "Nombre",
+    "serverInfoMembers": "Miembros",
+    "serverInfoCreationDate": "Fecha de creación",
+
+    "userInfoUserIsNotBot": "Humano",
+    "userInfoBoostYes": "Sí",
+    "userInfoBoostNo": "No",
+    "userInfoNickname": "Apodo",
+    "userInfoNoNickname": "Ninguno",
+    "userInfoJoinedDate": "Se unió a Discord el",
+
+    "pingLatencyBot": "Latencia del bot: ",
+    "pingLatencyAPI": "ms, latencia de API: ",
+
+    "pollOptionsListLength": "10 opciones como máximo",
+    "pollSimpleTitle": "Encuesta :",
+
+    "sayDontEveryoneOrHere": "No me hagas mencionar a los miembros de esta discordia :sob:",
+
+    "configPrefixArgs": "¡Un prefijo solo puede ser un argumento!",
+    "configPrefixLengthMax": "¡El prefijo está limitado a 3 caracteres!",
+    "configPrefixNew": "Nuevo prefijo: ",
+    "configPrefixNotString": "¡El prefijo solo contiene letras o símbolos!",
+    "configLangArgs": "¡El lenguaje es solo un argumento!",
+    "configLangTooLong": "¡Los idiomas solo tienen 2 caracteres!",
+    "configLangNew": "Nuevo idioma: ",
+    "configLangUnknown": "¡Este idioma no está disponible!",
+    "configLangNotString": "¡Los idiomas solo contienen letras!",
+    
+    "messageEventBotPing": "Hola, soy un robot. No tengo patas de acero ni rayos láser, ¡pero puedo ayudarte! \nMi prefijo actual en este servidor es : ",
+    "messageEventMissingPermManageGuild": "¡no tienes el permiso` MANAGE_GUILD` para ejecutar este comando! ",
+    "messageEventMissingPermManageMessages": "¡no tienes el permiso` MANAGE_MESSAGES` para ejecutar este comando! ",
+    "messageEventCommandNeedArg": "Necesita un argumento para este comando",
+    "messageEventCommandUsage": "Aquí se explica cómo utilizar el comando : "
+}
