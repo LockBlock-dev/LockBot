@@ -10,6 +10,7 @@
     "botInfoServers": "Servers",
     "botInfoMembers": "Members",
     "botInfoCreationDate": "Creation Date",
+    "botInfosLanguages": "Supported Languages",
 
     "profilePicture": "Avatar of",
 
@@ -23,6 +24,8 @@
     "userInfoNickname": "Nickname",
     "userInfoNoNickname": "Not any",
     "userInfoJoinedDate": "Joined Discord the",
+
+    "helpSupportServer": "If you need help join the support server : ",
 
     "pingLatencyBot": "Bot latency : ",
     "pingLatencyAPI": " ms, API latency : ",

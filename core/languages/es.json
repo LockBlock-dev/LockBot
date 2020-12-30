@@ -10,6 +10,7 @@
     "botInfoServers": "Servidores",
     "botInfoMembers": "Miembros",
     "botInfoCreationDate": "Fecha de creación",
+    "botInfosLanguages": "Idiomas admitidos",
 
     "profilePicture": "Avatar de",
 
@@ -23,6 +24,8 @@
     "userInfoNickname": "Apodo",
     "userInfoNoNickname": "Ninguno",
     "userInfoJoinedDate": "Se unió a Discord el",
+
+    "helpSupportServer": "Si necesita ayuda, únase al servidor de soporte: ",
 
     "pingLatencyBot": "Latencia del bot: ",
     "pingLatencyAPI": " ms, latencia de API: ",

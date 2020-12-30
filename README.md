@@ -27,7 +27,7 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 ## Potential bugs
 
-• I don't know why [meme.js](commandes/fun/meme.js) and [ping.js](commandes/misc/ping.js) commands doesnt find the language so they do a request to the database and it works.
+• I don't know why some commands doesnt find the language so they do a request to the database and it works.
 
 • I don't know if there are bugs now with the Database. All JSON bugs have been removed.
 
