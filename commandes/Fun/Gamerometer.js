@@ -2,8 +2,9 @@ const { MESSAGES } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const fs = require("fs")
 
-module.exports.run = (message, args, settings) => {
+module.exports.run = async (bot, message) => {
 
+    const settings = await bot.getGuild(message)
     const lang = require(`../../core/languages/${settings.guildLang}.json`)
 
     const gamer = Math.round(Math.random() * 100)

@@ -23,10 +23,9 @@ module.exports.run = async (bot, message, args) => {
         if (deletedMessages === -1)
             deletedMessages = 0
 
-        message.channel.send(`${deletedMessages} messages deleted.`).then(m => {
-            m.delete({ timeout: 10000 })
-          })
-        
+        message.channel.send(`${deletedMessages} messages deleted.`).then(msg => {
+            msg.delete({ timeout: 10000 })
+          }).catch(console.error)
        
     })
 }
