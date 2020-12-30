@@ -221,7 +221,7 @@ const MESSAGES = {
           aliases: ['settings','paramètres','parametres','config'],
           category: 'moderation',
           description: "Modify guild settings",
-          usage: '<prefix> <value> | <lang> <fr>/<en>',
+          usage: 'prefix <value> | lang <fr>/<en>',
           isUserAdmin: true,
           isUserModo: false,
           args: true
