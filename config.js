@@ -1,6 +1,8 @@
+require('dotenv').config()
+
 module.exports = {
   DBCONNECTION: {
-    adress: "mongodb://localhost:27017/LockBot"
+    adress: process.env.MONGODB_ADRESS
   },
   DEFAULT_SETTINGS: {
     prefix: "+",
