@@ -15,7 +15,7 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 • Go to the LockBot folder and do `npm install`
 
-• You need to setup a [MongoDB](https://www.mongodb.com), database adress can be changed in [config.js](/config.js)
+• You need to setup a [MongoDB](https://www.mongodb.com)
 
 • At the root of the folder, create a `.env` file, and put the token inside :\
     - `DISCORD_TOKEN=YOUR_TOKEN_HERE`\
