@@ -4,7 +4,7 @@ const MESSAGES = {
 
       DEV: {
         ASIDB: {
-          name: "ASIDB",
+          name: "asidb",
           aliases: [''],
           category: 'lockbot',
           description: "Add all servers the bot is in who arent in DB",

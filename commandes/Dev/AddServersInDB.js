@@ -7,8 +7,9 @@ module.exports.run = async (bot, message, args) => {
 
     if (message.author.id !== "249899689028091904") return message.reply("LockBot isn\'t your bot !")
 
+    message.author.send("Trying to add servers in DB..")
+
     const guilds = bot.guilds.cache.map(guild => [guild.id, guild.name])
-    console.log(guilds)
 
     for (const server in guilds) {
         const test = await bot.getGuild(guilds[server][0])

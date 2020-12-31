@@ -18,7 +18,7 @@ bot.on("message", async message => {
     }
   
     await bot.createGuild(newGuild)
-    throw err
+    console.log(err)
   }
   
   const lang = require(`../../core/languages/${settings.guildLang}.json`)
