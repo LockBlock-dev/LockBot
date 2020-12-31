@@ -6,6 +6,7 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 ![Bot preview](/preview.png)
 
+About ES5, ES6... When I first started coding the bot I didn't know much about JavaScript so the code is probably a mess with a mix between ES5 and ES6. These days, I try to use ES6 only to take advantage of the benefits it offers.
 
 ## How to use
 
