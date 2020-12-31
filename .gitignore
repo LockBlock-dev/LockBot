@@ -1,7 +1,5 @@
 node_modules
 *.env
 *.bat
-core/guildSettings.json
-guildsLog.js
 *.txt
 package-lock.json
