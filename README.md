@@ -17,7 +17,9 @@ Discord Bot made with [DiscordJS API](https://discord.js.org)
 
 • You need to setup a [MongoDB](https://www.mongodb.com), database adress can be changed in [config.js](/config.js)
 
-• At the root of the folder, create a `.env` file, and put the token inside : `DISCORD_TOKEN=YOURTOKENHERE`
+• At the root of the folder, create a `.env` file, and put the token inside :\
+    - `DISCORD_TOKEN=YOUR_TOKEN_HERE`\
+    - `MONGODB_ADRESS=YOUR_MONGO_DB_URL_HERE`
 
 • Run the bot by doing `node index.js`
 
