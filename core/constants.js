@@ -3,6 +3,15 @@ const MESSAGES = {
     COMMANDS: {
 
       DEV: {
+        ASIDB: {
+          name: "ASIDB",
+          aliases: [''],
+          category: 'lockbot',
+          description: "Add all servers the bot is in who arent in DB",
+          usage: '',
+          isUserAdmin: false,
+          args: false
+        },
         BROADCAST: {
           name: "broadcast",
           aliases: ['bc'],

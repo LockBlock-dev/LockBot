@@ -8,7 +8,7 @@ bot.on("message", async message => {
   if(message.channel.type === "dm")
     return
 
-  const settings = await bot.getGuild(message)
+  const settings = await bot.getGuild(message.guild.id)
 
   if (typeof settings === 'undefined') {
     const err = new ReferenceError("Error while asking for guild settings in guid : "+ message.guild.id + " " + message.guild.name)

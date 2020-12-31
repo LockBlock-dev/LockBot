@@ -11,13 +11,13 @@ module.exports = bot => {
         createGuild.save().then(g => console.log(console.log(chalk.red("[Bot]") + ` New guild joined : ${g.guildName}.`)))
     }
 
-    bot.getGuild = async message => {
-        const data = await Guild.findOne({ guildID: message.guild.id })
+    bot.getGuild = async id => {
+        const data = await Guild.findOne({ guildID: id })
         if(data) return data
     }
 
-    bot.modifyGuild = async (message, settings) => {
-        var data = await bot.getGuild(message)
+    bot.modifyGuild = async (id, settings) => {
+        var data = await bot.getGuild(id)
         if (typeof data !== "object") data = {}
         for (const key in settings) {
             if (data[key] !== settings[key]) data[key] = settings[key]
