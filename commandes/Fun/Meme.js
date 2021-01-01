@@ -5,16 +5,7 @@ const got = require("got")
 
 module.exports.run = async (bot, message) => {
 
-    const settings = await bot.getGuild(message)
-    const lang = require(`../../core/languages/${settings.guildLang}.json`)
-
-    if (lang == "fr") {
-        var subreddit = "frenchmemes"
-    } else {
-        var subreddit = "memes"
-    }
-
-    got(`https://www.reddit.com/r/${subreddit}/random/.json?sort=top&t=week`).then(response => {
+    got(`https://www.reddit.com/r/memes/random/.json?sort=top&t=week`).then(response => {
             try {
                         const content = JSON.parse(response.body)
                         const memeType = content[0].data.children[0].data.post_hint
