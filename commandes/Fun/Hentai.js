@@ -12,20 +12,20 @@ module.exports.run = async (bot, message) => {
         got(`https://www.reddit.com/r/hentai/random/.json?sort=top&t=week`).then(response => {
             try {
                         const content = JSON.parse(response.body)
-                        const memeType = content[0].data.children[0].data.post_hint
+                        const hentaiType = content[0].data.children[0].data.post_hint
                         const permalink = content[0].data.children[0].data.permalink
-                        const memeUrl = `https://reddit.com${permalink}`
-                        const memeImage = content[0].data.children[0].data.url
-                        const memeTitle = content[0].data.children[0].data.title
-                        const memeUpvotes = content[0].data.children[0].data.ups
-                        const memeNumComments = content[0].data.children[0].data.num_comments
+                        const hentaiUrl = `https://reddit.com${permalink}`
+                        const hentaiImage = content[0].data.children[0].data.url
+                        const hentaiTitle = content[0].data.children[0].data.title
+                        const hentaiUpvotes = content[0].data.children[0].data.ups
+                        const hentaiNumComments = content[0].data.children[0].data.num_comments
                         
                         const embed = new Discord.MessageEmbed()
-                            .setTitle(memeTitle)
-                            .setImage(memeImage)
-                            .setURL(memeUrl)
+                            .setTitle(hentaiTitle)
+                            .setImage(hentaiImage)
+                            .setURL(hentaiUrl)
                             .setColor("#FF8A33")
-                            .setFooter("👍 " + memeUpvotes + " | 💬 " + memeNumComments + " | © LockBot")
+                            .setFooter("👍 " + hentaiUpvotes + " | 💬 " + hentaiNumComments + " | © LockBot")
                             .setTimestamp()
 
                             message.channel.send(embed)
