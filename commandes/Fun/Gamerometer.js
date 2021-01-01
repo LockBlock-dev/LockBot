@@ -4,7 +4,7 @@ const fs = require("fs")
 
 module.exports.run = async (bot, message) => {
 
-    const settings = await bot.getGuild(message)
+    const settings = await bot.getGuild(message.guild.id)
     const lang = require(`../../core/languages/${settings.guildLang}.json`)
 
     const gamer = Math.round(Math.random() * 100)

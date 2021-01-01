@@ -4,7 +4,12 @@ const got = require("got")
 
 module.exports.run = async (bot, message) => {
 
-    got(`https://www.reddit.com/r/memes/random/.json?sort=top&t=week`).then(response => {
+    const settings = await bot.getGuild(message.guild.id)
+    const lang = require(`../../core/languages/${settings.guildLang}.json`)
+
+    if (message.channel.nsfw) {
+
+        got(`https://www.reddit.com/r/hentai/random/.json?sort=top&t=week`).then(response => {
             try {
                         const content = JSON.parse(response.body)
                         const memeType = content[0].data.children[0].data.post_hint
@@ -29,8 +34,12 @@ module.exports.run = async (bot, message) => {
             message.channel.send("💥")
             }
         })
+
+    } else {
+        message.channel.send(lang.hentaiChannelNotNSFW)
+    }
 }
 
 
 
-module.exports.help = MESSAGES.COMMANDS.FUN.MEME
+module.exports.help = MESSAGES.COMMANDS.FUN.HENTAI

@@ -118,7 +118,16 @@ const MESSAGES = {
           name: "meme",
           aliases: ['meme'],
           category: 'fun',
-          description: "Meme",
+          description: "Show a meme",
+          usage: '',
+          isUserAdmin: false,
+          args: false
+        },
+        HENTAI: {
+          name: "hentai",
+          aliases: [''],
+          category: 'fun',
+          description: "Show a hentai",
           usage: '',
           isUserAdmin: false,
           args: false

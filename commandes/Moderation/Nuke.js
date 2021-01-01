@@ -7,14 +7,14 @@ module.exports.run = async (bot, message, args) => {
   
     const parentid = message.channel.parentID
     const nukedchannel = message.channel
-    const nukelchannelname = message.channel.name
+    const nukedchannelname = message.channel.name
     const position = message.channel.position
     const guild = message.guild
 
     nukedchannel.clone().then(nukedchannel.delete())
 
     setTimeout(function(){ 
-        const newClonedChannel = guild.channels.cache.find(channel => channel.name === nukelchannelname)
+        const newClonedChannel = guild.channels.cache.find(channel => channel.name === nukedchannelname)
 
         const newClonedChannelID = newClonedChannel.id
 
