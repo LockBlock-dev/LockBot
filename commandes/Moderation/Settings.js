@@ -26,7 +26,7 @@ var lang = require(`../../core/languages/${settings.guildLang}.json`)
             }
 
             if (newValue) {
-                await bot.modifyGuild(message, { guildPrefix: newValue})
+                await bot.modifyGuild(message.guild.id, { guildPrefix: newValue})
                 var settings = await bot.getGuild(message.guild.id)
                 message.channel.send(lang.configPrefixNew + settings.guildPrefix)
             }
@@ -56,8 +56,8 @@ var lang = require(`../../core/languages/${settings.guildLang}.json`)
                 }
               
                 if (newValue) {
-                    await bot.modifyGuild(message, { guildLang: newValue})
-                    var settings = await bot.getGuild(message)
+                    await bot.modifyGuild(message.guild.id, { guildLang: newValue})
+                    var settings = await bot.getGuild(message.guild.id)
                     message.channel.send(lang.configLangNew + settings.guildLang)
                 }
               })
