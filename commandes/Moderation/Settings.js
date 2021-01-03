@@ -27,7 +27,7 @@ var lang = require(`../../core/languages/${settings.guildLang}.json`)
 
             if (newValue) {
                 await bot.modifyGuild(message, { guildPrefix: newValue})
-                var settings = await bot.getGuild(message)
+                var settings = await bot.getGuild(message.guild.id)
                 message.channel.send(lang.configPrefixNew + settings.guildPrefix)
             }
             break
