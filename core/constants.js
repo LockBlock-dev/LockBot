@@ -5,7 +5,7 @@ const MESSAGES = {
       DEV: {
         ASIDB: {
           name: "asidb",
-          aliases: [''],
+          aliases: ['addservers'],
           category: 'lockbot',
           description: "Add all servers the bot is in who arent in DB",
           usage: '',
@@ -23,7 +23,7 @@ const MESSAGES = {
         },
         EVAL: {
           name: "eval",
-          aliases: [''],
+          aliases: ['eval'],
           category: 'lockbot',
           description: "Execute a command",
           usage: '',
@@ -125,7 +125,7 @@ const MESSAGES = {
         },
         HENTAI: {
           name: "hentai",
-          aliases: [''],
+          aliases: ['hentai'],
           category: 'fun',
           description: "Show a hentai",
           usage: '',
@@ -163,7 +163,7 @@ const MESSAGES = {
           args: false
         },
         PROFILEPICTURE: {
-          name: "pp",
+          name: "pfp",
           aliases: ['pfp','pdp','profilepicture','pp'],
           category: 'info',
           description: "Pfp",
@@ -176,7 +176,7 @@ const MESSAGES = {
       LOCKBOT: {
         VOTE: {
           name: "vote",
-          aliases: [''],
+          aliases: ['vote'],
           category: 'lockbot',
           description: "Vote for the bot",
           usage: '',
@@ -186,7 +186,7 @@ const MESSAGES = {
         },
         HELP: {
           name: "help",
-          aliases: [''],
+          aliases: ['help'],
           category: 'lockbot',
           description: "Help me",
           usage: '',
