@@ -53,5 +53,8 @@
     "messageEventMissingPermManageGuild": "¡no tienes el permiso` MANAGE_GUILD` para ejecutar este comando! ",
     "messageEventMissingPermManageMessages": "¡no tienes el permiso` MANAGE_MESSAGES` para ejecutar este comando! ",
     "messageEventCommandNeedArg": "Necesita un argumento para este comando",
-    "messageEventCommandUsage": "Aquí se explica cómo utilizar el comando : "
+    "messageEventCommandUsage": "Aquí se explica cómo utilizar el comando : ",
+
+    "nukeWarning": "¿Quieres destruir este canal?",
+    "nukeDescription": "Todos los mensajes serán eliminados"
 }

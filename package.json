@@ -1,6 +1,6 @@
 {
   "name": "lockbot",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Discord Bot made by LockBlock",
   "main": "index.js",
   "dependencies": {
@@ -35,7 +35,7 @@
     "url": "git+https://github.com/LockBlock-dev/LockBot.git"
   },
   "author": "LockBlock",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/LockBlock-dev/LockBot/issues"
   },

@@ -5,7 +5,7 @@ const path = require("path")
 
 module.exports.run = async (bot, message, args, settings) => {
 
-var lang = require(`../../core/languages/${settings.guildLang}.json`)
+    var lang = require(`../../core/languages/${settings.guildLang}.json`)
 
     const getSetting = args[0]
     const newValue = args.slice(1).join(" ")

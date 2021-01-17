@@ -53,5 +53,8 @@
     "messageEventMissingPermManageGuild": "Sie haben nicht die Berechtigung `MANAGE_GUILD` um diesen Befehl auszuführen !",
     "messageEventMissingPermManageMessages": "Sie haben nicht die Berechtigung `MANAGE_MESSAGES` um diesen Befehl auszuführen !",
     "messageEventCommandNeedArg": "Sie benötigen ein Argument für diesen Befehl",
-    "messageEventCommandUsage": "So verwenden Sie den Befehl: "
+    "messageEventCommandUsage": "So verwenden Sie den Befehl: ",
+
+    "nukeWarning": "Möchten Sie diesen Kanal zerstören ?",
+    "nukeDescription": "Alle Nachrichten werden gelöscht"
 }

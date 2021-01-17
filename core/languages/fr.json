@@ -53,5 +53,8 @@
     "messageEventMissingPermManageGuild": "tu n'as pas la permission `MANAGE_GUILD` d'éxécuter cette commande !",
     "messageEventMissingPermManageMessages": "tu n'as pas la permission `MANAGE_MESSAGES` d'éxécuter cette commande !",
     "messageEventCommandNeedArg": "Il faut un argument pour cette commande, ",
-    "messageEventCommandUsage": "Voici comment utiliser la commande : "
+    "messageEventCommandUsage": "Voici comment utiliser la commande : ",
+
+    "nukeWarning": "Voulez-vous nuke ce salon ?",
+    "nukeDescription": "L'entiereté des messages seront supprimés"
 }
