@@ -7,7 +7,7 @@ bot.on("guildCreate", async guild => {
     guildName: guild.name
   }
 
-  const settings = await bot.getGuild(message.guild.id)
+  const settings = await bot.getGuild(guild.id)
 
   if (typeof settings === 'undefined') {
     await bot.createGuild(newGuild)
