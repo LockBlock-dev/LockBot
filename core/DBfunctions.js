@@ -8,7 +8,8 @@ module.exports = bot => {
     bot.createGuild = async guild => {
         const merged = Object.assign({ _id: mongoose.Types.ObjectId() }, guild)
         const createGuild = await new Guild(merged)
-        createGuild.save().then(g => console.log(console.log(chalk.red("[Bot]") + ` New guild joined : ${g.guildName}.`)))
+        createGuild.save()
+        console.log(console.log(chalk.red("[Bot]") + ` New guild joined : ${guild.guildName}.`))
     }
 
     bot.getGuild = async id => {
