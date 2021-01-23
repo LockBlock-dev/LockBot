@@ -7,7 +7,11 @@ bot.on("guildCreate", async guild => {
     guildName: guild.name
   }
 
-  await bot.createGuild(newGuild)
+  const settings = await bot.getGuild(message.guild.id)
+
+  if (typeof settings === 'undefined') {
+    await bot.createGuild(newGuild)
+  }
     
   bot.user.setActivity(`+help | in ${bot.guilds.cache.size} servers`, { type: 'WATCHING' })
 
