@@ -169,7 +169,7 @@ const MESSAGES = {
           description: "Pfp",
           usage: '<mention>',
           isUserAdmin: false,
-          args: true
+          args: false
         }
       },
 
