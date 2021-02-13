@@ -20,7 +20,8 @@ About ES5, ES6... When I first started coding the bot I didn't know much about J
 
 • At the root of the folder, create a `.env` file, and put the token inside :\
     - `DISCORD_TOKEN=YOUR_TOKEN_HERE`\
-    - `MONGODB_ADRESS=YOUR_MONGO_DB_URL_HERE`
+    - `MONGODB_ADRESS=YOUR_MONGO_DB_URL_HERE`\
+    - `DEV_ID=YOUR_DISCORD_ID_HERE`
 
 • Run the bot by doing `node index.js`
 
