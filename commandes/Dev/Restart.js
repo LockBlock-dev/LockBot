@@ -4,7 +4,7 @@ require('dotenv').config()
 
 module.exports.run = async (bot, message) => {
 
-    if (message.author.id !== "249899689028091904") return message.reply("LockBot isn't your bot !")
+    if (message.author.id !== process.env.DEV_ID) return message.reply("LockBot isn't your bot !")
 	message.delete()
     message.channel.send("Restarting...")
     .then(m => m.delete(100))
