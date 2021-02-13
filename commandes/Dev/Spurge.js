@@ -1,5 +1,5 @@
 const { MESSAGES } = require("../../core/constants.js")
-const Discord = require("discord.js")
+require('dotenv').config()
 
 module.exports.run = async (bot, message, args) => {
     if (message.author.id !== process.env.DEV_ID) return message.reply("LockBot isn't your bot !")

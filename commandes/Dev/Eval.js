@@ -1,4 +1,5 @@
 const { MESSAGES } = require("../../core/constants.js")
+require('dotenv').config()
 
 module.exports.run = async (bot, message, args) => {
 

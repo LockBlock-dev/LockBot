@@ -1,5 +1,5 @@
 const { MESSAGES } = require("../../core/constants.js")
-const Discord = require("discord.js")
+require('dotenv').config()
 
 module.exports.run = async (bot, message, args) => {
 
