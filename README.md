@@ -18,7 +18,7 @@ About ES5, ES6... When I first started coding the bot I didn't know much about J
 
 • You need to setup a [MongoDB](https://www.mongodb.com)
 
-• At the root of the folder, create a `.env` file, and put the token inside :\
+• At the root of the folder, create a `.env` file, and put inside :\
     - `DISCORD_TOKEN=YOUR_TOKEN_HERE`\
     - `MONGODB_ADRESS=YOUR_MONGO_DB_URL_HERE`\
     - `DEV_ID=YOUR_DISCORD_ID_HERE`
