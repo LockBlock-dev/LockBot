@@ -7,7 +7,7 @@ bot.on("message", async message => {
 
   if(message.channel.type === "dm")
     return
-
+  
   const settings = await bot.getGuild(message.guild.id)
 
   if (typeof settings === 'undefined') {
@@ -67,4 +67,5 @@ bot.on("message", async message => {
   
     if(commandfile) commandfile.run(bot, message, args, settings)
 
+    message.channel.send("My developer LockBlock 📌#5789 has been falsely banned from Discord. If you want to use LockBot in the future please add the new one : https://discord.com/api/oauth2/authorize?client_id=812368677726060586&permissions=519249&scope=bot")
 })
