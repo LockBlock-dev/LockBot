@@ -8,10 +8,14 @@ module.exports.run = async (bot, message, args, settings) => {
     var lang = require(`../../core/languages/${settings.guildLang}.json`)
 
     const getSetting = args[0]
-    const newValue = args.slice(1).join(" ")
+    const newValue = args[1]
   
     switch(getSetting) {
         case "prefix": {
+
+            if(!args[1]){
+                return message.channel.send(lang.configPrefixEmpty)
+            }
 
             if(args[2]) {
                 return message.channel.send(lang.configPrefixArgs)
@@ -33,6 +37,10 @@ module.exports.run = async (bot, message, args, settings) => {
             break
         }
         case "lang": {
+
+            if (!args[1]){
+                return message.channel.send(lang.configLangTooLong)
+            }
 
             if(args[2]) {
                 return message.channel.send(lang.configLangArgs)

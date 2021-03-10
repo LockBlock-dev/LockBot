@@ -12,12 +12,21 @@ const MESSAGES = {
           isUserAdmin: false,
           args: false
         },
+        BLACKLIST: {
+          name: "blacklist",
+          aliases: ['bl'],
+          category: 'lockbot',
+          description: "Blacklist an user from the bot",
+          usage: '<User ID (reason)>',
+          isUserAdmin: false,
+          args: true
+        },
         BROADCAST: {
           name: "broadcast",
           aliases: ['bc'],
           category: 'lockbot',
           description: "Say a message in every server where the bot is",
-          usage: '',
+          usage: '<text>',
           isUserAdmin: false,
           args: true
         },
@@ -26,7 +35,7 @@ const MESSAGES = {
           aliases: ['eval'],
           category: 'lockbot',
           description: "Execute a command",
-          usage: '',
+          usage: '<command>',
           isUserAdmin: false,
           args: true
         },

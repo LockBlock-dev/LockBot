@@ -39,6 +39,7 @@
 
     "sayDontEveryoneOrHere": "Don't make me mention the members of this discord: sob:",
 
+    "configPrefixEmpty": "The prefix must be at least 1 character !",
     "configPrefixArgs": "A prefix can only be one argument !",
     "configPrefixLengthMax": "The prefix is limited to 3 characters !",
     "configPrefixNew": "New prefix : ",

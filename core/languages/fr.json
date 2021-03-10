@@ -39,6 +39,7 @@
 
     "sayDontEveryoneOrHere": "Ne me faîtes pas mentionner les membres de ce discord :sob:",
 
+    "configPrefixEmpty": "Le préfixe doit comporter au moins 1 caractère !",
     "configPrefixArgs": "Un préfixe ne peut être constituer que d'un argument !",
     "configPrefixLengthMax": "Le préfixe est limité à 3 caractères !",
     "configPrefixNew": "Nouveau préfixe : ",

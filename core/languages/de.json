@@ -39,6 +39,7 @@
 
     "sayDontEveryoneOrHere": "Lassen Sie mich die Mitglieder dieser Zwietracht nicht erwähnen :sob:",
 
+    "configPrefixEmpty": "Das Präfix muss mindestens 1 Zeichen lang sein!",
     "configPrefixArgs": "Ein Präfix kann nur ein Argument sein!",
     "configPrefixLengthMax": "Das Präfix ist auf 3 Zeichen begrenzt!",
     "configPrefixNew": "Neues Präfix: ",

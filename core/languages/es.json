@@ -39,6 +39,7 @@
 
     "sayDontEveryoneOrHere": "No me hagas mencionar a los miembros de esta discordia :sob:",
 
+    "configPrefixEmpty": "¡El prefijo debe tener al menos 1 carácter!",
     "configPrefixArgs": "¡Un prefijo solo puede ser un argumento!",
     "configPrefixLengthMax": "¡El prefijo está limitado a 3 caracteres!",
     "configPrefixNew": "Nuevo prefijo: ",
