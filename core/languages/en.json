@@ -50,6 +50,7 @@
     "configLangUnknown": "This language is not available!",
     "configLangNotString": "Languages only contain letters !",
     
+    "messageBanWarning" : "You are banned from the bot !",
     "messageEventBotPing": "Hello, I am a robot. I don't have steel legs or laser beams, but I can help you ! \nMy current prefix on this server is : ",
     "messageEventMissingPermManageGuild": "you do not have the `MANAGE_GUILD` permission to execute this command !",
     "messageEventMissingPermManageMessages": "you don't have the `MANAGE_MESSAGES` permission to execute this command !",

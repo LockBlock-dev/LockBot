@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     }
 
     if (args[2]) {
-        var reason = args[2]
+        var reason = args.slice(2).join(" ")
         var newBlacklisted = {
             userID: user.id,
             userName: user.username,

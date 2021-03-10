@@ -17,7 +17,7 @@ module.exports = bot => {
         const ID = data.userID
         const username = data.userName
         await data.remove()
-        console.log(`${chalk.green("[Database]")} User removed from blacklist : ${ID} ${usernamee}`)
+        console.log(`${chalk.green("[Database]")} User removed from blacklist : ${ID} ${username}`)
     }
 
     bot.getBlacklistedUser = async id => {
