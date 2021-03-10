@@ -25,12 +25,6 @@ bot.on("message", async message => {
   const lang = require(`../../core/languages/${settings.guildLang}.json`)
   const prefix = settings.guildPrefix
 
-  const someUser = await bot.getBlacklistedUser(message.author.id)
-
-  if(!someUser === 'undefined') {
-    return message.reply(lang.messageBanWarning)
-  }
-
   const mentionArgs = message.content.split(" ")
 
   if(message.author.id !== bot.user.id){
@@ -70,7 +64,12 @@ bot.on("message", async message => {
   
     return message.channel.send(noArgsReply)
       }
-  
+
+    const someUser = await bot.getBlacklistedUser(message.author.id)
+
+    if(someUser) {
+      return message.reply(lang.messageBanWarning)
+    }
   
     if(commandfile) commandfile.run(bot, message, args, settings)
 })
