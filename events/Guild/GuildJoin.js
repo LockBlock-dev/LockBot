@@ -12,6 +12,8 @@ bot.on("guildCreate", async guild => {
   if (typeof settings === 'undefined') {
     await bot.createGuild(newGuild)
   }
+
+  console.log(`${chalk.red("[Bot]")} New guild joined : ${guild.id} ${guild.name}`)
     
   bot.user.setActivity(`+help | in ${bot.guilds.cache.size} servers`, { type: 'WATCHING' })
 

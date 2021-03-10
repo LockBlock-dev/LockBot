@@ -12,7 +12,7 @@ module.exports.loadCommands = () => {
     for (const file of commands) {
       const getFileName = require(`../${dircommand}/${dirs}/${file}`)
       bot.commands.set(getFileName.help.name, getFileName)
-      console.log(chalk.yellow("[Command Handler] ") + chalk.bold(`${file}`) + " module detected.")
+      console.log(`${chalk.yellow("[Command Handler] ")} ${chalk.bold(`${file}`)} module detected.`)
     }
   })
 }
@@ -25,7 +25,7 @@ module.exports.loadEvents = () => {
 
       for (const file of events) {
         require(`../${direvent}/${dirs}/${file}`)
-        console.log(chalk.yellow("[Event Handler] ") + chalk.bold(`${file}`) + " module detected.")
+        console.log(`${chalk.yellow("[Event Handler] ")} ${chalk.bold(`${file}`)} module detected.`)
       }
   })
 }

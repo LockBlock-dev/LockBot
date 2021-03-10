@@ -1,6 +1,4 @@
-const Discord = require("discord.js")
 const { MESSAGES } = require("../../core/constants.js")
-const fs = require("fs")
 
 module.exports.run = async (bot, message) => {
 
@@ -12,8 +10,8 @@ module.exports.run = async (bot, message) => {
 
 	m.delete()
 
-	message.channel.send("Pong ! :ping_pong:")
-	message.channel.send(lang.pingLatencyBot + ping + lang.pingLatencyAPI + Math.round(bot.ws.ping) + "ms")
+	message.channel.send(`Pong ! :ping_pong: ${lang.pingLatencyBot} ping ${lang.pingLatencyAPI} ${Math.round(bot.ws.ping)} ms`)
+	message.channel.send()
 
 	})
 }

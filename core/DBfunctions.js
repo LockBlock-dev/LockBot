@@ -8,8 +8,8 @@ module.exports = bot => {
     bot.createGuild = async guild => {
         const merged = Object.assign({ _id: mongoose.Types.ObjectId() }, guild)
         const createGuild = await new Guild(merged)
-        createGuild.save()
-        console.log(chalk.red("[Bot]") + ` New guild joined : ${guild.guildName}.`)
+        await createGuild.save()
+        console.log(`${chalk.green("[Database]")} Guild created : ${guild.guildID} ${guild.guildName}`)
     }
 
     bot.getGuild = async id => {
@@ -34,6 +34,6 @@ module.exports = bot => {
     bot.deleteGuild = async guild => {
         var data = await bot.getGuild(guild.id)
         data.remove()
-        console.log(chalk.red("[Bot]") + ` Guild left : ${guild.guildName}.`)
+        console.log(`${chalk.green("[Database]")} Guild deleted : ${guild.guildID} ${guild.guildName}`)
     }
 }

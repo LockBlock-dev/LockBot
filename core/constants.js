@@ -207,6 +207,26 @@ const MESSAGES = {
       },
 
       MISC: {
+        ENCODE: {
+          name: "encode",
+          aliases: ['encode'],
+          category: 'misc',
+          description: "Encode the message in Base64",
+          usage: '<text>',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: true
+        },
+        DECODE: {
+          name: "decode",
+          aliases: ['decode'],
+          category: 'misc',
+          description: "Decode Base64",
+          usage: '<text>',
+          isUserAdmin: false,
+          isUserModo: false,
+          args: true
+        },
         PING: {
           name: "ping",
           aliases: ['ping'],
