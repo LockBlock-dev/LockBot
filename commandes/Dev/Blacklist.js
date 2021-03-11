@@ -1,7 +1,9 @@
 const { MESSAGES } = require("../../core/constants.js")
 require('dotenv').config()
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (bot, message, args, settings) => {
+
+    var lang = require(`../../core/languages/${settings.guildLang}.json`)
     
     message.delete()
     
@@ -15,24 +17,26 @@ module.exports.run = async (bot, message, args) => {
         return message.reply("You must provide an user ID !")
     }
 
-    if (args[2]) {
-        var reason = args.slice(2).join(" ")
-        var newBlacklisted = {
-            userID: user.id,
-            userName: user.username,
-            reason: reason
-        }
-    } else {
-        var newBlacklisted = {
-            userID: user.id,
-            userName: user.username
-        }
+    if (!args[2]) {
+        return message.reply("You must provide a reason !")
+    }
+
+    const reason = args.slice(2).join(" ")
+
+    const newBlacklisted = {
+        userID: user.id,
+        userName: user.username,
+        reason: reason
     }
   
     switch(getAction) {
         case "add": {
 
             await bot.addToBlacklist(newBlacklisted)
+
+            await user.send(`${lang.blacklistBanWarning} ${reason}`).catch(() => {
+                message.channel.send("User has DMs closed or has no mutual servers with the bot");
+             })
            
             break
         }

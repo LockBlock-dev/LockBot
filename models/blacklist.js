@@ -4,10 +4,7 @@ const blacklistSchema = mongoose.Schema({
     _id: String,
     userID: String,
     userName: String,
-    reason: {
-        "type": String,
-        "default": "undefined"
-    }
+    reason: String
 })
 
 

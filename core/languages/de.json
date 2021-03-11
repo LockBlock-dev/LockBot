@@ -1,6 +1,8 @@
 {
     "asciiMaxCaracters": "Maximal 10 Zeichen !",
 
+    "blacklistBanWarning" : "Sie sind aus folgendem Grund vom Bot ausgeschlossen:",
+
     "gamerometer1": " ist ",
     "gamerometer2": "% a gamer !",
 
@@ -50,7 +52,6 @@
     "configLangUnknown": "Diese Sprache ist nicht verfügbar!",
     "configLangNotString": "Sprachen enthalten nur Buchstaben!",
     
-    "messageBanWarning" : "Du bist vom Bot ausgeschlossen!",
     "messageEventBotPing": "Hallo, ich bin ein Roboter. Ich habe keine Stahlbeine oder Laserstrahlen, aber ich kann Ihnen helfen ! \nMein aktuelles Präfix auf diesem Server lautet: ",
     "messageEventMissingPermManageGuild": "Sie haben nicht die Berechtigung `MANAGE_GUILD` um diesen Befehl auszuführen !",
     "messageEventMissingPermManageMessages": "Sie haben nicht die Berechtigung `MANAGE_MESSAGES` um diesen Befehl auszuführen !",

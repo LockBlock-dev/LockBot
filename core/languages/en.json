@@ -1,6 +1,8 @@
 {
     "asciiMaxCaracters": "10 caracters maximum !",
 
+    "blacklistBanWarning" : "You are banned from the bot for the following reason :",
+
     "gamerometer1": " is ",
     "gamerometer2": "% a gamer !",
 
@@ -27,12 +29,12 @@
     "userInfoNoNickname": "Not any",
     "userInfoJoinedDate": "Joined Discord the",
 
-    "helpSupportServer": "If you need help join the support server : ",
+    "helpSupportServer": "If you need help join the support server :",
 
     "vote": "Vote for the bot to help me ! ",
 
-    "pingLatencyBot": "Bot latency : ",
-    "pingLatencyAPI": " ms, API latency : ",
+    "pingLatencyBot": "Bot latency :",
+    "pingLatencyAPI": "API latency :",
 
     "pollOptionsListLength": "10 choices maximum",
     "pollSimpleTitle": "Poll :",
@@ -42,20 +44,19 @@
     "configPrefixEmpty": "The prefix must be at least 1 character !",
     "configPrefixArgs": "A prefix can only be one argument !",
     "configPrefixLengthMax": "The prefix is limited to 3 characters !",
-    "configPrefixNew": "New prefix : ",
+    "configPrefixNew": "New prefix :",
     "configPrefixNotString": "The prefix contains only letters or symbols !",
     "configLangArgs": "Language is only an argument !",
     "configLangTooLong": "Languages are only 2 characters long !",
-    "configLangNew": "New language : ",
+    "configLangNew": "New language :",
     "configLangUnknown": "This language is not available!",
     "configLangNotString": "Languages only contain letters !",
     
-    "messageBanWarning" : "You are banned from the bot !",
-    "messageEventBotPing": "Hello, I am a robot. I don't have steel legs or laser beams, but I can help you ! \nMy current prefix on this server is : ",
+    "messageEventBotPing": "Hello, I am a robot. I don't have steel legs or laser beams, but I can help you ! \nMy current prefix on this server is :",
     "messageEventMissingPermManageGuild": "you do not have the `MANAGE_GUILD` permission to execute this command !",
     "messageEventMissingPermManageMessages": "you don't have the `MANAGE_MESSAGES` permission to execute this command !",
     "messageEventCommandNeedArg": "You need an argument for this command, ",
-    "messageEventCommandUsage": "Here's how to use the command : ",
+    "messageEventCommandUsage": "Here's how to use the command :",
 
     "nukeWarning": "Do you want to nuke this channel ?",
     "nukeDescription": "All messages will be deleted"

@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args, settings) => {
             if (newValue) {
                 await bot.modifyGuild(message.guild.id, { guildPrefix: newValue})
                 var settings = await bot.getGuild(message.guild.id)
-                message.channel.send(lang.configPrefixNew + settings.guildPrefix)
+                message.channel.send(`${lang.configPrefixNew} ${settings.guildPrefix}`)
             }
             break
         }
@@ -66,7 +66,7 @@ module.exports.run = async (bot, message, args, settings) => {
                 if (newValue) {
                     await bot.modifyGuild(message.guild.id, { guildLang: newValue})
                     var settings = await bot.getGuild(message.guild.id)
-                    message.channel.send(lang.configLangNew + settings.guildLang)
+                    message.channel.send(`${lang.configLangNew} ${settings.guildLang}`)
                 }
               })
                               

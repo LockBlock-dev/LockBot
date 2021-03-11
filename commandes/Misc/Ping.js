@@ -10,8 +10,7 @@ module.exports.run = async (bot, message) => {
 
 	m.delete()
 
-	message.channel.send(`Pong ! :ping_pong: ${lang.pingLatencyBot} ping ${lang.pingLatencyAPI} ${Math.round(bot.ws.ping)} ms`)
-	message.channel.send()
+	message.channel.send(`Pong ! :ping_pong: ${lang.pingLatencyBot} ${ping} ms ${lang.pingLatencyAPI} ${Math.round(bot.ws.ping)} ms`)
 
 	})
 }

@@ -33,7 +33,7 @@ bot.on("message", async message => {
       if(!message.content.startsWith(prefix)){
           if(message.mentions.users.first().id === bot.user.id){
             if(!mentionArgs[1]) {
-              message.channel.send(lang.messageEventBotPing + `\`${prefix}\``)
+              message.channel.send(`${lang.messageEventBotPing} \`${prefix}\``)
             }
         }
       }
@@ -58,9 +58,9 @@ bot.on("message", async message => {
     }
 
     if (commandfile.help.args && !args.length) {
-      var noArgsReply = lang.messageEventCommandNeedArg + `<@${message.author.id}> !`
+      var noArgsReply = `${lang.messageEventCommandNeedArg} <@${message.author.id}> !`
   
-    if (commandfile.help.usage) noArgsReply += `\n` + lang.messageEventCommandUsage + `\`${prefix}${commandfile.help.name} ${commandfile.help.usage}\``
+    if (commandfile.help.usage) noArgsReply += `\n ${lang.messageEventCommandUsage} \`${prefix}${commandfile.help.name} ${commandfile.help.usage}\``
   
     return message.channel.send(noArgsReply)
       }
@@ -68,7 +68,7 @@ bot.on("message", async message => {
     const someUser = await bot.getBlacklistedUser(message.author.id)
 
     if(someUser) {
-      return message.reply(lang.messageBanWarning)
+      return
     }
   
     if(commandfile) commandfile.run(bot, message, args, settings)
