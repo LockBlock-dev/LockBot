@@ -17,10 +17,6 @@ module.exports.run = async (bot, message, args, settings) => {
         return message.reply("You must provide an user ID !")
     }
 
-    if (!args[2]) {
-        return message.reply("You must provide a reason !")
-    }
-
     const reason = args.slice(2).join(" ")
 
     const newBlacklisted = {
@@ -31,6 +27,10 @@ module.exports.run = async (bot, message, args, settings) => {
   
     switch(getAction) {
         case "add": {
+
+            if (!args[2]) {
+                return message.reply("You must provide a reason !")
+            }
 
             await bot.addToBlacklist(newBlacklisted)
 
