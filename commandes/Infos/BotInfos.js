@@ -1,6 +1,6 @@
 const { MESSAGES } = require("../../core/constants.js")
 const Discord = require("discord.js")
-const fs = require("fs")
+require('dotenv').config()
 
 function checkDays(date) {
     const now = new Date()
@@ -19,10 +19,10 @@ module.exports.run = (bot, message, args, settings) => {
     const serversize = bot.guilds.cache.size
 
     const embed = new Discord.MessageEmbed()
-        .setAuthor(message.author.tag)
+        .setDescription(`<@${message.author.id}>`)
         .setThumbnail(boticon)
         .addField(lang.botInfoName, bot.user.username, true)
-        .addField("Owner", "<@249899689028091904>", true )
+        .addField("Owner", `<@${process.env.DEV_ID}>`, true )
         .addField("Version", "1.4", true)
         .addField(lang.botInfoServers, serversize, true)
         .addField("Channels", channelsize, true)

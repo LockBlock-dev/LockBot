@@ -11,8 +11,8 @@ module.exports.run = async (bot, message) => {
     const Filter = (reaction, user) => user.id == message.author.id
 
     const embed = new Discord.MessageEmbed()
-        .setTitle(lang.nukeWarning)
-        .setDescription(lang.nukeDescription)
+        .setDescription(`<@${message.author.id}>`)
+        .addField(lang.nukeWarning, lang.nukeDescription)
         .setColor("FF0000")
         .setTimestamp()
         .setFooter("© LockBot")

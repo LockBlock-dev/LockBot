@@ -1,4 +1,5 @@
 const { MESSAGES } = require("../../core/constants.js")
+const Discord = require("discord.js")
 
 module.exports.run = async (bot, message) => {
 
@@ -10,7 +11,15 @@ module.exports.run = async (bot, message) => {
 
 	m.delete()
 
-	message.channel.send(`Pong ! :ping_pong: ${lang.pingLatencyBot} ${ping} ms ${lang.pingLatencyAPI} ${Math.round(bot.ws.ping)} ms`)
+	const embed = new Discord.MessageEmbed()
+		.setDescription(`<@${message.author.id}> Pong ! 🏓`)
+        .addField(`${lang.pingLatencyBot}`, `${ping} ms`)
+		.addField(`${lang.pingLatencyAPI}`, `${Math.round(bot.ws.ping)} ms`)
+        .setColor("#FF8A33")
+        .setTimestamp()
+	    .setFooter("© LockBot")
+
+    message.channel.send(embed)
 
 	})
 }

@@ -1,7 +1,5 @@
 const { MESSAGES } = require("../../core/constants.js")
 const Discord = require("discord.js")
-const fs = require("fs")
-const { cpuUsage } = require("process")
 
 function checkDays(date) {
         const now = new Date()
@@ -14,9 +12,8 @@ module.exports.run = (bot, message, args, settings) => {
 
 	const lang = require(`../../core/languages/${settings.guildLang}.json`)
 	
-
 		const embed = new Discord.MessageEmbed()
-			.setAuthor(message.author.tag)
+			.setDescription(`<@${message.author.id}>`)
 			.addField(lang.serverInfoName, message.guild.name, true)
 			.addField("ID", message.guild.id, true)
 			.setThumbnail(message.guild.iconURL())
@@ -32,7 +29,6 @@ module.exports.run = (bot, message, args, settings) => {
 			.setTimestamp()
 			
 		message.channel.send(embed)
-
 		
 }
 

@@ -8,10 +8,26 @@ module.exports.run = async (bot, message) => {
     const lang = require(`../../core/languages/${settings.guildLang}.json`)
 
     const gamer = Math.round(Math.random() * 100)
-	const member = message.mentions.users.first()
+
+    var member
+
+    if(args.length == 0) {
+
+        member = message.author
+
+    } else {
+
+        member = message.mentions.members.first()
+        
+    }
+
     const embed = new Discord.MessageEmbed()
+        .setDescription(`<@${message.author.id}>`)
+        .addField(`${member.username} ${lang.gamerometer1} **${gamer}** ${lang.gamerometer2} 🎮`, '\u200b')
         .setColor("#FF8A33")
-        .setDescription(`:video_game: **${member.username}` + lang.gamerometer1 + `${gamer}` + lang.gamerometer2 +`** :video_game:`)
+        .setTimestamp()
+	    .setFooter("© LockBot")
+        
     message.channel.send(embed)
 }
 

@@ -160,7 +160,7 @@ const MESSAGES = {
           description: "User Infos",
           usage: '<mention>',
           isUserAdmin: false,
-          args: true
+          args: false
         },
         BOTINFO: {
           name: "bi",
@@ -190,7 +190,6 @@ const MESSAGES = {
           description: "Vote for the bot",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         },
         HELP: {
@@ -200,7 +199,6 @@ const MESSAGES = {
           description: "Help me",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         },
         INVITE: {
@@ -210,30 +208,18 @@ const MESSAGES = {
           description: "Invite link",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         }
       },
 
       MISC: {
-        ENCODE: {
-          name: "encode",
-          aliases: ['encode'],
+        BASE64: {
+          name: "base64",
+          aliases: ['b64'],
           category: 'misc',
-          description: "Encode the message in Base64",
-          usage: '<text>',
+          description: "Encode | Decode Base64",
+          usage: 'encode <text> | decode <base64 text>',
           isUserAdmin: false,
-          isUserModo: false,
-          args: true
-        },
-        DECODE: {
-          name: "decode",
-          aliases: ['decode'],
-          category: 'misc',
-          description: "Decode Base64",
-          usage: '<text>',
-          isUserAdmin: false,
-          isUserModo: false,
           args: true
         },
         PING: {
@@ -243,7 +229,6 @@ const MESSAGES = {
           description: "Pong !",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         },  
         SAY: {
@@ -253,7 +238,6 @@ const MESSAGES = {
           description: "Repeat text",
           usage: '<text>',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         },
         POLL: {
@@ -263,7 +247,6 @@ const MESSAGES = {
           description: "Make a poll",
           usage: '(Simple) <Question> | OR | (Multiple) <Question, answer 1, answer 2,etc> MAX 10',
           isUserAdmin: false,
-          isUserModo: false,
           args: true
         }
       },
@@ -276,7 +259,6 @@ const MESSAGES = {
           description: "",
           usage: '',
           isUserAdmin: false,
-          isUserModo: false,
           args: false
         }
       },
@@ -289,7 +271,6 @@ const MESSAGES = {
           description: "Modify guild settings",
           usage: 'prefix <value> | lang <fr>/<en>',
           isUserAdmin: true,
-          isUserModo: false,
           args: true
         },
         NUKE: {

@@ -1,7 +1,9 @@
 {
     "asciiMaxCaracters": "¡10 caracteres como máximo!",
 
-    "blacklistBanWarning" : "Estás prohibido del bot por el siguiente motivo:",
+    "blacklistBanWarning": "Estás prohibido del bot por el siguiente motivo:",
+
+    "base64ContentLength": "¡50 caracteres como máximo!",
 
     "gamerometer1": " es ",
     "gamerometer2": "% un gamer!",
@@ -22,6 +24,7 @@
     "serverInfoMembers": "Miembros",
     "serverInfoCreationDate": "Fecha de creación",
 
+    "userInfoUsername": "Nombre",
     "userInfoUserIsNotBot": "Humano",
     "userInfoBoostYes": "Sí",
     "userInfoBoostNo": "No",
@@ -29,26 +32,26 @@
     "userInfoNoNickname": "Ninguno",
     "userInfoJoinedDate": "Se unió a Discord el",
 
-    "helpSupportServer": "Si necesita ayuda, únase al servidor de soporte: ",
+    "helpSupportServer": "Si necesita ayuda, únase al servidor de soporte:",
 
     "Vote": "¡Vote por el bot que me ayuda! ",
 
-    "pingLatencyBot": "Latencia del bot: ",
-    "pingLatencyAPI": " ms, latencia de API: ",
+    "pingLatencyBot": "Latencia del bot:",
+    "pingLatencyAPI": " ms, latencia de API:",
 
     "pollOptionsListLength": "10 opciones como máximo",
     "pollSimpleTitle": "Encuesta :",
 
-    "sayDontEveryoneOrHere": "No me hagas mencionar a los miembros de esta discordia :sob:",
-
     "configPrefixEmpty": "¡El prefijo debe tener al menos 1 carácter!",
     "configPrefixArgs": "¡Un prefijo solo puede ser un argumento!",
     "configPrefixLengthMax": "¡El prefijo está limitado a 3 caracteres!",
-    "configPrefixNew": "Nuevo prefijo: ",
+    "configPrefixOld": "Prefijo antiguo:",
+    "configPrefixNew": "Nuevo prefijo:",
     "configPrefixNotString": "¡El prefijo solo contiene letras o símbolos!",
     "configLangArgs": "¡El lenguaje es solo un argumento!",
     "configLangTooLong": "¡Los idiomas solo tienen 2 caracteres!",
-    "configLangNew": "Nuevo idioma: ",
+    "configLangOld": "Antiguo idioma:",
+    "configLangNew": "Nuevo idioma:",
     "configLangUnknown": "¡Este idioma no está disponible!",
     "configLangNotString": "¡Los idiomas solo contienen letras!",
     

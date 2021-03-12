@@ -1,4 +1,3 @@
-const bot = require("../index.js")
 const chalk = require("chalk")
 const mongoose = require("mongoose")
 const { Guild, Blacklist } = require("../models/export.js")

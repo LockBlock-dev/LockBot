@@ -7,6 +7,8 @@ module.exports.run = async (bot, message, args, settings) => {
 
     var lang = require(`../../core/languages/${settings.guildLang}.json`)
 
+    const oldPrefix = settings.guildPrefix
+    const oldLang = settings.guildLang
     const getSetting = args[0]
     const newValue = args[1]
   
@@ -32,7 +34,16 @@ module.exports.run = async (bot, message, args, settings) => {
             if (newValue) {
                 await bot.modifyGuild(message.guild.id, { guildPrefix: newValue})
                 var settings = await bot.getGuild(message.guild.id)
-                message.channel.send(`${lang.configPrefixNew} ${settings.guildPrefix}`)
+
+                const embed = new Discord.MessageEmbed()
+                    .setDescription(`<@${message.author.id}>`)
+                    .addField(lang.configPrefixOld, oldPrefix)
+                    .addField(lang.configPrefixNew, settings.guildPrefix)
+                    .setColor("#FF8A33")
+                    .setTimestamp()
+	                .setFooter("© LockBot")
+
+                message.channel.send(embed)
             }
             break
         }
@@ -66,7 +77,16 @@ module.exports.run = async (bot, message, args, settings) => {
                 if (newValue) {
                     await bot.modifyGuild(message.guild.id, { guildLang: newValue})
                     var settings = await bot.getGuild(message.guild.id)
-                    message.channel.send(`${lang.configLangNew} ${settings.guildLang}`)
+
+                    const embed = new Discord.MessageEmbed()
+                    .setDescription(`<@${message.author.id}>`)
+                    .addField(lang.configLangOld, oldLang)
+                    .addField(lang.configLangNew, settings.guildLang)
+                    .setColor("#FF8A33")
+                    .setTimestamp()
+	                .setFooter("© LockBot")
+
+                    message.channel.send(embed)
                 }
               })
                               

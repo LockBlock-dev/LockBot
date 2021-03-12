@@ -1,7 +1,9 @@
 {
     "asciiMaxCaracters": "10 caracters maximum !",
 
-    "blacklistBanWarning" : "You are banned from the bot for the following reason :",
+    "blacklistBanWarning": "You are banned from the bot for the following reason :",
+
+    "base64ContentLength": "50 caracters maximum !",
 
     "gamerometer1": " is ",
     "gamerometer2": "% a gamer !",
@@ -22,6 +24,7 @@
     "serverInfoMembers": "Members",
     "serverInfoCreationDate": "Creation Date",
 
+    "userInfoUsername": "Name",
     "userInfoUserIsNotBot": "Human",
     "userInfoBoostYes": "Yes",
     "userInfoBoostNo": "No",
@@ -39,15 +42,15 @@
     "pollOptionsListLength": "10 choices maximum",
     "pollSimpleTitle": "Poll :",
 
-    "sayDontEveryoneOrHere": "Don't make me mention the members of this discord: sob:",
-
     "configPrefixEmpty": "The prefix must be at least 1 character !",
     "configPrefixArgs": "A prefix can only be one argument !",
     "configPrefixLengthMax": "The prefix is limited to 3 characters !",
+    "configPrefixOld": "Old prefix :",
     "configPrefixNew": "New prefix :",
     "configPrefixNotString": "The prefix contains only letters or symbols !",
     "configLangArgs": "Language is only an argument !",
     "configLangTooLong": "Languages are only 2 characters long !",
+    "configLangOld": "Old language :",
     "configLangNew": "New language :",
     "configLangUnknown": "This language is not available!",
     "configLangNotString": "Languages only contain letters !",

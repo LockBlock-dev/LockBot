@@ -1,7 +1,7 @@
 const { Client } = require("discord.js")
 require('dotenv').config()
 
-const bot = new Client({disableEveryone: true})
+const bot = new Client({disableMentions: 'everyone'})
 
 module.exports = bot
 

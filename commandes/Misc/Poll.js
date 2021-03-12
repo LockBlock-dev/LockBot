@@ -1,5 +1,5 @@
-const Discord = require("discord.js")
 const { MESSAGES } = require("../../core/constants.js")
+const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args, settings) => {
 
@@ -14,14 +14,13 @@ module.exports.run = async (bot, message, args, settings) => {
 
     if (optionsList.length < 2) {
         const embed = new Discord.MessageEmbed()
-        .setTitle(lang.pollSimpleTitle)
-        .setAuthor(`${message.author.tag}`, message.author.avatarURL)
-        .setDescription(args.join(" "))
+        .setDescription(`<@${message.author.id}>`)
+        .addField(lang.pollSimpleTitle, args.join(" "))
         .setColor("#FF8A33")
         .setTimestamp()
 	    .setFooter("© LockBot")
 
-        message.channel.send({embed})
+        message.channel.send(embed)
         .then(async function (message) {
             await message.react("✔️")
             await message.react("❌")
@@ -36,17 +35,16 @@ module.exports.run = async (bot, message, args, settings) => {
         }
 
         const question = optionsList.splice(0, 1)
-        const optionsArgsCommas = optionsList.toString()
-        const optionsArgs = optionsArgsCommas.split(",").join(" | ")
+        const optionsArgs = optionsList.toString().split(",").join(" | ")
 
         const embed = new Discord.MessageEmbed()
-        .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.author.avatarURL)
-        .addField(`${question} :`, optionsArgs)
-        .setColor("#FF8A33")
-        .setTimestamp()
-	    .setFooter("© LockBot")
+            .setDescription(`<@${message.author.id}>`)
+            .addField(`${question} :`, optionsArgs)
+            .setColor("#FF8A33")
+            .setTimestamp()
+	        .setFooter("© LockBot")
 
-        message.channel.send({embed})
+        message.channel.send(embed)
             .then(async function (message) {
                 var reactionArray = [];
                 for (var i = 0; i < optionsList.length; i++) { 
