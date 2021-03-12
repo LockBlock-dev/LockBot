@@ -54,7 +54,7 @@ module.exports = bot => {
     bot.deleteGuild = async guild => {
         var data = await bot.getGuild(guild.id)
         const ID = data.guildID
-        const guildname = guild.Name
+        const guildname = data.guildName
         await data.remove()
         console.log(`${chalk.green("[Database]")} Guild deleted : ${ID} ${guildname}`)
     }
