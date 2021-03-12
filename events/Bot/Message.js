@@ -8,20 +8,7 @@ bot.on("message", async message => {
     return
 
   var settings = await bot.getGuild(message.guild.id)
-
-  if (typeof settings === 'undefined') {
-    console.log(`${chalk.bgRed("[Error]")} Error while asking for guild settings in guild : ${message.guild.id} ${message.guild.name}`)
-
-    const newGuild = {
-      guildID: message.guild.id,
-      guildName: message.guild.name
-    }
-  
-    await bot.createGuild(newGuild)
-  }
-
-  var settings = await bot.getGuild(message.guild.id)
-  
+ 
   const lang = require(`../../core/languages/${settings.guildLang}.json`)
   const prefix = settings.guildPrefix
 
@@ -60,7 +47,7 @@ bot.on("message", async message => {
     if (commandfile.help.args && !args.length) {
       var noArgsReply = `${lang.messageEventCommandNeedArg} <@${message.author.id}> !`
   
-    if (commandfile.help.usage) noArgsReply += `\n ${lang.messageEventCommandUsage} \`${prefix}${commandfile.help.name} ${commandfile.help.usage}\``
+    if (commandfile.help.usage) noArgsReply += `\n${lang.messageEventCommandUsage} \`${prefix}${commandfile.help.name} ${commandfile.help.usage}\``
   
     return message.channel.send(noArgsReply)
       }
