@@ -23,7 +23,7 @@ module.exports.run = (bot, message, args, settings) => {
         .setThumbnail(boticon)
         .addField(lang.botInfoName, bot.user.username, true)
         .addField("Owner", `<@${process.env.DEV_ID}>`, true )
-        .addField("Version", "1.4", true)
+        .addField("Version", "1.5", true)
         .addField(lang.botInfoServers, serversize, true)
         .addField("Channels", channelsize, true)
         .addField(lang.botInfoMembers, usersize, true)

@@ -14,6 +14,7 @@ module.exports.run = (bot, message, args, settings) => {
     } else {
 
         member = message.mentions.members.first()
+        member = member.user
         
     }
 
