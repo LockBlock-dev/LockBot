@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
 function checkDays(date) {
@@ -56,4 +56,4 @@ module.exports.run = (bot, message, args, settings) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.INFOS.USERINFO
+module.exports.help = COMMANDS.INFOS.USERINFO

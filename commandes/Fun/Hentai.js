@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const got = require("got")
 
@@ -42,4 +42,4 @@ module.exports.run = async (bot, message) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.FUN.HENTAI
+module.exports.help = COMMANDS.FUN.HENTAI

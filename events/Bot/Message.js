@@ -1,11 +1,13 @@
 const Discord = require("discord.js")
 const bot = require("../../index.js")
 const chalk = require("chalk")
+require('dotenv').config()
 
 bot.on("message", async message => {
 
-  if(message.channel.type === "dm")
+  if(message.channel.type === "dm") {
     return
+  }
 
   var settings = await bot.getGuild(message.guild.id)
  
@@ -27,30 +29,42 @@ bot.on("message", async message => {
     }
   }
 
-  if (!message.content.startsWith(prefix) || message.channel.type === "dm" || message.author.bot)
+  if (!message.content.startsWith(prefix) || message.channel.type === "dm" || message.author.bot) {
     return
+  }
 
   const messageArray = message.content.split(" ")
   const cmd = messageArray[0].toLowerCase()
   const args = messageArray.slice(1)
   const comd = cmd.slice(prefix.length)
-  const commandfile = bot.commands.get(comd) || bot.commands.find(cmd => cmd.help.aliases.includes(comd))
+  const commandFile = bot.commands.get(comd) || bot.commands.find(cmd => cmd.help.aliases.includes(comd))
 
-    if (!commandfile)
+    if (!commandFile) {
       return
-
-    if (commandfile.help.isUserAdmin && !message.member.hasPermission('MANAGE_GUILD')) {
-  
-    return message.reply(lang.messageEventMissingPermManageGuild)
     }
 
-    if (commandfile.help.args && !args.length) {
+    if (commandFile.help.isDevRestricted) {
+      
+      if (message.author.id !== process.env.DEV_ID) {
+
+        return message.reply("LockBot isn\'t your bot !")
+      }
+    }
+
+    if (commandFile.help.isUserAdmin && !message.member.hasPermission('MANAGE_GUILD')) {
+
+      return message.reply(lang.messageEventMissingPermManageGuild)
+    }
+
+    if (commandFile.help.args && !args.length) {
       var noArgsReply = `${lang.messageEventCommandNeedArg} <@${message.author.id}> !`
   
-    if (commandfile.help.usage) noArgsReply += `\n${lang.messageEventCommandUsage} \`${prefix}${commandfile.help.name} ${commandfile.help.usage}\``
-  
-    return message.channel.send(noArgsReply)
+      if (commandFile.help.usage) {
+        noArgsReply += `\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
       }
+  
+      return message.channel.send(noArgsReply)
+    }
 
     const someUser = await bot.getBlacklistedUser(message.author.id)
 
@@ -58,5 +72,7 @@ bot.on("message", async message => {
       return
     }
   
-    if(commandfile) commandfile.run(bot, message, args, settings)
+    if(commandFile) {
+      commandFile.run(bot, message, args, settings)
+    }
 })

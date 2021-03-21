@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
 module.exports.run = async (bot, message) => {
@@ -18,4 +18,4 @@ module.exports.run = async (bot, message) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.LOCKBOT.VOTE
+module.exports.help = COMMANDS.LOCKBOT.VOTE

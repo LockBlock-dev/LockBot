@@ -10,8 +10,8 @@ module.exports.loadCommands = () => {
     const commands = readdirSync(`${dircommand}/${dirs}/`).filter(files => files.endsWith(".js"))
 
     for (const file of commands) {
-      const getFileName = require(`../${dircommand}/${dirs}/${file}`)
-      bot.commands.set(getFileName.help.name, getFileName)
+      const getFile = require(`../${dircommand}/${dirs}/${file}`)
+      bot.commands.set(getFile.help.name, getFile)
       console.log(`${chalk.yellow("[Command Handler] ")} ${chalk.bold(`${file}`)} module detected.`)
     }
   })

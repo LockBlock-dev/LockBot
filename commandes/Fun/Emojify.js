@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args) => {
@@ -34,4 +34,4 @@ module.exports.run = async (bot, message, args) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.FUN.EMOJIFY
+module.exports.help = COMMANDS.FUN.EMOJIFY

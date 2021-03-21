@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const fs = require("fs")
 const path = require("path")
@@ -92,7 +92,42 @@ module.exports.run = async (bot, message, args, settings) => {
                               
             break
         }
+        case "channelthingy": {
+
+            if (!args[1]){
+                return message.channel.send(lang.configLangTooLong)
+            }
+
+            if(args[2]) {
+                return message.channel.send(lang.configLangArgs)
+              }
+        
+            if(args[1].length > 2) {
+                return message.channel.send(lang.configLangTooLong)
+            }
+        
+            if(typeof args[1] !== "string"){
+              return message.channel.send(lang.configLangNotString)
+            }
+
+            if (newValue) {
+                await bot.modifyGuild(message.guild.id, { guildLang: newValue})
+                var settings = await bot.getGuild(message.guild.id)
+
+                const embed = new Discord.MessageEmbed()
+                .setDescription(`<@${message.author.id}>`)
+                .addField(lang.configLangOld, oldLang)
+                .addField(lang.configLangNew, settings.guildLang)
+                .setColor("#FF8A33")
+                .setTimestamp()
+	            .setFooter("© LockBot")
+
+                message.channel.send(embed)
+            }
+                              
+            break
+        }
     }
 }
 
-module.exports.help = MESSAGES.COMMANDS.MODERATION.SETTINGS
+module.exports.help = COMMANDS.MODERATION.SETTINGS

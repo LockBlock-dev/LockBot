@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
 module.exports.run = (bot, message, args, settings) => {
@@ -28,4 +28,4 @@ module.exports.run = (bot, message, args, settings) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.INFOS.PROFILEPICTURE
+module.exports.help = COMMANDS.INFOS.PROFILEPICTURE

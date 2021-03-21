@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 require('dotenv').config()
 
 module.exports.run = async (bot, message, args, settings) => {
@@ -6,8 +6,6 @@ module.exports.run = async (bot, message, args, settings) => {
     var lang = require(`../../core/languages/${settings.guildLang}.json`)
     
     message.delete()
-    
-    if (message.author.id !== process.env.DEV_ID) return message.reply("LockBot isn\'t your bot !")
 
     const getAction = args[0]
     const ID = args[1]
@@ -51,4 +49,4 @@ module.exports.run = async (bot, message, args, settings) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.DEV.BLACKLIST
+module.exports.help = COMMANDS.DEV.BLACKLIST

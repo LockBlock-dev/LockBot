@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
 module.exports.run = (bot, message, args, settings) => {
@@ -10,12 +10,12 @@ module.exports.run = (bot, message, args, settings) => {
     const getAction = args[0]
     
     if (!args[1]) {  
-        return message.channel.send(`${lang.messageEventCommandNeedArg} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${MESSAGES.COMMANDS.MISC.BASE64.name} ${MESSAGES.COMMANDS.MISC.BASE64.usage}\``)
+        return message.channel.send(`${lang.messageEventCommandNeedArg} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${COMMANDS.MISC.BASE64.name} ${COMMANDS.MISC.BASE64.usage}\``)
     }
 
     const content = args.slice(1).join(" ")
 
-    if (content.length > 50) {
+    if (content.length > 100) {
         return message.reply(lang.base64ContentLength)
     }
   
@@ -58,4 +58,4 @@ module.exports.run = (bot, message, args, settings) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.MISC.BASE64
+module.exports.help = COMMANDS.MISC.BASE64

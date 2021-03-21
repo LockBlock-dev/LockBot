@@ -1,25 +1,22 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 require('dotenv').config()
 
 module.exports.run = async (bot, message, args) => {
 
   message.delete()
-    
-  function clean(text) {
-    if (typeof text === "string") 
-      return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203))
-    return text
-  }
-
-  if (message.author.id !== process.env.DEV_ID) return message.reply("LockBot isn\'t your bot !")
 
   const code = args.join(" ")
-  const evaled = eval(code)
-  const cleanCode = await clean(evaled)
+  eval(code)
 
-  message.author.send("Command executed !", cleanCode, { code: "js" })
+  const codeblock = (language, code) => {       
+    return `\`\`\`${language}\n${code}\`\`\``;
+  }
+
+  //available languages : apache, asciidoc, autohotkey, bash, coffeescript, cpp, cs, css, diff, fix, glsl, ini, js, json, md, ml, prolog, py, tex, xl, xml
+
+  message.author.send(`Command executed :\n${codeblock("js", code)}`)
 }
 
 
 
-module.exports.help = MESSAGES.COMMANDS.DEV.EVAL
+module.exports.help = COMMANDS.DEV.EVAL

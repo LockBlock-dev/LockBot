@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const figlet = require("figlet")
 const fs = require("fs")
@@ -19,4 +19,4 @@ module.exports.run = (bot, message, args, settings) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.FUN.ASCII
+module.exports.help = COMMANDS.FUN.ASCII

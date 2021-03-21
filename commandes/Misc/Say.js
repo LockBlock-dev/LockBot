@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 
 module.exports.run = async (bot, message, args) => {
    
@@ -9,4 +9,4 @@ module.exports.run = async (bot, message, args) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.MISC.SAY
+module.exports.help = COMMANDS.MISC.SAY

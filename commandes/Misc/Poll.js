@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args, settings) => {
@@ -56,4 +56,4 @@ module.exports.run = async (bot, message, args, settings) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.MISC.POLL
+module.exports.help = COMMANDS.MISC.POLL

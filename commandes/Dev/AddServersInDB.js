@@ -1,11 +1,9 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 require('dotenv').config()
 
 module.exports.run = async (bot, message, args) => {
 
     message.delete()
-
-    if (message.author.id !== process.env.DEV_ID) return message.reply("LockBot isn\'t your bot !")
 
     message.author.send("Trying to add servers in DB..")
 
@@ -26,4 +24,4 @@ module.exports.run = async (bot, message, args) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.DEV.ASIDB
+module.exports.help = COMMANDS.DEV.ASIDB

@@ -1,4 +1,4 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 require('dotenv').config()
 
@@ -39,4 +39,4 @@ module.exports.run = (bot, message, args, settings) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.INFOS.BOTINFO
+module.exports.help = COMMANDS.INFOS.BOTINFO

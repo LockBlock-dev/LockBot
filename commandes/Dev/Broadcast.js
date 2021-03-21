@@ -1,11 +1,9 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 require('dotenv').config()
 
 module.exports.run = async (bot, message, args) => {
 
     message.delete()
-
-    if (message.author.id !== process.env.DEV_ID) return message.reply("LockBot isn\'t your bot !")
 
     const content = args.join(" ")
 
@@ -29,4 +27,4 @@ module.exports.run = async (bot, message, args) => {
 
 
 
-module.exports.help = MESSAGES.COMMANDS.DEV.BROADCAST
+module.exports.help = COMMANDS.DEV.BROADCAST

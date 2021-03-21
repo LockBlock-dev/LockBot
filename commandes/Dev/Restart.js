@@ -1,10 +1,10 @@
-const { MESSAGES } = require("../../core/constants.js")
+const { COMMANDS } = require("../../core/constants.js")
 require('dotenv').config()
 
 module.exports.run = async (bot, message) => {
 
-    if (message.author.id !== process.env.DEV_ID) return message.reply("LockBot isn't your bot !")
 	message.delete()
+    
     message.channel.send("Restarting...")
     .then(m => m.delete(100))
     .then(process.exit())
@@ -14,4 +14,4 @@ module.exports.run = async (bot, message) => {
     console.log(chalk.red("[Bot] ") + "Restart command: SUCCESS.")
 }
 
-module.exports.help = MESSAGES.COMMANDS.DEV.RESTART
+module.exports.help = COMMANDS.DEV.RESTART

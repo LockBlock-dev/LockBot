@@ -33,6 +33,11 @@
     "userInfoJoinedDate": "Se unió a Discord el",
 
     "helpSupportServer": "Si necesita ayuda, únase al servidor de soporte:",
+    "helpCommandName": "Nombre:",
+    "helpCommandDescription": "Descripción:",
+    "helpCommandUsage": "Uso:",
+    "helpCommandAliases": "Alias:",
+    "helpCommandPermissions": "Permisos:",
 
     "Vote": "¡Vote por el bot que me ayuda! ",
 
