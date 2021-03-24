@@ -112,7 +112,7 @@ const COMMANDS = {
           usage: '<mention>',
           isDevRestricted: false,
           isUserAdmin: false,
-          args: true
+          args: false
         },
         HACK: {
           name: "hack",
