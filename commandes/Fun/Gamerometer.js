@@ -18,6 +18,7 @@ module.exports.run = async (bot, message) => {
     } else {
 
         member = message.mentions.members.first()
+        member = member.user
         
     }
 
