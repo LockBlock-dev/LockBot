@@ -41,7 +41,7 @@ module.exports.run = (bot, message, args, settings) => {
     .setDescription(`<@${message.author.id}>`)
     .setThumbnail(member.avatarURL({format:'png', dynamic:true, size:4096}))
     .addField(lang.userInfoUsername,`<@${member.id}>`, true)
-    .addField(lang.userInfoNickname, `${member.nickname !== null ? `${member.nickname}` : lang.userInfoNoNickname}`, true)
+    .addField(lang.userInfoNickname, `${message.guild.members.cache.get(member.id).nickname !== null ? `${message.guild.members.cache.get(member.id).nickname}` : lang.userInfoNoNickname}`, true)
     .addField("Bot ?", bot, true)
     .addField("Booster", boost, true)
     .addField("ID", member.id,true)
