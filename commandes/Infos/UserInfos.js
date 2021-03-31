@@ -8,9 +8,7 @@ function checkDays(date) {
   return days + (days == 1 ? " day" : " days") 
 }
 
-module.exports.run = (bot, message, args, settings) => {
-
-  const lang = require(`../../core/languages/${settings.guildLang}.json`)
+module.exports.run = (bot, message, args, settings, lang) => {
 
   var member
      

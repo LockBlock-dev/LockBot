@@ -4,6 +4,7 @@ const { Guild, Blacklist } = require("../models/export.js")
 
 
 module.exports = bot => {
+    
     bot.addToBlacklist = async user => {
         const merged = Object.assign({ _id: mongoose.Types.ObjectId() }, user)
         const newBlacklistedUser = await new Blacklist(merged)

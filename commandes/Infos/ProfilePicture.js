@@ -1,9 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = (bot, message, args, settings) => {
-
-    const lang = require(`../../core/languages/${settings.guildLang}.json`)
+module.exports.run = (bot, message, args, settings, lang) => {
 
     var member
 

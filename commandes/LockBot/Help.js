@@ -1,11 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
-const got = require("got")
 
-module.exports.run = async (bot, message, args) => {
-
-	const settings = await bot.getGuild(message.guild.id)
-	const lang = require(`../../core/languages/${settings.guildLang}.json`)
+module.exports.run = async (bot, message, args, settings, lang) => {
 
 	const getCommands = (category) => {
 		var commands = []

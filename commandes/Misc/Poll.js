@@ -1,9 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = async (bot, message, args, settings) => {
-
-    const lang = require(`../../core/languages/${settings.guildLang}.json`)
+module.exports.run = async (bot, message, args, settings, lang) => {
     
     var emojiList = ['1️⃣','2️⃣','3️⃣','4️⃣','5️⃣','6️⃣','7️⃣','8️⃣','9️⃣','🔟']
 

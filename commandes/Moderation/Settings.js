@@ -3,9 +3,7 @@ const Discord = require("discord.js")
 const fs = require("fs")
 const path = require("path")
 
-module.exports.run = async (bot, message, args, settings) => {
-
-    var lang = require(`../../core/languages/${settings.guildLang}.json`)
+module.exports.run = async (bot, message, args, settings, lang) => {
 
     const oldPrefix = settings.guildPrefix
     const oldLang = settings.guildLang
@@ -92,39 +90,8 @@ module.exports.run = async (bot, message, args, settings) => {
                               
             break
         }
-        case "channelthingy": {
+        case "blacklist": {
 
-            if (!args[1]){
-                return message.channel.send(lang.configLangTooLong)
-            }
-
-            if(args[2]) {
-                return message.channel.send(lang.configLangArgs)
-              }
-        
-            if(args[1].length > 2) {
-                return message.channel.send(lang.configLangTooLong)
-            }
-        
-            if(typeof args[1] !== "string"){
-              return message.channel.send(lang.configLangNotString)
-            }
-
-            if (newValue) {
-                await bot.modifyGuild(message.guild.id, { guildLang: newValue})
-                var settings = await bot.getGuild(message.guild.id)
-
-                const embed = new Discord.MessageEmbed()
-                .setDescription(`<@${message.author.id}>`)
-                .addField(lang.configLangOld, oldLang)
-                .addField(lang.configLangNew, settings.guildLang)
-                .setColor("#FF8A33")
-                .setTimestamp()
-	            .setFooter("© LockBot")
-
-                message.channel.send(embed)
-            }
-                              
             break
         }
     }
