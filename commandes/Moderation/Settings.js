@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
             }
 
             if (newValue) {
-                await bot.modifyGuild(message.guild.id, { guildPrefix: newValue})
+                await bot.updateGuild(message.guild.id, { guildPrefix: newValue})
                 var settings = await bot.getGuild(message.guild.id)
 
                 const embed = new Discord.MessageEmbed()
@@ -72,7 +72,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
                 }
               
                 if (newValue) {
-                    await bot.modifyGuild(message.guild.id, { guildLang: newValue})
+                    await bot.updateGuild(message.guild.id, { guildLang: newValue})
                     var settings = await bot.getGuild(message.guild.id)
 
                     const embed = new Discord.MessageEmbed()

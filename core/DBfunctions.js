@@ -50,7 +50,7 @@ module.exports = bot => {
         }
         await data.updateOne(settings)
         data = await bot.getGuild(id)
-        console.log(`${chalk.green("[Database]")} Guild updated : ${data.guildID} ${data.guildName}`)
+        console.log(`${chalk.green("[Database]")} Guild updated : ${data.guildID} ${data.guildName}.`)
     }
 
     bot.deleteGuild = async guild => {
