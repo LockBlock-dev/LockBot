@@ -104,6 +104,16 @@ const COMMANDS = {
           isUserAdmin: false,
           args: true
         },
+        EIGHTBALL: {
+          name: "8ball",
+          aliases: ['eightball'],
+          category: 'fun',
+          description: "Answer your question",
+          usage: '<question>',
+          isDevRestricted: false,
+          isUserAdmin: false,
+          args: true
+        },
         GAMER: {
           name: "gamerometer",
           aliases: ['gamerometre','gamer'],
