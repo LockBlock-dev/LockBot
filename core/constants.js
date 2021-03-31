@@ -197,6 +197,16 @@ const COMMANDS = {
           isUserAdmin: false,
           args: false
         },
+        MEMBERCOUNT: {
+          name: "membercount",
+          aliases: ['mc','count','mcount'],
+          category: 'info',
+          description: "Count of members",
+          usage: '',
+          isDevRestricted: false,
+          isUserAdmin: false,
+          args: false
+        },
         PROFILEPICTURE: {
           name: "profilepicture",
           aliases: ['pfp','pdp','pp'],
