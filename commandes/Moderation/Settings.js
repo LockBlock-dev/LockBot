@@ -91,7 +91,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
             break
         }
         case "blacklist": {
-
+            
             break
         }
     }
