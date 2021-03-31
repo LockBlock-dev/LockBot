@@ -37,7 +37,7 @@ module.exports = bot => {
         if(data) return data
     }
 
-    bot.modifyGuild = async (id, settings) => {
+    bot.updateGuild = async (id, settings) => {
         var data = await bot.getGuild(id)
         if (typeof data !== "object") {
             data = {}
@@ -48,14 +48,14 @@ module.exports = bot => {
                 data[key] = settings[key]
             }
         }
-        return await data.updateOne(settings)
+        await data.updateOne(settings)
+        data = await bot.getGuild(id)
+        console.log(`${chalk.green("[Database]")} Guild updated : ${data.guildID} ${data.guildName}`)
     }
 
     bot.deleteGuild = async guild => {
         var data = await bot.getGuild(guild.id)
-        const ID = data.guildID
-        const guildname = data.guildName
         await data.remove()
-        console.log(`${chalk.green("[Database]")} Guild deleted : ${ID} ${guildname}`)
+        console.log(`${chalk.green("[Database]")} Guild deleted : ${data.guildID} ${data.guildName}`)
     }
 }

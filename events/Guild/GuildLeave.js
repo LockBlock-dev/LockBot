@@ -1,7 +1,7 @@
 const bot = require("../../index.js")
 const chalk = require("chalk")
 
-bot.on('guildDelete', async guild => {
+bot.on("guildDelete", async guild => {
 
 	await bot.deleteGuild(guild)
 
