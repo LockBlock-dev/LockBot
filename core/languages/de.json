@@ -1,4 +1,8 @@
 {
+    "eightBallAnswers": ["Versuchen Sie es später", "Versuchen Sie es erneut", "Keine Meinung", "Es ist Ihr Schicksal", "Der Würfel ist gefallen", "Einer von zwei", "Stellen Sie Ihre Frage erneut", "Laut mir ja", " Es ist sicher ", " Ja absolut ", " Sie können sich darauf verlassen ", " Ohne Zweifel ", " Sehr wahrscheinlich ", " Ja ", " Es ist ein guter Anfang ", " Es ist nein ", " Unwahrscheinlich ", " Träume nicht ", " Zähle nicht ", " Unmöglich "],
+    "eightBallYourQuestion": "Ihre Frage war:",
+    "eightBallTheAnswer": "Die Antwort ist :",
+
     "asciiMaxCaracters": "Maximal 10 Zeichen !",
 
     "blacklistBanWarning": "Sie sind aus folgendem Grund vom Bot ausgeschlossen:",

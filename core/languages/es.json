@@ -1,4 +1,8 @@
 {
+    "eightBallAnswers": ["Inténtalo más tarde", "Inténtalo de nuevo", "Sin opinión", "Es tu destino", "La suerte está echada", "Uno de cada dos", "Haz tu pregunta de nuevo", "En mi opinión, sí", " Es cierto ", " Sí, absolutamente ", " Puede contar con ello ", " Sin duda ", " Muy probable ", " Sí ", " Es un buen comienzo ", " No es ", " Improbable ", " No sueñes ", " No cuentes ", " Imposible "],
+    "eightBallYourQuestion": "Tu pregunta fue:",
+    "eightBallTheAnswer": "La respuesta es :",
+
     "asciiMaxCaracters": "¡10 caracteres como máximo!",
 
     "blacklistBanWarning": "Estás prohibido del bot por el siguiente motivo:",

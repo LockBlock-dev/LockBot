@@ -1,4 +1,8 @@
 {
+    "eightBallAnswers": ["Try later", "Try again", "No opinion", "It's your destiny", "The die is cast", "One in two", "Ask your question again", "According to me yes", " It is certain ", " Yes absolutely ", " You can count on it ", " Without a doubt ", " Very likely ", " Yes ", " It's a good start ", " It's no ", " Unlikely ", " Don't dream ", " Don't count ", " Impossible "],
+    "eightBallYourQuestion": "Your question was :",
+    "eightBallTheAnswer": "The answer is :",
+
     "asciiMaxCaracters": "10 caracters maximum !",
 
     "blacklistBanWarning": "You are banned from the bot for the following reason :",
