@@ -8,11 +8,24 @@ module.exports.run = async (bot, message, args, settings) => {
     message.delete()
 
     const getAction = args[0]
-    const ID = args[1]
-    const user = await bot.users.fetch(ID)
-    
+   
     if (!args[1]) {
-        return message.reply("You must provide an user ID !")
+        return message.channel.send(bot.error("You must provide an user ID !", message.author.id, lang))
+    }
+
+    var user
+     
+    if (message.mentions.members.first()) {
+        user = message.mentions.members.first().user
+    }
+    
+    if (message.guild.members.cache.get(args[1])) {
+        user = message.guild.members.cache.get(args[1]).user
+        console.log(user.id)
+    }       
+
+    if (!user) {
+        return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))
     }
 
     const reason = args.slice(2).join(" ")
@@ -27,13 +40,13 @@ module.exports.run = async (bot, message, args, settings) => {
         case "add": {
 
             if (!args[2]) {
-                return message.reply("You must provide a reason !")
+                return message.channel.send(bot.error("You must provide a reason !", message.author.id, lang))
             }
 
             await bot.addToBlacklist(newBlacklisted)
 
             await user.send(`${lang.blacklistBanWarning} ${reason}`).catch(() => {
-                message.channel.send("User has DMs closed or has no mutual servers with the bot");
+                message.channel.send(bot.error("User has DMs closed or has no mutual servers with the bot", message.author.id, lang))
              })
            
             break

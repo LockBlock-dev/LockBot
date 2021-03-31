@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
     var optionsList = args.join(" ").split(",")
 
     if (optionsList.length > 10)
-        return message.channel.send(lang.pollOptionsListLength + `<@${message.author.id}> !`)
+        return message.channel.send(bot.error(lang.pollOptionsListLength, message.author.id, lang))
 
     if (optionsList.length < 2) {
         const embed = new Discord.MessageEmbed()

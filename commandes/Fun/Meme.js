@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
                             message.channel.send(embed)
 
             } catch(err) {
-            message.channel.send("💥")
+                return message.channel.send(bot.error("💥", message.author.id, lang))
             }
         })
 }

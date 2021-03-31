@@ -11,10 +11,13 @@ require("./core/DBfunctions.js")(bot)
 
 bot.mongoose = require("./core/mongoose.js")
 
+bot.mongoose.init()
+
 const { loadCommands, loadEvents } = require("./core/loader.js")
 
-loadCommands()
 loadEvents()
-bot.mongoose.init()
+loadCommands()
+
+require("./core/botFunctions.js")(bot)
 
 bot.login(process.env.DISCORD_TOKEN)

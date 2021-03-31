@@ -16,7 +16,7 @@ const COMMANDS = {
           aliases: ['bl'],
           category: 'dev',
           description: "Blacklist an user from the bot",
-          usage: '<User ID (reason)>',
+          usage: '<add> | <remove> <User ID> <reason)>',
           isDevRestricted: true,
           isUserAdmin: false,
           args: true

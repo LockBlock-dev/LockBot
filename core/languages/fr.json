@@ -3,7 +3,7 @@
     "eightBallYourQuestion": "Votre question était :",
     "eightBallTheAnswer": "La réponse est :",
 
-    "asciiMaxCaracters": "10 caractères maximum !",
+    "asciiMaxCaracters": "20 caractères maximum !",
 
     "blacklistBanWarning": "Vous êtes banni du bot pour la raison suivante :",
 
@@ -64,11 +64,14 @@
     "configLangNotString": "Les langues ne contiennent que des lettres !",
 
     "messageEventBotPing": "Bonjour, je suis un robot. Je n'ai pas de jambes en acier, ni de rayons laser, mais je peux vous aider ! \nMon prefix actuel sur ce serveur est :",
-    "messageEventMissingPermManageGuild": "tu n'as pas la permission `MANAGE_GUILD` d'éxécuter cette commande !",
-    "messageEventMissingPermManageMessages": "tu n'as pas la permission `MANAGE_MESSAGES` d'éxécuter cette commande !",
+    "messageEventMissingPermManageGuild": "Tu n'as pas la permission `MANAGE_GUILD` d'éxécuter cette commande !",
+    "messageEventMissingPermManageMessages": "Tu n'as pas la permission `MANAGE_MESSAGES` d'éxécuter cette commande !",
     "messageEventCommandNeedArg": "Il faut un argument pour cette commande, ",
     "messageEventCommandUsage": "Voici comment utiliser la commande :",
 
     "nukeWarning": "Voulez-vous nuke ce salon ?",
-    "nukeDescription": "L'entiereté des messages seront supprimés"
+    "nukeDescription": "L'entiereté des messages seront supprimés",
+
+    "errorMessage": "Une erreur s'est produite :",
+    "errorUserNotFound": "Je n'ai pas pu trouver cet utilisateur !"
 }

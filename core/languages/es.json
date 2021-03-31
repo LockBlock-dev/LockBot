@@ -3,7 +3,7 @@
     "eightBallYourQuestion": "Tu pregunta fue:",
     "eightBallTheAnswer": "La respuesta es :",
 
-    "asciiMaxCaracters": "¡10 caracteres como máximo!",
+    "asciiMaxCaracters": "¡20 caracteres como máximo!",
 
     "blacklistBanWarning": "Estás prohibido del bot por el siguiente motivo:",
 
@@ -65,11 +65,14 @@
     "configLangNotString": "¡Los idiomas solo contienen letras!",
     
     "messageEventBotPing": "Hola, soy un robot. No tengo patas de acero ni rayos láser, ¡pero puedo ayudarte! \nMi prefijo actual en este servidor es :",
-    "messageEventMissingPermManageGuild": "¡no tienes el permiso` MANAGE_GUILD` para ejecutar este comando! ",
-    "messageEventMissingPermManageMessages": "¡no tienes el permiso` MANAGE_MESSAGES` para ejecutar este comando! ",
+    "messageEventMissingPermManageGuild": "¡No tienes el permiso` MANAGE_GUILD` para ejecutar este comando! ",
+    "messageEventMissingPermManageMessages": "¡No tienes el permiso` MANAGE_MESSAGES` para ejecutar este comando! ",
     "messageEventCommandNeedArg": "Necesita un argumento para este comando",
     "messageEventCommandUsage": "Aquí se explica cómo utilizar el comando :",
 
     "nukeWarning": "¿Quieres destruir este canal?",
-    "nukeDescription": "Todos los mensajes serán eliminados"
+    "nukeDescription": "Todos los mensajes serán eliminados",
+
+    "errorMessage": "Ocurrió un error:",
+    "errorUserNotFound": "No pude encontrar a este usuario!"
 }

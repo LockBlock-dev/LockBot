@@ -14,7 +14,7 @@ module.exports.run = (bot, message, args, settings, lang) => {
     const content = args.slice(1).join(" ")
 
     if (content.length > 100) {
-        return message.reply(lang.base64ContentLength)
+        return message.channel.send(bot.error(lang.base64ContentLength, message.author.id, lang))
     }
   
     switch(getAction) {

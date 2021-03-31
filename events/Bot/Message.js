@@ -1,4 +1,3 @@
-const Discord = require("discord.js")
 const bot = require("../../index.js")
 const chalk = require("chalk")
 require('dotenv').config()
@@ -47,23 +46,19 @@ bot.on("message", async message => {
       
       if (message.author.id !== process.env.DEV_ID) {
 
-        return message.reply("LockBot isn\'t your bot !")
+        return message.channel.send(bot.error("LockBot isn\'t your bot !", message.author.id, lang))
       }
     }
 
     if (commandFile.help.isUserAdmin && !message.member.hasPermission('MANAGE_GUILD')) {
 
-      return message.reply(lang.messageEventMissingPermManageGuild)
+      return message.channel.send(bot.error(lang.messageEventMissingPermManageGuild, message.author.id, lang))
     }
 
     if (commandFile.help.args && !args.length) {
-      var noArgsReply = `${lang.messageEventCommandNeedArg} <@${message.author.id}> !`
-  
-      if (commandFile.help.usage) {
-        noArgsReply += `\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
-      }
-  
-      return message.channel.send(noArgsReply)
+      var noArgsReply = `${lang.messageEventCommandNeedArg} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
+   
+      return message.channel.send(bot.error(noArgsReply, message.author.id, lang))
     }
 
     const someUser = await bot.getBlacklistedUser(message.author.id)

@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     message.delete()
 
     const guild = bot.guilds.cache.get(args[0])
-    if (!guild) return message.reply("The bot isn't in a guild with this ID.")
+    if (!guild) return message.channel.send(bot.error("The bot isn't in the guild with this ID.", message.author.id, lang))
 
     guild.leave()
 

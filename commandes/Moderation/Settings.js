@@ -14,19 +14,19 @@ module.exports.run = async (bot, message, args, settings, lang) => {
         case "prefix": {
 
             if(!args[1]){
-                return message.channel.send(lang.configPrefixEmpty)
+                return message.channel.send(bot.error(lang.configPrefixEmpty, message.author.id, lang))
             }
 
             if(args[2]) {
-                return message.channel.send(lang.configPrefixArgs)
+                return message.channel.send(bot.error(lang.configPrefixArgs, message.author.id, lang))
             }
         
             if(args[1].length > 3) {
-                return message.channel.send(lang.configPrefixLengthMax)
+                return message.channel.send(bot.error(lang.configPrefixLengthMax, message.author.id, lang))
             }
         
             if(typeof args[1] !== "string"){
-                return message.channel.send(configPrefixNotString)
+                return message.channel.send(bot.error(lang.configPrefixNotString, message.author.id, lang))
             }
 
             if (newValue) {
@@ -48,19 +48,19 @@ module.exports.run = async (bot, message, args, settings, lang) => {
         case "lang": {
 
             if (!args[1]){
-                return message.channel.send(lang.configLangTooLong)
+                return message.channel.send(bot.error(lang.configLangTooLong, message.author.id, lang))
             }
 
             if(args[2]) {
-                return message.channel.send(lang.configLangArgs)
+                return message.channel.send(bot.error(lang.configLangArgs, message.author.id, lang))
               }
         
             if(args[1].length > 2) {
-                return message.channel.send(lang.configLangTooLong)
+                return message.channel.send(bot.error(lang.configLangTooLong, message.author.id, lang))
             }
         
             if(typeof args[1] !== "string"){
-              return message.channel.send(lang.configLangNotString)
+                return message.channel.send(bot.error(lang.configLangNotString, message.author.id, lang))
             }
 
             const languagesPath = path.join(__dirname, `../../core/languages/${newValue}.json`)
@@ -68,8 +68,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
             fs.access(languagesPath, fs.F_OK, async (err) => {
                 if (err) {
                   console.error(err)
-                  message.channel.send(lang.configLangUnknown)
-                  return
+                  return message.channel.send(bot.error(lang.configLangUnknown, message.author.id, lang))
                 }
               
                 if (newValue) {

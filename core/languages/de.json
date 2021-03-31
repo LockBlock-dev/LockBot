@@ -3,7 +3,7 @@
     "eightBallYourQuestion": "Ihre Frage war:",
     "eightBallTheAnswer": "Die Antwort ist :",
 
-    "asciiMaxCaracters": "Maximal 10 Zeichen !",
+    "asciiMaxCaracters": "Maximal 20 Zeichen !",
 
     "blacklistBanWarning": "Sie sind aus folgendem Grund vom Bot ausgeschlossen:",
 
@@ -71,5 +71,8 @@
     "messageEventCommandUsage": "So verwenden Sie den Befehl:",
 
     "nukeWarning": "Möchten Sie diesen Kanal zerstören ?",
-    "nukeDescription": "Alle Nachrichten werden gelöscht"
+    "nukeDescription": "Alle Nachrichten werden gelöscht",
+
+    "errorMessage": "Ein Fehler ist aufgetreten:",
+    "errorUserNotFound": "Ich konnte diesen Benutzer nicht finden!"
 }

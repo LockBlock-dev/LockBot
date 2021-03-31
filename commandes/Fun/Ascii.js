@@ -4,9 +4,9 @@ const figlet = require("figlet")
 
 module.exports.run = (bot, message, args, settings, lang) => {
 
-    var maxLen = 9 // max characters here
+    var maxLen = 20 // max characters here
 
-    if (args.join(' ').length > maxLen) return message.channel.send(lang.asciiMaxCaracters)
+    if (args.join(' ').length > maxLen) return message.channel.send(bot.error(lang.asciiMaxCaracters, message.author.id, lang))
 
     figlet(`${args.join(' ')}`, function (err, data) {
         message.channel.send(`${data}`, { code: 'AsciiArt' })

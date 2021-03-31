@@ -7,16 +7,24 @@ module.exports.run = async (bot, message, args, settings, lang) => {
     const gamer = Math.round(Math.random() * 100)
 
     var member
-
+     
     if(args.length == 0) {
 
         member = message.author
 
     } else {
 
-        member = message.mentions.members.first()
-        member = member.user
-        
+        if (message.mentions.members.first()) {
+            member = message.mentions.members.first().user
+        }
+    
+        if (message.guild.members.cache.get(args[0])) {
+            member = message.guild.members.cache.get(args[0]).user
+        }       
+    }
+
+    if (!member) {
+        return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))
     }
 
     const embed = new Discord.MessageEmbed()

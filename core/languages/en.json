@@ -3,7 +3,7 @@
     "eightBallYourQuestion": "Your question was :",
     "eightBallTheAnswer": "The answer is :",
 
-    "asciiMaxCaracters": "10 caracters maximum !",
+    "asciiMaxCaracters": "20 caracters maximum !",
 
     "blacklistBanWarning": "You are banned from the bot for the following reason :",
 
@@ -65,11 +65,14 @@
     "configLangNotString": "Languages only contain letters !",
     
     "messageEventBotPing": "Hello, I am a robot. I don't have steel legs or laser beams, but I can help you ! \nMy current prefix on this server is :",
-    "messageEventMissingPermManageGuild": "you do not have the `MANAGE_GUILD` permission to execute this command !",
-    "messageEventMissingPermManageMessages": "you don't have the `MANAGE_MESSAGES` permission to execute this command !",
+    "messageEventMissingPermManageGuild": "You do not have the `MANAGE_GUILD` permission to execute this command !",
+    "messageEventMissingPermManageMessages": "You don't have the `MANAGE_MESSAGES` permission to execute this command !",
     "messageEventCommandNeedArg": "You need an argument for this command, ",
     "messageEventCommandUsage": "Here's how to use the command :",
 
     "nukeWarning": "Do you want to nuke this channel ?",
-    "nukeDescription": "All messages will be deleted"
+    "nukeDescription": "All messages will be deleted",
+
+    "errorMessage": "An error happened :",
+    "errorUserNotFound": "I couldn't find this user !"
 }
