@@ -37,7 +37,7 @@ module.exports.run = (bot, message, args, settings, lang) => {
   
   const embed = new Discord.MessageEmbed()
     .setDescription(`<@${message.author.id}>`)
-    .setThumbnail(member.avatarURL({format:'png', dynamic:true, size:4096}))
+    .setThumbnail(member.avatarURL({ format: 'png', dynamic: true}))
     .addField(lang.userInfoUsername,`<@${member.id}>`, true)
     .addField(lang.userInfoNickname, `${message.guild.members.cache.get(member.id).nickname !== null ? `${message.guild.members.cache.get(member.id).nickname}` : lang.userInfoNoNickname}`, true)
     .addField("Bot ?", bot, true)

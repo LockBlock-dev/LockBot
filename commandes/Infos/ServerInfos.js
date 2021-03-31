@@ -14,7 +14,7 @@ module.exports.run = (bot, message, args, settings, lang) => {
 		.setDescription(`<@${message.author.id}>`)
 		.addField(lang.serverInfoName, message.guild.name, true)
 		.addField("ID", message.guild.id, true)
-		.setThumbnail(message.guild.iconURL())
+		.setThumbnail(message.guild.iconURL({ format: 'png', dynamic: true}))
 		.addField("Owner", `<@${message.guild.ownerID}>`, true)
 		.addField("Channels", message.guild.channels.cache.size, true)
 		.addField("Roles", message.guild.roles.cache.size, true)
