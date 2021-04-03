@@ -11,7 +11,7 @@ Discord Bot made with [![discord.js](https://img.shields.io/github/package-json/
 
 ## Support Server
 
-![Discord](https://img.shields.io/discord/819233068199837726?color=7289da&logo=discord&logoColor=white)
+[![Discord](https://img.shields.io/discord/819233068199837726?color=7289da&logo=discord&logoColor=white)](https://discord.gg/R2KVJNr4Ta)
 
 
 ## How to use
