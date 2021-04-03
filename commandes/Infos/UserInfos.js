@@ -3,13 +3,6 @@ const Discord = require("discord.js")
 
 module.exports.run = (bot, message, args, settings, lang) => {
 
-  function checkDays(date) {
-    const now = new Date()
-    const diff = now.getTime() - date.getTime()
-    const days = Math.floor(diff / 86400000)
-    return days + (days == 1 ? lang.userInfoDay : lang.userInfoDays) 
-  }
-
   var member
      
   if(args.length == 0) {
@@ -32,9 +25,9 @@ module.exports.run = (bot, message, args, settings, lang) => {
   }
 
   if (member.bot) {
-    bot = "Bot"
+    isBot = "Bot"
   } else {
-    bot = lang.userInfoUserIsNotBot
+    isBot = lang.userInfoUserIsNotBot
   }
 
   if (member.premiumSince) {
@@ -50,11 +43,11 @@ module.exports.run = (bot, message, args, settings, lang) => {
     .setThumbnail(member.avatarURL({ format: 'png', dynamic: true}))
     .addField(lang.userInfoUsername,`<@${member.id}>`, true)
     .addField(lang.userInfoNickname, `${guildMember.nickname !== null ? `${guildMember.nickname}` : lang.userInfoNoNickname}`, true)
-    .addField("Bot ?", bot, true)
+    .addField("Bot ?", isBot, true)
     .addField("Booster", boost, true)
     .addField("ID", member.id,true)
-    .addField(lang.userInfoJoinedDate, `${guildMember.joinedAt.toUTCString().substr(0, 16)} (${checkDays(guildMember.joinedAt)})`)
-    .addField(lang.userInfoCreatedDate, `${member.createdAt.toUTCString().substr(0, 16)} (${checkDays(member.createdAt)})`)
+    .addField(lang.userInfoJoinedDate, `${guildMember.joinedAt.toUTCString().substr(0, 16)} (${bot.checkDays(guildMember.joinedAt, lang)})`)
+    .addField(lang.userInfoCreatedDate, `${member.createdAt.toUTCString().substr(0, 16)} (${bot.checkDays(guildMember.joinedAt, lang)})`)
     .addField("Roles", `${guildMember.roles.cache.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "Pas de rôles"}`)
     .setColor("#FF8A33")
     .setFooter("© LockBot")

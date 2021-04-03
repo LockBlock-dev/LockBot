@@ -1,13 +1,6 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-function checkDays(date) {
-        const now = new Date()
-        const diff = now.getTime() - date.getTime()
-        const days = Math.floor(diff / 86400000)
-        return days + (days == 1 ? " day" : " days") 
-	}
-	
 module.exports.run = (bot, message, args, settings, lang) => {
 	
 	const embed = new Discord.MessageEmbed()
@@ -21,7 +14,7 @@ module.exports.run = (bot, message, args, settings, lang) => {
 		.addField(lang.serverInfoMembers, message.guild.memberCount, true)
 		.addField("Emojis", message.guild.emojis.cache.size, true)
 		.addField("Region", message.guild.region.toUpperCase(), true)
-		.addField(lang.serverInfoCreationDate, `${message.channel.guild.createdAt.toUTCString().substr(0, 16)} (${checkDays(message.channel.guild.createdAt)})`, true)
+		.addField(lang.serverInfoCreationDate, `${message.channel.guild.createdAt.toUTCString().substr(0, 16)} (${bot.checkDays(message.channel.guild.createdAt, lang)})`, true)
 		.setColor("#FF8A33")
 		.setFooter("© LockBot")
 		.setTimestamp()

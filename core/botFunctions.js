@@ -13,4 +13,12 @@ module.exports = bot => {
         return embed
     }
 
+    bot.checkDays = (date, lang) => {
+        const now = new Date()
+        const diff = now.getTime() - date.getTime()
+        const days = Math.floor(diff / 86400000)
+
+        return days + (days == 1 ? lang.userInfoDay : lang.userInfoDays) 
+    }
+
 }
