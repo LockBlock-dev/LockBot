@@ -1,6 +1,6 @@
 {
-    "eightBallAnswers": ["Versuchen Sie es später", "Versuchen Sie es erneut", "Keine Meinung", "Es ist Ihr Schicksal", "Der Würfel ist gefallen", "Einer von zwei", "Stellen Sie Ihre Frage erneut", "Laut mir ja", " Es ist sicher ", " Ja absolut ", " Sie können sich darauf verlassen ", " Ohne Zweifel ", " Sehr wahrscheinlich ", " Ja ", " Es ist ein guter Anfang ", " Es ist nein ", " Unwahrscheinlich ", " Träume nicht ", " Zähle nicht ", " Unmöglich "],
-    "eightBallYourQuestion": "Ihre Frage war:",
+    "eightBallAnswers": ["Versuche es später", "Versuche es erneut", "Keine Meinung", "Es ist dein Schicksal", "Der Würfel ist gefallen", "Einer von zwei", "Stelle deine Frage erneut", "Laut mir ja", " Es ist sicher ", " Ja absolut ", " Du kannst dich darauf verlassen ", " Ohne Zweifel ", " Sehr wahrscheinlich ", " Ja ", " Es ist ein guter Anfang ", " Die Antwort ist nein ", " Unwahrscheinlich ", " Träume nicht ", " Zähle nicht ", " Unmöglich "],
+    "eightBallYourQuestion": "Deine Frage war:",
     "eightBallTheAnswer": "Die Antwort ist :",
 
     "asciiMaxCaracters": "Maximal 20 Zeichen !",
@@ -10,7 +10,7 @@
     "base64ContentLength": "Maximal 50 Zeichen !",
 
     "gamerometer1": " ist ",
-    "gamerometer2": "% a gamer !",
+    "gamerometer2": "% ein gamer !",
 
     "hack": "Hast du es wirklich geglaubt ? :joy:",
 
@@ -22,7 +22,7 @@
     "botInfoCreationDate": "Erstellungsdatum",
     "botInfosLanguages": "Unterstützte Sprachen",
 
-    "profilePicture": "Avatar von",
+    "profilePicture": "Profilbild von",
 
     "serverInfoName": "Name",
     "serverInfoMembers": "Mitglieder",
@@ -35,18 +35,18 @@
     "userInfoBoostYes": "Ja",
     "userInfoBoostNo": "Nein",
     "userInfoNickname": "Nickname",
-    "userInfoNoNickname": "Not any",
-    "userInfoJoinedDate": "Verbundener Server ein",
-    "userInfoCreatedDate": "Erstellt sein Konto am",
+    "userInfoNoNickname": "Kein",
+    "userInfoJoinedDate": "Tritt dem Server bei am",
+    "userInfoCreatedDate": "Erstellte sein Account am",
     
-    "helpSupportServer": "Wenn Sie Hilfe benötigen, treten Sie dem Support-Server bei:",
+    "helpSupportServer": "Wenn Sie Hilfe mit dem Bot benötigen, treten Sie dem Support-Server bei:",
     "helpCommandName": "Name:",
     "helpCommandDescription": "Beschreibung:",
     "helpCommandUsage": "Verwendung:",
     "helpCommandAliases": "Aliase:",
     "helpCommandPermissions": "Berechtigungen:",
 
-    "vote": "Stimmen Sie für den Bot, der mir hilft! ",
+    "vote": "Stimmen Sie für den Bot, um mir zu helfen! ",
 
     "pingLatencyBot": "Bot-Latenz:",
     "pingLatencyAPI": " ms, API-Latenz:",
@@ -65,15 +65,15 @@
     "configLangOld": "Alte Sprache:",
     "configLangNew": "Neue Sprache:",
     "configLangUnknown": "Diese Sprache ist nicht verfügbar!",
-    "configLangNotString": "Sprachen enthalten nur Buchstaben!",
+    "configLangNotString": "Sprachen können nur Buchstaben enthalten!",
     
-    "messageEventBotPing": "Hallo, ich bin ein Roboter. Ich habe keine Stahlbeine oder Laserstrahlen, aber ich kann Ihnen helfen ! \nMein aktuelles Präfix auf diesem Server lautet:",
+    "messageEventBotPing": "Hallo, ich bin ein Bot. Ich habe keine Stahlbeine oder Laserstrahlen, aber ich kann Ihnen helfen ! \nMeine aktuelle Präfix auf diesem Server lautet:",
     "messageEventMissingPermManageGuild": "Sie haben nicht die Berechtigung `MANAGE_GUILD` um diesen Befehl auszuführen !",
     "messageEventMissingPermManageMessages": "Sie haben nicht die Berechtigung `MANAGE_MESSAGES` um diesen Befehl auszuführen !",
     "messageEventCommandNeedArg": "Sie benötigen ein Argument für diesen Befehl",
     "messageEventCommandUsage": "So verwenden Sie den Befehl:",
 
-    "nukeWarning": "Möchten Sie diesen Kanal zerstören ?",
+    "nukeWarning": "Möchten Sie diesen Kanal nuken ?",
     "nukeDescription": "Alle Nachrichten werden gelöscht",
 
     "errorMessage": "Ein Fehler ist aufgetreten:",
