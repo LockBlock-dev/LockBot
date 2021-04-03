@@ -2,7 +2,6 @@ const chalk = require("chalk")
 const mongoose = require("mongoose")
 const { Guild, Blacklist } = require("../models/export.js")
 
-
 module.exports = bot => {
     
     bot.addToBlacklist = async user => {
