@@ -6,7 +6,7 @@ Discord Bot made with [![discord.js](https://img.shields.io/github/package-json/
 [![GitHub issues](https://img.shields.io/github/issues/LockBlock-dev/LockBot)](https://github.com/LockBlock-dev/LockBot/issues)
 ![GitHub all releases](https://img.shields.io/github/downloads/LockBlock-dev/LockBot/total)
 
-![Bot preview](/preview.png)
+![Bot preview](/preview.jpg)
 
 
 ## Support Server
