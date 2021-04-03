@@ -24,10 +24,12 @@ Discord Bot made with [![discord.js](https://img.shields.io/github/package-json/
 
 • You need to setup a [MongoDB](https://www.mongodb.com)
 
-• At the root of the folder, create a `.env` file, and put inside :\
-    - `DISCORD_TOKEN=YOUR_TOKEN_HERE`\
-    - `MONGODB_ADRESS=YOUR_MONGO_DB_URL_HERE`\
-    - `DEV_ID=YOUR_DISCORD_ID_HERE`
+• At the root of the folder, create a `.env` file, and put inside :
+```dosini
+DISCORD_TOKEN=YOUR_TOKEN_HERE
+MONGODB_ADRESS=YOUR_MONGO_DB_URL_HERE
+DEV_ID=YOUR_DISCORD_ID_HERE
+```
 
 • Run the bot by doing `node index.js`
 
