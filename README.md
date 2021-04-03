@@ -1,12 +1,18 @@
 # LockBot
-Discord Bot made with [DiscordJS API](https://discord.js.org)
+Discord Bot made with [DiscordJS API](https://discord.js.org) ![discord.js](https://img.shields.io/github/package-json/dependency-version/LockBlock-dev/LockBot/discord.js)
 
-[![HitCount](http://hits.dwyl.com/LockBlock-dev/LockBot.svg)](http://hits.dwyl.com/LockBlock-dev/LockBot)
-[![GitHub All Releases](https://img.shields.io/github/downloads/LockBlock-dev/LockBot/total.svg)](https://github.com/LockBlock-dev/LockBot/releases/)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/LockBlock-dev/LockBot)
+[![stars](https://img.shields.io/github/stars/LockBlock-dev/LockBot.svg)](https://github.com/LockBlock-dev/LockBot/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/LockBlock-dev/LockBot)](https://github.com/LockBlock-dev/LockBot/issues)
+![GitHub all releases](https://img.shields.io/github/downloads/LockBlock-dev/LockBot/total)
 
 ![Bot preview](/preview.png)
 
-About ES5, ES6... When I first started coding the bot I didn't know much about JavaScript, so the code is probably a mess with a mix between ES5 and ES6. These days, I try to use ES6 only to take advantage of the benefits it offers.
+
+## Support Server
+
+![Discord](https://img.shields.io/discord/819233068199837726?color=7289da&logo=discord&logoColor=white)
+
 
 ## How to use
 
@@ -29,13 +35,10 @@ About ES5, ES6... When I first started coding the bot I didn't know much about J
 
 • To add any language, just go to [languages](/core/languages) folder, create a .json file and name it with the ISO 3166-1 norm. Exemple : [en.json](/core/languages/en.json) for the international english.
 
+
 ## Potential bugs
 
-• I don't know why some commands doesnt find the language so they do a request to the database and it works.
-
-• I don't know if there are bugs now with the Database. All JSON bugs have been removed.
-
-• Languages are app translated, if you find any errors please tell me.
+• Some languages are app translated, you can find errors.
 
 
 ## Copyright
