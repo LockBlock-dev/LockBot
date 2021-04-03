@@ -12,7 +12,7 @@
     "gamerometer1": " est à ",
     "gamerometer2": "% un(e) gamer|euse !",
 
-    "hack": "T'y as vraiment cru ? :joy:",
+    "hack": "Vous y avez vraiment cru ? :joy:",
 
     "hentaiChannelNotNSFW": "Ce salon n'est pas NSFW !",
 
@@ -28,13 +28,16 @@
     "serverInfoMembers": "Membres",
     "serverInfoCreationDate": "Date de création",
 
+    "userInfoDay": " jour",
+    "userInfoDays": " jours",
     "userInfoUsername": "Nom",
     "userInfoUserIsNotBot": "Humain",
     "userInfoBoostYes": "Oui",
     "userInfoBoostNo": "Non",
     "userInfoNickname": "Surnom",
     "userInfoNoNickname": "Aucun",
-    "userInfoJoinedDate": "A rejoins discord le",
+    "userInfoJoinedDate": "A rejoint le serveur le",
+    "userInfoCreatedDate": "A créé son compte le",
 
     "helpSupportServer": "Si vous avez besoin d'aide rejoignez le serveur de support :",
     "helpCommandName": "Nom :",
@@ -43,7 +46,7 @@
     "helpCommandAliases": "Alias :",
     "helpCommandPermissions": "Permissions :",
 
-    "vote": "Votez pour le bot et ainsi m'aider ! ",
+    "vote": "Votez pour le bot et aidez moi :",
 
     "pingLatencyBot": "Latence du bot :",
     "pingLatencyAPI": " ms, Latence de l'API :",
@@ -64,8 +67,8 @@
     "configLangNotString": "Les langues ne contiennent que des lettres !",
 
     "messageEventBotPing": "Bonjour, je suis un robot. Je n'ai pas de jambes en acier, ni de rayons laser, mais je peux vous aider ! \nMon prefix actuel sur ce serveur est :",
-    "messageEventMissingPermManageGuild": "Tu n'as pas la permission `MANAGE_GUILD` d'éxécuter cette commande !",
-    "messageEventMissingPermManageMessages": "Tu n'as pas la permission `MANAGE_MESSAGES` d'éxécuter cette commande !",
+    "messageEventMissingPermManageGuild": "Vous n'avez pas la permission `MANAGE_GUILD` d'éxécuter cette commande !",
+    "messageEventMissingPermManageMessages": "Vous n'avez pas la permission `MANAGE_MESSAGES` d'éxécuter cette commande !",
     "messageEventCommandNeedArg": "Il faut un argument pour cette commande, ",
     "messageEventCommandUsage": "Voici comment utiliser la commande :",
 

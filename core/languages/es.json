@@ -28,13 +28,16 @@
     "serverInfoMembers": "Miembros",
     "serverInfoCreationDate": "Fecha de creación",
 
+    "userInfoDay": " día",
+    "userInfoDays": " días",
     "userInfoUsername": "Nombre",
     "userInfoUserIsNotBot": "Humano",
     "userInfoBoostYes": "Sí",
     "userInfoBoostNo": "No",
     "userInfoNickname": "Apodo",
     "userInfoNoNickname": "Ninguno",
-    "userInfoJoinedDate": "Se unió a Discord el",
+    "userInfoJoinedDate": "Se unió al servidor el",
+    "userInfoCreatedDate": "Creó su cuenta el",
 
     "helpSupportServer": "Si necesita ayuda, únase al servidor de soporte:",
     "helpCommandName": "Nombre:",
