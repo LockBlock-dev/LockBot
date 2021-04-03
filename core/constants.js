@@ -96,7 +96,7 @@ const COMMANDS = {
         },
         EMOJIFY: {
           name: "emojify",
-          aliases: ['emoji'],
+          aliases: ['emoji','emote'],
           category: 'fun',
           description: "Text to emotes",
           usage: '<text>',
