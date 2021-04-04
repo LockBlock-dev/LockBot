@@ -1,24 +1,9 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = (bot, message, args, settings, lang) => {
+module.exports.run = (bot, message, args, lang) => {
 
-    var member
-     
-    if(args.length == 0) {
-
-        member = message.author
-
-    } else {
-
-        if (message.mentions.members.first()) {
-            member = message.mentions.members.first().user
-        }
-    
-        if (message.guild.members.cache.get(args[0])) {
-            member = message.guild.members.cache.get(args[0]).user
-        }       
-    }
+    const member = bot.memberFinder(message, args, lang)
 
     if (!member) {
         return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))

@@ -68,6 +68,6 @@ bot.on("message", async message => {
     }
   
     if(commandFile) {
-      commandFile.run(bot, message, args, settings, lang)
+      commandFile.run(bot, message, args, lang, settings)
     }
 })

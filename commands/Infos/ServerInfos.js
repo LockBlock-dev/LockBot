@@ -1,7 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = (bot, message, args, settings, lang) => {
+module.exports.run = (bot, message, args, lang) => {
 	
 	const embed = new Discord.MessageEmbed()
 		.setDescription(`<@${message.author.id}>`)

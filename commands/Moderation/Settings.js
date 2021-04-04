@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 const fs = require("fs")
 const path = require("path")
 
-module.exports.run = async (bot, message, args, settings, lang) => {
+module.exports.run = async (bot, message, args, lang, settings) => {
 
     const oldPrefix = settings.guildPrefix
     const oldLang = settings.guildLang

@@ -2,7 +2,7 @@ const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const got = require("got")
 
-module.exports.run = async (bot, message, args, settings, lang) => {
+module.exports.run = async (bot, message, args, lang) => {
 
     if (message.channel.nsfw) {
 
@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
         })
 
     } else {
-        message.channel.send(lang.hentaiChannelNotNSFW)
+        message.channel.send(bot.error(lang.hentaiChannelNotNSFW, message.author.id, lang))
     }
 }
 

@@ -1,7 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = async (bot, message, args, settings, lang) => {
+module.exports.run = async (bot, message, args, lang, settings) => {
 
 	const getCommands = (category) => {
 		var commands = []

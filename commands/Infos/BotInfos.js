@@ -2,7 +2,7 @@ const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 require('dotenv').config()
 
-module.exports.run = (bot, message, args, settings, lang) => {
+module.exports.run = (bot, message, args, lang) => {
 
     const boticon = bot.user.displayAvatarURL()
     const usersize = bot.users.cache.size

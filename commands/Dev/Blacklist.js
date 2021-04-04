@@ -1,9 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 require('dotenv').config()
 
-module.exports.run = async (bot, message, args, settings) => {
-
-    var lang = require(`../../core/languages/${settings.guildLang}.json`)
+module.exports.run = async (bot, message, args, lang) => {
     
     message.delete()
 
@@ -21,7 +19,6 @@ module.exports.run = async (bot, message, args, settings) => {
     
     if (message.guild.members.cache.get(args[1])) {
         user = message.guild.members.cache.get(args[1]).user
-        console.log(user.id)
     }       
 
     if (!user) {

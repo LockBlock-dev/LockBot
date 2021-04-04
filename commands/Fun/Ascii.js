@@ -2,7 +2,7 @@ const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const figlet = require("figlet")
 
-module.exports.run = (bot, message, args, settings, lang) => {
+module.exports.run = (bot, message, args, lang) => {
 
     var maxLen = 20 // max characters here
 

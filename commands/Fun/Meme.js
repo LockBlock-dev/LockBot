@@ -2,7 +2,7 @@ const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const got = require("got")
 
-module.exports.run = async (bot, message, args, settings, lang) => {
+module.exports.run = async (bot, message, args, lang) => {
 
     got(`https://www.reddit.com/r/dankmemes/random/.json?sort=top&t=week`).then(response => {
             try {
