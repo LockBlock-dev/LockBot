@@ -18,6 +18,6 @@ module.exports = {
         }
         mongoose.connect(connection.adress, options).catch((error) => {console.error(error)})
         mongoose.Promise = global.Promise
-        mongoose.connection.on("connected", () =>console.log( `${chalk.green("[Database] ")} ${chalk.bold("Mongoose")} is online.`))
+        mongoose.connection.on("connected", () => console.log( `${chalk.green("[Database] ")} ${chalk.bold("Mongoose")} is online.`))
     }
 }
