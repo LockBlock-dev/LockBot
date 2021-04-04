@@ -36,6 +36,7 @@
     "userInfoBoostNo": "Nein",
     "userInfoNickname": "Nickname",
     "userInfoNoNickname": "Kein",
+    "userInfoStatus": "Status",
     "userInfoJoinedDate": "Tritt dem Server bei am",
     "userInfoCreatedDate": "Erstellte sein Account am",
     
@@ -77,5 +78,7 @@
     "nukeDescription": "Alle Nachrichten werden gelöscht",
 
     "errorMessage": "Ein Fehler ist aufgetreten:",
-    "errorUserNotFound": "Ich konnte diesen Benutzer nicht finden!"
+    "errorUserNotFound": "Ich konnte diesen Benutzer nicht finden!",
+    "errorHarmYourself1": "Sie können sich nicht selbst ",
+    "errorHarmYourself2": " !"
 }

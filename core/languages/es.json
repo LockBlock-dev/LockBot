@@ -36,6 +36,7 @@
     "userInfoBoostNo": "No",
     "userInfoNickname": "Apodo",
     "userInfoNoNickname": "Ninguno",
+    "userInfoStatus": "Estado",
     "userInfoJoinedDate": "Se unió al servidor el",
     "userInfoCreatedDate": "Creó su cuenta el",
 
@@ -77,5 +78,7 @@
     "nukeDescription": "Todos los mensajes serán eliminados",
 
     "errorMessage": "Ocurrió un error:",
-    "errorUserNotFound": "No pude encontrar a este usuario!"
+    "errorUserNotFound": "No pude encontrar a este usuario!",
+    "errorHarmYourself1": "¡No puedes ",
+    "errorHarmYourself2": " a ti mismo!"
 }
