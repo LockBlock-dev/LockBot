@@ -28,7 +28,7 @@ module.exports.run = (bot, message, args, lang) => {
     .setThumbnail(member.avatarURL({ format: 'png', dynamic: true}))
     .addField(lang.userInfoUsername,`<@${member.id}>`, true)
     .addField(lang.userInfoNickname, `${guildMember.nickname !== null ? `${guildMember.nickname}` : lang.userInfoNoNickname}`, true)
-    .addField("Bot ?", isBot, true)
+    .addField(lang.userInfoStatus, isBot, true)
     .addField("Booster", boost, true)
     .addField("ID", member.id,true)
     .addField(lang.userInfoJoinedDate, `${guildMember.joinedAt.toUTCString().substr(0, 16)} (${bot.checkDays(guildMember.joinedAt, lang)})`)
