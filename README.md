@@ -40,16 +40,18 @@ DEV_ID=YOUR_DISCORD_ID_HERE
 
 ## Potential bugs
 
-• Some languages are app translated, you can find errors.
+• Some languages are app translated and can contains errors.
 
 
 ## Credits
 
 I couldn't do this without the help of :
 
-• DV4#1337 who made the [german](/core/languages/de.json) translation
+• DV4 who made the [german](/core/languages/de.json) translation
 
-• MasterIO#4588
+• JunkMeal who helped me with the [meme](/commands/Fun/Meme.js) command
+
+• MasterIO, DeXoZ, Hawked who supported me in this project
 
 • and everyone who invited and used my bot !
 
