@@ -16,7 +16,7 @@ const COMMANDS = {
           aliases: ['bl'],
           category: 'dev',
           description: "Blacklist an user from the bot",
-          usage: '<add> | <remove> <User ID> <reason)>',
+          usage: '<add> | <remove> <mention> | <ID> <reason)>',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
           args: true
@@ -119,7 +119,7 @@ const COMMANDS = {
           aliases: ['gamerometre','gamer'],
           category: 'fun',
           description: "Are you a gamer ?",
-          usage: '<mention>',
+          usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
           args: false
@@ -182,7 +182,7 @@ const COMMANDS = {
           aliases: ['ui','uinfos','userinfo','uinfo'],
           category: 'info',
           description: "Infos of an user",
-          usage: '<mention>',
+          usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
           args: false
@@ -212,7 +212,7 @@ const COMMANDS = {
           aliases: ['pfp','pdp','pp'],
           category: 'info',
           description: "Pfp of a member",
-          usage: '<mention>',
+          usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
           args: false
@@ -321,10 +321,20 @@ const COMMANDS = {
           aliases: ['kick'],
           category: 'moderation',
           description: "Kick a member",
-          usage: '<mention>',
+          usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "KICK_MEMBERS",
-          args: false
+          args: true
+        },
+        BAN: {
+          name: "ban",
+          aliases: ['ban'],
+          category: 'moderation',
+          description: "Ban a member",
+          usage: '<mention> | <ID>',
+          isDevRestricted: false,
+          permissionNeeded: "BAN_MEMBERS",
+          args: true
         }
       }
 }
