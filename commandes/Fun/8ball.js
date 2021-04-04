@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
     const response = Math.floor(Math.random() * replies.length)
 
     const embed = new Discord.MessageEmbed()
-        .setDescription(`<@${message.author.id}>`)
+        .setDescription(`<@${message.author.id}> 🎱`)
         .addField(`${lang.eightBallYourQuestion}`, `${args.join(" ")}`)   
         .addField(`${lang.eightBallTheAnswer}`, `${replies[response]}`)     
         .setColor("#FF8A33")

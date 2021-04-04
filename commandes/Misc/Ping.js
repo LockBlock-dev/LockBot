@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args, settings, lang) => {
 	m.delete()
 
 	const embed = new Discord.MessageEmbed()
-		.setDescription(`<@${message.author.id}> Pong ! 🏓`)
+		.setDescription(`<@${message.author.id}> 🏓 Pong ! `)
         .addField(`${lang.pingLatencyBot}`, `${ping} ms`)
 		.addField(`${lang.pingLatencyAPI}`, `${Math.round(bot.ws.ping)} ms`)
         .setColor("#FF8A33")
