@@ -11,15 +11,7 @@ module.exports.run = async (bot, message, args, lang) => {
         return message.channel.send(bot.error("You must provide an user ID !", message.author.id, lang))
     }
 
-    var user
-     
-    if (message.mentions.members.first()) {
-        user = message.mentions.members.first().user
-    }
-    
-    if (message.guild.members.cache.get(args[1])) {
-        user = message.guild.members.cache.get(args[1]).user
-    }       
+    const user = bot.memberFinder(message, args, 1)
 
     if (!user) {
         return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))
@@ -43,7 +35,7 @@ module.exports.run = async (bot, message, args, lang) => {
             await bot.addToBlacklist(newBlacklisted)
 
             await user.send(`${lang.blacklistBanWarning} ${reason}`).catch(() => {
-                message.channel.send(bot.error("User has DMs closed or has no mutual servers with the bot", message.author.id, lang))
+                message.channel.send(bot.error("User has DMs closed or has no mutual servers with the bot. I couldn't sent him the ban warning", message.author.id, lang))
              })
            
             break

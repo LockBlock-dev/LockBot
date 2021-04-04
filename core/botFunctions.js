@@ -21,7 +21,7 @@ module.exports = bot => {
         return days + (days == 1 ? lang.userInfoDay : lang.userInfoDays) 
     }
 
-    bot.memberFinder = (message, args, lang) => {
+    bot.memberFinder = (message, args, pos) => {
         var member
      
         if(args.length == 0) {
@@ -34,8 +34,8 @@ module.exports = bot => {
                 member = message.mentions.members.first().user
             }
     
-            if (message.guild.members.cache.get(args[0])) {
-                member = message.guild.members.cache.get(args[0]).user
+            if (message.guild.members.cache.get(args[pos])) {
+                member = message.guild.members.cache.get(args[pos]).user
             }       
         }
 

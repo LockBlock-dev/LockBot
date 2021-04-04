@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args, lang) => {
 
     const gamer = Math.round(Math.random() * 100)
 
-    const member = bot.memberFinder(message, args, lang)
+    const member = bot.memberFinder(message, args, 0)
 
     if (!member) {
         return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))
