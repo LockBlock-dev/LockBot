@@ -5,7 +5,7 @@ const { Collection } = require("discord.js")
 bot.commands = new Collection()
   
 module.exports.loadCommands = () => {
-  const dircommand = "./commandes"
+  const dircommand = "./commands"
   readdirSync(dircommand).forEach(dirs => {
     const commands = readdirSync(`${dircommand}/${dirs}/`).filter(files => files.endsWith(".js"))
 
