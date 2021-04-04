@@ -43,6 +43,17 @@ DEV_ID=YOUR_DISCORD_ID_HERE
 • Some languages are app translated, you can find errors.
 
 
+## Credits
+
+I couldn't do this without the help of :
+
+• DV4#1337 who made the [german](/core/languages/de.json) translation
+
+• MasterIO#4588
+
+• and everyone who invited and used my bot !
+
+
 ## Copyright
 
 See the [license](/LICENSE).
