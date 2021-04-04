@@ -8,7 +8,7 @@ const COMMANDS = {
           description: "Add all the servers where the bot is located that are not in the database",
           usage: '',
           isDevRestricted: true,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         BLACKLIST: {
@@ -18,7 +18,7 @@ const COMMANDS = {
           description: "Blacklist an user from the bot",
           usage: '<add> | <remove> <User ID> <reason)>',
           isDevRestricted: true,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         BROADCAST: {
@@ -28,7 +28,7 @@ const COMMANDS = {
           description: "Say a message in every server where the bot is",
           usage: '<text>',
           isDevRestricted: true,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         EVAL: {
@@ -38,7 +38,7 @@ const COMMANDS = {
           description: "Execute code",
           usage: '<code>',
           isDevRestricted: true,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         GUILDINVITE: {
@@ -48,7 +48,7 @@ const COMMANDS = {
           description: "Try to find an invite of the guild",
           usage: '<guild ID>',
           isDevRestricted: true,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         GUILDLEAVE: {
@@ -58,7 +58,7 @@ const COMMANDS = {
           description: "Make the bot leaves the guild",
           usage: '<guild ID>',
           isDevRestricted: true,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         RESTART: {
@@ -68,7 +68,7 @@ const COMMANDS = {
           description: "Restart the bot (works only if you start the bot with pm2)",
           usage: '',
           isDevRestricted: true,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         SPURGE: {
@@ -78,7 +78,7 @@ const COMMANDS = {
           description: "Clear only the bot messages",
           usage: '<amount>',
           isDevRestricted: true,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         }
       },
@@ -91,7 +91,7 @@ const COMMANDS = {
           description: "Text to ASCII Art",
           usage: '<text>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         EMOJIFY: {
@@ -101,7 +101,7 @@ const COMMANDS = {
           description: "Text to emotes",
           usage: '<text>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         EIGHTBALL: {
@@ -111,7 +111,7 @@ const COMMANDS = {
           description: "Answer your question",
           usage: '<question>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         GAMER: {
@@ -121,7 +121,7 @@ const COMMANDS = {
           description: "Are you a gamer ?",
           usage: '<mention>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         HACK: {
@@ -131,7 +131,7 @@ const COMMANDS = {
           description: "Corrupted",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         FBI : {
@@ -141,7 +141,7 @@ const COMMANDS = {
           description: "FBI !",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         MEME: {
@@ -151,7 +151,7 @@ const COMMANDS = {
           description: "Show a meme",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         HENTAI: {
@@ -161,7 +161,7 @@ const COMMANDS = {
           description: "Show a hentai",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         }
       },
@@ -174,7 +174,7 @@ const COMMANDS = {
           description: "Server infos",
           usage: '',
             isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         USERINFO: {
@@ -184,7 +184,7 @@ const COMMANDS = {
           description: "Infos of an user",
           usage: '<mention>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         BOTINFO: {
@@ -194,7 +194,7 @@ const COMMANDS = {
           description: "Bot infos",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         MEMBERCOUNT: {
@@ -204,7 +204,7 @@ const COMMANDS = {
           description: "Count of members",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         PROFILEPICTURE: {
@@ -214,7 +214,7 @@ const COMMANDS = {
           description: "Pfp of a member",
           usage: '<mention>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         }
       },
@@ -227,7 +227,7 @@ const COMMANDS = {
           description: "Vote for the bot",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         HELP: {
@@ -237,7 +237,7 @@ const COMMANDS = {
           description: "Help of the bot",
           usage: '<command>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },
         INVITE: {
@@ -247,7 +247,7 @@ const COMMANDS = {
           description: "Invite link of the bot",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         }
       },
@@ -260,7 +260,7 @@ const COMMANDS = {
           description: "Encode | Decode Base64",
           usage: 'encode <text> | decode <base64 text>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         PING: {
@@ -270,7 +270,7 @@ const COMMANDS = {
           description: "Pong !",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: false
         },  
         SAY: {
@@ -280,7 +280,7 @@ const COMMANDS = {
           description: "Repeat text",
           usage: '<text>',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         },
         POLL: {
@@ -290,7 +290,7 @@ const COMMANDS = {
           description: "Make a poll",
           usage: '(Simple) <Question> | OR | (Multiple) <Question, answer 1, answer 2,etc> MAX 10',
           isDevRestricted: false,
-          isUserAdmin: false,
+          permissionNeeded: "SEND_MESSAGES",
           args: true
         }
       },
@@ -303,7 +303,7 @@ const COMMANDS = {
           description: "Modify guild settings",
           usage: 'prefix <value> | lang <value>',
           isDevRestricted: false,
-          isUserAdmin: true,
+          permissionNeeded: "MANAGE_GUILD",
           args: true
         },
         NUKE: {
@@ -313,7 +313,7 @@ const COMMANDS = {
           description: "Nuke a channel",
           usage: '',
           isDevRestricted: false,
-          isUserAdmin: true,
+          permissionNeeded: "MANAGE_CHANNELS",
           args: false
         },
         KICK: {
@@ -323,7 +323,7 @@ const COMMANDS = {
           description: "Kick a member",
           usage: '<mention>',
           isDevRestricted: false,
-          isUserAdmin: true,
+          permissionNeeded: "KICK_MEMBERS",
           args: false
         }
       }

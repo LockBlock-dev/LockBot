@@ -69,8 +69,8 @@
     "configLangNotString": "Languages only contain letters !",
     
     "messageEventBotPing": "Hello, I am a robot. I don't have steel legs or laser beams, but I can help you ! \nMy current prefix on this server is :",
-    "messageEventMissingPermManageGuild": "You do not have the `MANAGE_GUILD` permission to execute this command !",
-    "messageEventMissingPermManageMessages": "You don't have the `MANAGE_MESSAGES` permission to execute this command !",
+    "messageEventMissingPerm1": "You do not have the ",
+    "messageEventMissingPerm2": " permission to execute this command !",
     "messageEventCommandNeedArg": "You need an argument for this command, ",
     "messageEventCommandUsage": "Here's how to use the command :",
 

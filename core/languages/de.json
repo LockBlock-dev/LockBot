@@ -69,8 +69,8 @@
     "configLangNotString": "Sprachen können nur Buchstaben enthalten!",
     
     "messageEventBotPing": "Hallo, ich bin ein Bot. Ich habe keine Stahlbeine oder Laserstrahlen, aber ich kann Ihnen helfen ! \nMeine aktuelle Präfix auf diesem Server lautet:",
-    "messageEventMissingPermManageGuild": "Sie haben nicht die Berechtigung `MANAGE_GUILD` um diesen Befehl auszuführen !",
-    "messageEventMissingPermManageMessages": "Sie haben nicht die Berechtigung `MANAGE_MESSAGES` um diesen Befehl auszuführen !",
+    "messageEventMissingPerm1": "Sie haben nicht die Berechtigung ",
+    "messageEventMissingPerm2": " um diesen Befehl auszuführen!",
     "messageEventCommandNeedArg": "Sie benötigen ein Argument für diesen Befehl",
     "messageEventCommandUsage": "So verwenden Sie den Befehl:",
 

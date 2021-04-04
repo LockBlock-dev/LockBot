@@ -50,9 +50,10 @@ bot.on("message", async message => {
       }
     }
 
-    if (commandFile.help.isUserAdmin && !message.member.hasPermission('MANAGE_GUILD')) {
+    if (commandFile.help.permissionNeeded && !message.member.hasPermission(commandFile.help.permissionNeeded)) {
+      const errorMessage = `${lang.messageEventMissingPerm1}\`${commandFile.help.permissionNeeded}\`${lang.messageEventMissingPerm2}`
 
-      return message.channel.send(bot.error(lang.messageEventMissingPermManageGuild, message.author.id, lang))
+      return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
     if (commandFile.help.args && !args.length) {
