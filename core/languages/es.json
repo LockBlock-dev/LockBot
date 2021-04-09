@@ -77,6 +77,15 @@
     "nukeWarning": "¿Quieres destruir este canal?",
     "nukeDescription": "Todos los mensajes serán eliminados",
 
+    "kickSuccess": "Member pateó:",
+    "kickFailed": "No pude patear este miembro: ",
+
+    "banSuccess": "Miembro prohibió:",
+    "banFailed": "No podría prohibir este miembro: ",
+
+    "unbanSuccess": "Miembro no le prohibido:",
+    "unbanFailed": "No pude deshacer este miembro: ",
+
     "errorMessage": "Ocurrió un error:",
     "errorUserNotFound": "No pude encontrar a este usuario!",
     "errorHarmYourself1": "¡No puedes ",

@@ -288,7 +288,7 @@ const COMMANDS = {
           aliases: ['sondage','ask'],
           category: 'misc',
           description: "Make a poll",
-          usage: '(Simple) <Question> | OR | (Multiple) <Question, answer 1, answer 2,etc> MAX 10',
+          usage: '<Question> | OR | <Question, answer 1, answer 2, etc> MAX 10',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
           args: true
@@ -332,6 +332,16 @@ const COMMANDS = {
           category: 'moderation',
           description: "Ban a member",
           usage: '<mention> | <ID>',
+          isDevRestricted: false,
+          permissionNeeded: "BAN_MEMBERS",
+          args: true
+        },
+        UNBAN: {
+          name: "unban",
+          aliases: ['deban'],
+          category: 'moderation',
+          description: "Unban a member",
+          usage: '<@ID> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "BAN_MEMBERS",
           args: true

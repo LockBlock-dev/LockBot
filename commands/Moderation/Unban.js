@@ -1,36 +1,44 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = (bot, message, args, lang) => {
+module.exports.run = async (bot, message, args, lang) => {
 
-    const member = bot.memberFinder(message, args, 0, false)
+    const member = args[0]
 
-    if (!member) {
+    var ID
+
+    if (member.includes('@')) {
+        ID = member.replace('<@','').replace('>','')
+    } else {
+        ID = member
+    }
+
+    if (!ID || ID.length !== 18) {
         return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))
     }
 
-    if (member.id == message.author.id) {
+    if (ID == message.author.id) {
         const errorMessage = `${lang.errorHarmYourself1}${COMMANDS.MODERATION.BAN.name}${lang.errorHarmYourself2}`
         return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
-    const guildMember = message.guild.members.cache.get(member.id)
+    try {
+        message.guild.members.unban(ID)
 
-    if (guildMember.bannable) {
-        guildMember.ban()
+        const user = await bot.users.fetch(ID)
 
         const embed = new Discord.MessageEmbed()
         .setDescription(`<@${message.author.id}>`)
-        .setThumbnail(member.avatarURL({ format: 'png', dynamic: true}))
-        .addField(lang.banSuccess, `<@${member.id}>`)
+        .setThumbnail(user.avatarURL({ format: 'png', dynamic: true}))
+        .addField(lang.unbanSuccess, `<@${ID}>`)
         .setColor("#FF8A33")
         .setTimestamp()
         .setFooter("© LockBot")
             
         message.channel.send(embed)
 
-    } else {
-        const errorMessage = `${lang.banFailed}<@${member.id}>`
+    } catch (e) {
+        const errorMessage = `${lang.unbanFailed}<@${ID}>`
         message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
@@ -38,4 +46,4 @@ module.exports.run = (bot, message, args, lang) => {
 
 
 
-module.exports.help = COMMANDS.MODERATION.BAN
+module.exports.help = COMMANDS.MODERATION.UNBAN

@@ -77,6 +77,15 @@
     "nukeWarning": "Do you want to nuke this channel ?",
     "nukeDescription": "All messages will be deleted",
 
+    "kickSuccess": "Member kicked :",
+    "kickFailed": "I couldn't kick this member : ",
+
+    "banSuccess": "Member banned :",
+    "banFailed": "I couldn't ban this member : ",
+
+    "unbanSuccess": "Member unbanned :",
+    "unbanFailed": "I couldn't unban this member : ",
+
     "errorMessage": "An error happened :",
     "errorUserNotFound": "I couldn't find this user !",
     "errorHarmYourself1": "You can't ",

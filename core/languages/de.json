@@ -77,6 +77,15 @@
     "nukeWarning": "Möchten Sie diesen Kanal nuken ?",
     "nukeDescription": "Alle Nachrichten werden gelöscht",
 
+    "kickSuccess": "Mitglied gekickt :",
+    "kickFailed": "Ich konnte diesen Mitglied nicht kicken : ",
+
+    "banSuccess": "Mitglied gebannt :",
+    "banFailed": "Ich konnte diesen Mitglied nicht bannen : ",
+
+    "unbanSuccess": "Mitglied entbannt :",
+    "unbanFailed": "Ich konnte diesen Mitglied nicht entbannen : ",
+
     "errorMessage": "Ein Fehler ist aufgetreten:",
     "errorUserNotFound": "Ich konnte diesen Benutzer nicht finden!",
     "errorHarmYourself1": "Sie können sich nicht selbst ",

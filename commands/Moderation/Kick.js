@@ -16,22 +16,25 @@ module.exports.run = (bot, message, args, lang) => {
 
     const guildMember = message.guild.members.cache.get(member.id)
 
-    const embed = new Discord.MessageEmbed()
-
     if (guildMember.kickable) {
-        //guildMember.kick()
-        embed.addField("kicked member :", `<@${member.id}>`)
-    } else {
-        embed.addField("cant kick :", `<@${member.id}>`)
-    }
+        guildMember.kick()
 
+        const embed = new Discord.MessageEmbed()
+        .setDescription(`<@${message.author.id}>`)
+        .setThumbnail(member.avatarURL({ format: 'png', dynamic: true}))
+        .addField(lang.kickSuccess, `<@${member.id}>`)
+        .setColor("#FF8A33")
+        .setTimestamp()
+        .setFooter("© LockBot")
+            
+        message.channel.send(embed)
+
+    } else {
+        const errorMessage = `${lang.kickFailed}<@${member.id}>`
+        message.channel.send(bot.error(errorMessage, message.author.id, lang))
+    }
     
-    embed
-    .setDescription(`<@${message.author.id}>`)
-    .setThumbnail(member.avatarURL({ format: 'png', dynamic: true, size: 4096 }))
-    .setColor("#FF8A33")
     
-    message.channel.send(embed)
 
 }
 
