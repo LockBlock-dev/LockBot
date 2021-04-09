@@ -71,6 +71,8 @@
     "messageEventBotPing": "Hola, soy un robot. No tengo patas de acero ni rayos láser, ¡pero puedo ayudarte! \nMi prefijo actual en este servidor es :",
     "messageEventMissingPerm1": "¡No tiene el permiso ",
     "messageEventMissingPerm2": " para ejecutar este comando!",
+    "messageEventBotMissingPerm1": "¡No tengo el permiso ",
+    "messageEventBotMissingPerm2": " para ejecutar este comando!",
     "messageEventCommandNeedArg": "Necesita un argumento para este comando",
     "messageEventCommandUsage": "Aquí se explica cómo utilizar el comando :",
 
