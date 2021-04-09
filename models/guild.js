@@ -12,6 +12,10 @@ const guildSchema = mongoose.Schema({
     guildLang: {
         "type": String,
         "default": defaults.lang
+    },
+    guildAnonMode: {
+        "type": Boolean,
+        "default": defaults.anonMode
     }
 })
 
