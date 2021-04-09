@@ -8,29 +8,29 @@ module.exports.run = async (bot, message, args, lang) => {
     var ID
 
     if (member.includes('@')) {
-        ID = member.replace('<@','').replace('>','')
+        ID = member.replace('@','').replace('<','').replace('>','')
     } else {
         ID = member
     }
 
-    if (!ID || ID.length !== 18) {
+    const user = await bot.users.fetch(ID)
+
+    if (!user) {
         return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))
     }
 
-    if (ID == message.author.id) {
+    if (user.id == message.author.id) {
         const errorMessage = `${lang.errorHarmYourself1}${COMMANDS.MODERATION.BAN.name}${lang.errorHarmYourself2}`
         return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
     try {
-        message.guild.members.unban(ID)
-
-        const user = await bot.users.fetch(ID)
+        message.guild.members.unban(user.id)
 
         const embed = new Discord.MessageEmbed()
         .setDescription(`<@${message.author.id}>`)
         .setThumbnail(user.avatarURL({ format: 'png', dynamic: true}))
-        .addField(lang.unbanSuccess, `<@${ID}>`)
+        .addField(lang.unbanSuccess, `<@${user.id}>`)
         .setColor("#FF8A33")
         .setTimestamp()
         .setFooter("© LockBot")
