@@ -11,6 +11,16 @@ const COMMANDS = {
           permissionNeeded: "SEND_MESSAGES",
           args: false
         },
+        MUG: {
+          name: "mug",
+          aliases: ['massupdateguilds'],
+          category: 'dev',
+          description: "Update all guilds with a new settings",
+          usage: '',
+          isDevRestricted: true,
+          permissionNeeded: "SEND_MESSAGES",
+          args: false
+        },
         BLACKLIST: {
           name: "blacklist",
           aliases: ['bl'],
