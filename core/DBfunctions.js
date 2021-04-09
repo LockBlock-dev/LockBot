@@ -47,9 +47,13 @@ module.exports = bot => {
                 data[key] = settings[key]
             }
         }
-        await data.updateOne(settings)
+
+        const res = await data.updateOne(settings)
         data = await bot.getGuild(id)
-        console.log(`${chalk.green("[Database]")} Guild updated : ${data.guildID} ${data.guildName}.`)
+
+        if (res.nModified > 0) {
+            console.log(`${chalk.green("[Database]")} Guild updated : ${data.guildID} ${data.guildName}. Settings updated : ${JSON.stringify(settings)}`)
+        }
     }
 
     bot.deleteGuild = async guild => {
