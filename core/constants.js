@@ -189,7 +189,7 @@ const COMMANDS = {
         },
         USERINFO: {
           name: "userinfos",
-          aliases: ['ui','uinfos','userinfo','uinfo'],
+          aliases: ['ui','uinfos','userinfo','uinfo','whois'],
           category: 'info',
           description: "Infos of an user",
           usage: '<mention> | <ID>',
@@ -355,7 +355,17 @@ const COMMANDS = {
           isDevRestricted: false,
           permissionNeeded: "BAN_MEMBERS",
           args: true
-        }
+        },
+        SLOWMODE: {
+          name: "slowmode",
+          aliases: ['slowmod'],
+          category: 'moderation',
+          description: "Set the slowmode for a channel",
+          usage: '<duration (1h1m12s / 3672s)> | <off>',
+          isDevRestricted: false,
+          permissionNeeded: "MANAGE_CHANNELS",
+          args: true
+        },
       }
 }
   

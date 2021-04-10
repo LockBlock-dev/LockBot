@@ -88,6 +88,11 @@
     "unbanSuccess": "е одбаниран :",
     "unbanFailed": "не можев да го банирам : ",
 
+    "slowmodeWasDisabled": "исклучено",
+    "slowmodeOldDuration": "Старо времетраење:",
+    "slowmodeNewDuration": "Ново времетраење:",
+    "slowmodeDurationTooBig": "Времетраењето не може да биде поголемо од 21600 секунди!",
+
     "errorMessage": "ерор :",
     "errorUserNotFound": "неможев да го најдам !",
     "errorHarmYourself1": "не можеш ",

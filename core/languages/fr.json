@@ -87,6 +87,11 @@
     "unbanSuccess": "Membre débanni :",
     "unbanFailed": "Je n'ai pas pu débannir ce membre : ",
 
+    "slowmodeWasDisabled": "désactivé",
+    "slowmodeOldDuration": "Ancienne durée :",
+    "slowmodeNewDuration": "Nouvelle durée :",
+    "slowmodeDurationTooBig": "La durée ne peut pas être supérieure à 21600 secondes !",
+
     "errorMessage": "Une erreur s'est produite :",
     "errorUserNotFound": "Je n'ai pas pu trouver cet utilisateur !",
     "errorHarmYourself1": "Vous ne pouvez pas vous ",

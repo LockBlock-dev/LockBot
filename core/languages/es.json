@@ -88,6 +88,11 @@
     "unbanSuccess": "Miembro no le prohibido:",
     "unbanFailed": "No pude deshacer este miembro: ",
 
+    "slowmodeWasDisabled": "discapacitado",
+    "slowmodeOldDuration": "Duración antigua:",
+    "slowmodeNewDuration": "Nueva duración:",
+    "slowmodeDurationTooBig": "¡La duración no puede ser mayor que 21600 segundos!",
+
     "errorMessage": "Ocurrió un error:",
     "errorUserNotFound": "No pude encontrar a este usuario!",
     "errorHarmYourself1": "¡No puedes ",

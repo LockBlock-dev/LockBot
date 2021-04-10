@@ -88,6 +88,11 @@
     "unbanSuccess": "Member unbanned :",
     "unbanFailed": "I couldn't unban this member : ",
 
+    "slowmodeWasDisabled": "disabled",
+    "slowmodeOldDuration": "Old duration :",
+    "slowmodeNewDuration": "New duration :",
+    "slowmodeDurationTooBig": "Duration can't be greater than 21600 seconds !",
+
     "errorMessage": "An error happened :",
     "errorUserNotFound": "I couldn't find this user !",
     "errorHarmYourself1": "You can't ",
