@@ -78,6 +78,8 @@
 
     "nukeWarning": "Do you want to nuke this channel ?",
     "nukeDescription": "All messages will be deleted",
+    "nukeAborted": "Nuke command aborted :",
+    "nukeAbortedWhy": "You took too much time to answer",
 
     "kickSuccess": "Member kicked :",
     "kickFailed": "I couldn't kick this member : ",

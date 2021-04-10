@@ -78,6 +78,8 @@
 
     "nukeWarning": "¿Quieres destruir este canal?",
     "nukeDescription": "Todos los mensajes serán eliminados",
+    "nukeAborted": "Comando nuclear abortado:",
+    "nukeAbortedWhy": "Te tomó mucho tiempo responder",
 
     "kickSuccess": "Member pateó:",
     "kickFailed": "No pude patear este miembro: ",

@@ -78,6 +78,8 @@
 
     "nukeWarning": "Möchten Sie diesen Kanal nuken ?",
     "nukeDescription": "Alle Nachrichten werden gelöscht",
+    "nukeAborted": "Nuke Befehl abgebrochen :",
+    "nukeAbortedWhy": "Sie brauchten zu lange um zu antworten",
 
     "kickSuccess": "Mitglied gekickt :",
     "kickFailed": "Ich konnte diesen Mitglied nicht kicken : ",

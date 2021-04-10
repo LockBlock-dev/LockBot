@@ -77,6 +77,8 @@
 
     "nukeWarning": "Voulez-vous nuke ce salon ?",
     "nukeDescription": "L'entiereté des messages seront supprimés",
+    "nukeAborted": "Commande nuke abandonnée :",
+    "nukeAbortedWhy": "Vous avez pris trop de temps pour répondre",
 
     "kickSuccess": "Membre kické :",
     "kickFailed": "Je n'ai pas pu kicker ce membre : ",

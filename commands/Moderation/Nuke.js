@@ -45,7 +45,7 @@ module.exports.run = async (bot, message, args, lang) => {
 
                     setTimeout(() => {
                         newClonedChannel.lockPermissions()
-                            .catch(error => " ")
+                            .catch(error => "")
 
                     }, 1000)
                 }, 1000)
@@ -54,11 +54,21 @@ module.exports.run = async (bot, message, args, lang) => {
             case "❌":
                 break
         }
-    })
+    }).catch(error => "")
 
     setTimeout(() => {
         reactionMessage.delete()
-    }, 10000)
+
+        const embed2 = new Discord.MessageEmbed()
+        .setDescription(`<@${message.author.id}>`)
+        .addField(lang.nukeAborted, lang.nukeAbortedWhy)
+        .setColor("FF0000")
+        .setTimestamp()
+        .setFooter("© LockBot")
+        
+        message.channel.send(embed2)
+    }, 12000)
+
 }
 
 
