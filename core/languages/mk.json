@@ -92,6 +92,7 @@
     "slowmodeOldDuration": "Старо времетраење:",
     "slowmodeNewDuration": "Ново времетраење:",
     "slowmodeDurationTooBig": "Времетраењето не може да биде поголемо од 21600 секунди!",
+    "slowmodeNotADuration": "Ова не е валидно времетраење!",
 
     "errorMessage": "ерор :",
     "errorUserNotFound": "неможев да го најдам !",

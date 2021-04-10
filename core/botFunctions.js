@@ -21,6 +21,15 @@ module.exports = bot => {
         return days + (days == 1 ? lang.userInfoDay : lang.userInfoDays) 
     }
 
+    bot.sToHMS = (time) => {
+        t = Number(time)
+        var h = Math.floor(t / 3600)
+        var m = Math.floor(t % 3600 / 60)
+        var s = Math.floor(t % 3600 % 60)
+
+        return `${h}h ${m}m ${s}s`
+    }
+
     bot.memberFinder = (message, args, pos) => {
         var member
      

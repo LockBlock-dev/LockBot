@@ -91,6 +91,7 @@
     "slowmodeOldDuration": "Ancienne durée :",
     "slowmodeNewDuration": "Nouvelle durée :",
     "slowmodeDurationTooBig": "La durée ne peut pas être supérieure à 21600 secondes !",
+    "slowmodeNotADuration": "Ceci n'est pas une durée valide !",
 
     "errorMessage": "Une erreur s'est produite :",
     "errorUserNotFound": "Je n'ai pas pu trouver cet utilisateur !",
