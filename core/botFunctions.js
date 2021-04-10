@@ -42,4 +42,25 @@ module.exports = bot => {
         return member
     }
 
+    bot.channelFinder = (message, args, pos) => {
+        var channel
+     
+        if(args.length == 0) {
+
+            channel = message.channel
+
+        } else {
+
+            if (message.mentions.channels.first()) {
+                channel = message.mentions.channels.first()
+            }
+    
+            if (message.guild.channels.cache.get(args[pos])) {
+                channel = message.guild.channels.cache.get(args[pos])
+            }       
+        }
+
+        return channel
+    }
+
 }
