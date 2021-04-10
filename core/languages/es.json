@@ -67,6 +67,10 @@
     "configLangNew": "Nuevo idioma:",
     "configLangUnknown": "¡Este idioma no está disponible!",
     "configLangNotString": "¡Los idiomas solo contienen letras!",
+    "configAnonArgs": "¡El modo anónimo es solo un argumento!",
+    "configAnonEmpty": "¡El modo anónimo debe ser \"sí\" o \"no\"!",
+    "configAnonOld": "Antiguo modo anónimo:",
+    "configAnonNew": "Nuevo modo anónimo:",
     
     "messageEventBotPing": "Hola, soy un robot. No tengo patas de acero ni rayos láser, ¡pero puedo ayudarte! \nMi prefijo actual en este servidor es :",
     "messageEventMissingPerm1": "¡No tiene el permiso ",

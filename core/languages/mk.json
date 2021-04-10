@@ -67,6 +67,10 @@
     "configLangNew": "New language :",
     "configLangUnknown": "This language is not available!",
     "configLangNotString": "Languages only contain letters !",
+    "configAnonArgs": "Анонимниот режим е само аргумент!",
+    "configAnonEmpty": "Анонимниот режим мора да биде \"да\" или \"не\"!",
+    "configAnonOld": "Стариот анонимен режим:",
+    "configAnonNew": "Нов анонимен режим: ",
     
     "messageEventBotPing": "Здраво, јас сум робот. немам железни нози или ласерски раци, но можам да ти помогнам ! \nмојот префих сега е :",
     "messageEventMissingPerm1": "немаш ",

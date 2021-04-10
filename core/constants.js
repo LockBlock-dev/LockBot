@@ -310,8 +310,8 @@ const COMMANDS = {
           name: "config",
           aliases: ['settings','paramètres','parametres','config'],
           category: 'moderation',
-          description: "Modify guild settings",
-          usage: 'prefix <value> | lang <value>',
+          description: "Modify guild settings | anonymous mode is for +say command (display username or not)",
+          usage: 'prefix <value> | lang <value> | anon <yes/no>',
           isDevRestricted: false,
           permissionNeeded: "MANAGE_GUILD",
           args: true

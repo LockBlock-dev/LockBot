@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
     const oldPrefix = settings.guildPrefix
     const oldLang = settings.guildLang
+    var oldAnonMode = settings.guildAnonMode
     const getSetting = args[0]
     const newValue = args[1]
   
@@ -87,6 +88,53 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                 }
               })
                               
+            break
+        }
+        case "anon": {
+
+            if (!args[1]){
+                return message.channel.send(bot.error(lang.configAnonEmpty, message.author.id, lang))
+            }
+
+            if(args[2]) {
+                return message.channel.send(bot.error(lang.configAnonArgs, message.author.id, lang))
+              }
+               
+            if(typeof args[1] !== "string"){
+                return message.channel.send(bot.error(lang.configAnonEmpty, message.author.id, lang))
+            }
+
+            if (newValue) {
+
+                if (newValue == "yes") {
+                    await bot.updateGuild(message.guild.id, { guildAnonMode: true})
+
+                } else if (newValue == "no") {
+                    await bot.updateGuild(message.guild.id, { guildAnonMode: false})
+                }
+
+                var settings = await bot.getGuild(message.guild.id)
+
+                if (oldAnonMode == true) {
+                    oldAnonMode = "yes"
+                    newAnonMode = "no"
+
+                } else if (oldAnonMode == false) {
+                    oldAnonMode = "no"
+                    newAnonMode = "yes"
+                }
+
+                const embed = new Discord.MessageEmbed()
+                    .setDescription(`<@${message.author.id}>`)
+                    .addField(lang.configAnonOld, oldAnonMode)
+                    .addField(lang.configAnonNew, newAnonMode)
+                    .setColor("#FF8A33")
+                    .setTimestamp()
+	                .setFooter("© LockBot")
+
+                message.channel.send(embed)
+            }
+
             break
         }
         case "blacklist": {

@@ -67,6 +67,10 @@
     "configLangNew": "Neue Sprache:",
     "configLangUnknown": "Diese Sprache ist nicht verfügbar!",
     "configLangNotString": "Sprachen können nur Buchstaben enthalten!",
+    "configAnonArgs": "Anonym Modus ist nur ein Argument !",
+    "configAnonEmpty": "Anonym Modus muss entweder \"Ja\" oder \"Nein\" entsprechen !",
+    "configAnonOld": "Altes anonym Modus :",
+    "configAnonNew": "Neues anonym Modus :",
     
     "messageEventBotPing": "Hallo, ich bin ein Bot. Ich habe keine Stahlbeine oder Laserstrahlen, aber ich kann Ihnen helfen ! \nMeine aktuelle Präfix auf diesem Server lautet:",
     "messageEventMissingPerm1": "Sie haben nicht die Berechtigung ",
