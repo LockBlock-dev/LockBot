@@ -1,0 +1,95 @@
+{
+    "eightBallAnswers": ["Try later", "Try again", "No opinion", "It's your destiny", "The die is cast", "One in two", "Ask your question again", "According to me yes", " It is certain ", " Yes absolutely ", " You can count on it ", " Without a doubt ", " Very likely ", " Yes ", " It's a good start ", " It's no ", " Unlikely ", " Don't dream ", " Don't count ", " Impossible "],
+    "eightBallYourQuestion": "Your question was :",
+    "eightBallTheAnswer": "The answer is :",
+
+    "asciiMaxCaracters": "20 букви махимум",
+
+    "blacklistBanWarning": "ти си баниран од ботот за :",
+
+    "base64ContentLength": "50 букви махимум !",
+
+    "gamerometer1": " е ",
+    "gamerometer2": "% е гамер !",
+
+    "hack": "стварно ли поверува? ? :joy:",
+
+    "hentaiChannelNotNSFW": "Овој канал не е NSFW !",
+
+    "botInfoName": "Име од ботот",
+    "botInfoServers": "Сервери",
+    "botInfoMembers": "Членови",
+    "botInfoCreationDate": "време на креација",
+    "botInfosLanguages": "јазици",
+
+    "profilePicture": "Avatar of",
+
+    "serverInfoName": "Име",
+    "serverInfoMembers": "Членови",
+    "serverInfoCreationDate": "бреме на креација",
+
+    "userInfoDay": " ден",
+    "userInfoDays": " дена",
+    "userInfoUsername": "име",
+    "userInfoUserIsNotBot": "човек",
+    "userInfoBoostYes": "да",
+    "userInfoBoostNo": "не",
+    "userInfoNickname": "име",
+    "userInfoNoNickname": "никој",
+    "userInfoStatus": "Status",
+    "userInfoJoinedDate": "Влезе во серверот на",
+    "userInfoCreatedDate": "Го направи акаѕнтот на",
+
+    "helpSupportServer": "ако ти треба помош блези во суппорт серверот :",
+    "helpCommandName": "име :",
+    "helpCommandDescription": "дескрипција :",
+    "helpCommandUsage": "користење :",
+    "helpCommandAliases": "Aliases :",
+    "helpCommandPermissions": "Пермисии :",
+
+    "vote": "Вотај за ботот да ми помогнеш ! ",
+
+    "pingLatencyBot": "Bot latency :",
+    "pingLatencyAPI": "API latency :",
+
+    "pollOptionsListLength": "10 choices maximum",
+    "pollSimpleTitle": "Poll :",
+
+    "configPrefixEmpty": "Префихот мора да биди барем 1 буква",
+    "configPrefixArgs": "префихот мора да биде интерпукциски знак !",
+    "configPrefixLengthMax": "Префихот може да биде махимум 3 букви !",
+    "configPrefixOld": "стар префих :",
+    "configPrefixNew": "нов префих :",
+    "configPrefixNotString": "префиџот се состој од букви и интерпукциски знаци",
+    "configLangArgs": "Language is only an argument !",
+    "configLangTooLong": "Languages are only 2 characters long !",
+    "configLangOld": "Old language :",
+    "configLangNew": "New language :",
+    "configLangUnknown": "This language is not available!",
+    "configLangNotString": "Languages only contain letters !",
+    
+    "messageEventBotPing": "Здраво, јас сум робот. немам железни нози или ласерски раци, но можам да ти помогнам ! \nмојот префих сега е :",
+    "messageEventMissingPerm1": "немаш ",
+    "messageEventMissingPerm2": " Немаш довојно премисии !",
+    "messageEventBotMissingPerm1": "немам ",
+    "messageEventBotMissingPerm2": " премисии за оваа команда !",
+    "messageEventCommandNeedArg": "You need an argument for this command, ",
+    "messageEventCommandUsage": "еве како да ја користиш командата :",
+
+    "nukeWarning": "сакаш ли да го избришеш овој канал ?",
+    "nukeDescription": "Сите пораки ке бидат избришани",
+
+    "kickSuccess": "е кикнат :",
+    "kickFailed": "неможев да го кикнам, : ",
+
+    "banSuccess": "е баниран :",
+    "banFailed": "неможев да го банирам : ",
+
+    "unbanSuccess": "е одбаниран :",
+    "unbanFailed": "не можев да го банирам : ",
+
+    "errorMessage": "ерор :",
+    "errorUserNotFound": "неможев да го најдам !",
+    "errorHarmYourself1": "не можеш ",
+    "errorHarmYourself2": " сам !"
+}
