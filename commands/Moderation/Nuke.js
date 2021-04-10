@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args, lang) => {
     await reactionMessage.react("✔️")
     await reactionMessage.react("❌")
 
-    reactionMessage.awaitReactions(Filter, {max: 1, time: 30000, errors: ["time"]}).then(collected => {
+    reactionMessage.awaitReactions(Filter, {max: 1, time: 10000, errors: ["time"]}).then(collected => {
 
         const reaction = collected.first()
         
