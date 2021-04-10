@@ -43,6 +43,11 @@ DEV_ID=YOUR_DISCORD_ID_HERE
 • Some languages are app translated and can contains errors.
 
 
+## Contributing
+
+See the [CONTRIBUTING.md](/CONTRIBUTING.md).
+
+
 ## Credits
 
 I couldn't do this without the help of :
