@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args, lang) => {
 
                 nukedchannel.clone().then(nukedchannel.delete())
 
-                setTimeout(function(){ 
+                setTimeout(() => { 
                     const newClonedChannel = guild.channels.cache.find(channel => channel.name === nukedchannelname)
 
                     const newClonedChannelID = newClonedChannel.id
@@ -43,7 +43,7 @@ module.exports.run = async (bot, message, args, lang) => {
 
                     bot.channels.cache.get(newClonedChannelID).send("Nuked :ok_hand: \nhttps://tenor.com/tZlA.gif")
 
-                    setTimeout(function(){
+                    setTimeout(() => {
                         newClonedChannel.lockPermissions()
                             .catch(error => " ")
 
@@ -55,6 +55,10 @@ module.exports.run = async (bot, message, args, lang) => {
                 break
         }
     })
+
+    setTimeout(() => {
+        reactionMessage.delete()
+    }, 10000)
 }
 
 
