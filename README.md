@@ -52,11 +52,13 @@ See the [CONTRIBUTING.md](/CONTRIBUTING.md).
 
 I couldn't do this without the help of :
 
-• DV4 who made the [german](/core/languages/de.json) translation
+• MasterIO, DeXoZ, Hawked who supported me in this project
 
 • JunkMeal who helped me with the [meme](/commands/Fun/Meme.js) command
 
-• MasterIO, DeXoZ, Hawked who supported me in this project
+• DV4 who made the [german](/core/languages/de.json) translation
+
+• Frisky who made the [macedonian](/core/languages/mk.json) translation
 
 • and everyone who invited and used my bot !
 
