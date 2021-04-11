@@ -32,7 +32,7 @@ module.exports.run = (bot, message, args, lang) => {
     .addField("Booster", boost, true)
     .addField("ID", member.id,true)
     .addField(lang.userInfoJoinedDate, `${guildMember.joinedAt.toUTCString().substr(0, 16)} (${bot.checkDays(guildMember.joinedAt, lang)})`)
-    .addField(lang.userInfoCreatedDate, `${member.createdAt.toUTCString().substr(0, 16)} (${bot.checkDays(guildMember.joinedAt, lang)})`)
+    .addField(lang.userInfoCreatedDate, `${member.createdAt.toUTCString().substr(0, 16)} (${bot.checkDays(member.createdAt, lang)})`)
     .addField("Roles", `${guildMember.roles.cache.filter(r => r.id !== message.guild.id).map(roles => `\`${roles.name}\``).join(" **|** ") || "Pas de rôles"}`)
     .setColor("#FF8A33")
     .setFooter("© LockBot")
