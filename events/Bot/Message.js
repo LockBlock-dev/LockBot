@@ -50,22 +50,24 @@ bot.on("message", async message => {
       }
     }
 
+    var errorMessage
+
     if (commandFile.help.permissionNeeded && !message.member.hasPermission(commandFile.help.permissionNeeded)) {
-      const errorMessage = `${lang.messageEventMissingPerm1}\`${commandFile.help.permissionNeeded}\`${lang.messageEventMissingPerm2}`
+      errorMessage = `${lang.messageEventMissingPerm1}\`${commandFile.help.permissionNeeded}\`${lang.messageEventMissingPerm2}`
 
       return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
     if (commandFile.help.permissionNeeded && !message.guild.me.hasPermission(commandFile.help.permissionNeeded)) {
-      const errorMessage = `${lang.messageEventBotMissingPerm1}\`${commandFile.help.permissionNeeded}\`${lang.messageEventBotMissingPerm2}`
+      errorMessage = `${lang.messageEventBotMissingPerm1}\`${commandFile.help.permissionNeeded}\`${lang.messageEventBotMissingPerm2}`
 
       return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
     if (commandFile.help.args && !args.length) {
-      var noArgsReply = `${lang.messageEventCommandNeedArg} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
+      errorMessage = `${lang.messageEventCommandNeedArg} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
    
-      return message.channel.send(bot.error(noArgsReply, message.author.id, lang))
+      return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
     const someUser = await bot.getBlacklistedUser(message.author.id)
