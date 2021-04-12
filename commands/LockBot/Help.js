@@ -57,6 +57,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 		.addField(lang.helpCommandName,`${commandFile.help.name}`)
 		.addField(lang.helpCommandDescription,`${commandFile.help.description}`)
 		.addField(lang.helpCommandUsage,`${settings.guildPrefix}${commandFile.help.name} ${commandFile.help.usage}`)
+		.addField(lang.helpCommandExample,`${settings.guildPrefix}${commandFile.help.name} ${commandFile.help.example}`)
 		.addField(lang.helpCommandAliases,`${commandFile.help.aliases.join(', ')}`)
 
 		if (commandFile.help.isUserAdmin) {

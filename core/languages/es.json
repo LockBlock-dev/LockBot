@@ -44,6 +44,7 @@
     "helpCommandName": "Nombre:",
     "helpCommandDescription": "Descripción:",
     "helpCommandUsage": "Uso:",
+    "helpCommandExample": "Ejemplo :",
     "helpCommandAliases": "Alias:",
     "helpCommandPermissions": "Permisos:",
 
