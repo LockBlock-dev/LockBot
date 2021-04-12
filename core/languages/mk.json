@@ -77,7 +77,9 @@
     "messageEventMissingPerm2": " Немаш довојно премисии !",
     "messageEventBotMissingPerm1": "немам ",
     "messageEventBotMissingPerm2": " премисии за оваа команда !",
-    "messageEventCommandNeedArg": "You need an argument for this command, ",
+    "messageEventCommandNeedArg1": "Ти треба ",
+    "messageEventCommandNeedArg2one": " аргумент за оваа команда, ",
+    "messageEventCommandNeedArg2multiple": " аргументи за оваа команда,  ",
     "messageEventCommandUsage": "еве како да ја користиш командата :",
 
     "nukeWarning": "сакаш ли да го избришеш овој канал ?",

@@ -9,7 +9,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         MUG: {
           name: "mug",
@@ -19,7 +19,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         BLACKLIST: {
           name: "blacklist",
@@ -29,7 +29,7 @@ const COMMANDS = {
           usage: '<add> | <remove> <mention> | <ID> <reason)>',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 3
         },
         BROADCAST: {
           name: "broadcast",
@@ -39,7 +39,7 @@ const COMMANDS = {
           usage: '<text>',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         },
         EVAL: {
           name: "eval",
@@ -49,7 +49,7 @@ const COMMANDS = {
           usage: '<code>',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         },
         GUILDINVITE: {
           name: "guildinvite",
@@ -59,7 +59,7 @@ const COMMANDS = {
           usage: '<guild ID>',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         },
         GUILDLEAVE: {
           name: "guildleave",
@@ -69,7 +69,7 @@ const COMMANDS = {
           usage: '<guild ID>',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         },
         RESTART: {
           name: "restart",
@@ -79,7 +79,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         SPURGE: {
           name: "spurge",
@@ -89,7 +89,7 @@ const COMMANDS = {
           usage: '<amount>',
           isDevRestricted: true,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         }
       },
 
@@ -102,7 +102,7 @@ const COMMANDS = {
           usage: '<text>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         },
         EMOJIFY: {
           name: "emojify",
@@ -112,7 +112,7 @@ const COMMANDS = {
           usage: '<text>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         },
         EIGHTBALL: {
           name: "8ball",
@@ -122,7 +122,7 @@ const COMMANDS = {
           usage: '<question>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         },
         GAMER: {
           name: "gamerometer",
@@ -132,7 +132,7 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         HACK: {
           name: "hack",
@@ -142,7 +142,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         FBI : {
           name: "fbi",
@@ -152,7 +152,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         MEME: {
           name: "meme",
@@ -162,7 +162,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         HENTAI: {
           name: "hentai",
@@ -172,7 +172,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         }
       },
 
@@ -185,7 +185,7 @@ const COMMANDS = {
           usage: '',
             isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         USERINFO: {
           name: "userinfos",
@@ -195,7 +195,7 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         BOTINFO: {
           name: "botinfos",
@@ -205,7 +205,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         MEMBERCOUNT: {
           name: "membercount",
@@ -215,7 +215,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         PROFILEPICTURE: {
           name: "profilepicture",
@@ -225,7 +225,7 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         }
       },
 
@@ -238,7 +238,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         HELP: {
           name: "help",
@@ -248,7 +248,7 @@ const COMMANDS = {
           usage: '<command>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },
         INVITE: {
           name: "invite",
@@ -258,7 +258,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         }
       },
 
@@ -271,7 +271,7 @@ const COMMANDS = {
           usage: 'encode <text> | decode <base64 text>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 2
         },
         PING: {
           name: "ping",
@@ -281,7 +281,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: false
+          args: 0
         },  
         SAY: {
           name: "say",
@@ -291,7 +291,7 @@ const COMMANDS = {
           usage: '<text>',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         },
         POLL: {
           name: "poll",
@@ -301,7 +301,7 @@ const COMMANDS = {
           usage: '<Question> | OR | <Question, answer 1, answer 2, etc> MAX 10',
           isDevRestricted: false,
           permissionNeeded: "SEND_MESSAGES",
-          args: true
+          args: 1
         }
       },
 
@@ -314,7 +314,7 @@ const COMMANDS = {
           usage: 'prefix <value> | lang <value> | anon <yes/no>',
           isDevRestricted: false,
           permissionNeeded: "MANAGE_GUILD",
-          args: true
+          args: 2
         },
         NUKE: {
           name: "nuke",
@@ -324,7 +324,7 @@ const COMMANDS = {
           usage: '',
           isDevRestricted: false,
           permissionNeeded: "MANAGE_CHANNELS",
-          args: false
+          args: 0
         },
         KICK: {
           name: "kick",
@@ -334,7 +334,7 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "KICK_MEMBERS",
-          args: true
+          args: 1
         },
         BAN: {
           name: "ban",
@@ -344,7 +344,7 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "BAN_MEMBERS",
-          args: true
+          args: 1
         },
         UNBAN: {
           name: "unban",
@@ -354,7 +354,7 @@ const COMMANDS = {
           usage: '<@ID> | <ID>',
           isDevRestricted: false,
           permissionNeeded: "BAN_MEMBERS",
-          args: true
+          args: 1
         },
         SLOWMODE: {
           name: "slowmode",
@@ -364,7 +364,7 @@ const COMMANDS = {
           usage: '<duration (1h1m12s / 3672s)> | <off>',
           isDevRestricted: false,
           permissionNeeded: "MANAGE_CHANNELS",
-          args: true
+          args: 1
         },
       }
 }

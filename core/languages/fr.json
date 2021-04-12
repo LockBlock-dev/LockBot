@@ -76,7 +76,9 @@
     "messageEventMissingPerm2": " pour exécuter cette commande !",
     "messageEventBotMissingPerm1": "Je n'ai pas la permission ",
     "messageEventBotMissingPerm2": " pour exécuter cette commande !",
-    "messageEventCommandNeedArg": "Il faut un argument pour cette commande, ",
+    "messageEventCommandNeedArg1": "Il faut ",
+    "messageEventCommandNeedArg2one": " argument pour cette commande, ",
+    "messageEventCommandNeedArg2multiple": " arguments pour cette commande, ",
     "messageEventCommandUsage": "Voici comment utiliser la commande :",
 
     "nukeWarning": "Voulez-vous nuke ce salon ?",

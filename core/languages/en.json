@@ -77,7 +77,9 @@
     "messageEventMissingPerm2": " permission to execute this command !",
     "messageEventBotMissingPerm1": "I don't have the ",
     "messageEventBotMissingPerm2": " permission to execute this command !",
-    "messageEventCommandNeedArg": "You need an argument for this command, ",
+    "messageEventCommandNeedArg1": "You need ",
+    "messageEventCommandNeedArg2one": " argument for this command, ",
+    "messageEventCommandNeedArg2multiple": " arguments for this command, ",
     "messageEventCommandUsage": "Here's how to use the command :",
 
     "nukeWarning": "Do you want to nuke this channel ?",

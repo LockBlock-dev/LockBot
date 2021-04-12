@@ -64,8 +64,13 @@ bot.on("message", async message => {
       return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
-    if (commandFile.help.args && !args.length) {
-      errorMessage = `${lang.messageEventCommandNeedArg} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
+    if (commandFile.help.args > 0 && args.length < commandFile.help.args) {
+      if (commandFile.help.args < 2) {
+        errorMessage = `${lang.messageEventCommandNeedArg1}${commandFile.help.args}${lang.messageEventCommandNeedArg2one} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
+      } else {
+        errorMessage = `${lang.messageEventCommandNeedArg1}${commandFile.help.args}${lang.messageEventCommandNeedArg2multiple} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
+      }
+      
    
       return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }

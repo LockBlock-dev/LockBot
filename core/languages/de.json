@@ -77,7 +77,9 @@
     "messageEventMissingPerm2": " um diesen Befehl auszuführen!",
     "messageEventBotMissingPerm1": "Ich habe nicht die Berechtigung ",
     "messageEventBotMissingPerm2": " um diesen Befehl auszuführen !",
-    "messageEventCommandNeedArg": "Sie benötigen ein Argument für diesen Befehl",
+    "messageEventCommandNeedArg1": "Sie benötigen ",
+    "messageEventCommandNeedArg2one": " Argument für diesen Befehl, ",
+    "messageEventCommandNeedArg2multiple": " Argumente für diesen Befehl, ",
     "messageEventCommandUsage": "So verwenden Sie den Befehl:",
 
     "nukeWarning": "Möchten Sie diesen Kanal nuken ?",

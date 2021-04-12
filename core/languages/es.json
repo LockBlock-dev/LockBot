@@ -77,7 +77,9 @@
     "messageEventMissingPerm2": " para ejecutar este comando!",
     "messageEventBotMissingPerm1": "¡No tengo el permiso ",
     "messageEventBotMissingPerm2": " para ejecutar este comando!",
-    "messageEventCommandNeedArg": "Necesita un argumento para este comando",
+    "messageEventCommandNeedArg1": "Necesitas ",
+    "messageEventCommandNeedArg2one": " argumento para este comando, ",
+    "messageEventCommandNeedArg2multiple": " argumentos para este comando, ",
     "messageEventCommandUsage": "Aquí se explica cómo utilizar el comando :",
 
     "nukeWarning": "¿Quieres destruir este canal?",
