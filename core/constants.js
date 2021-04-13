@@ -9,7 +9,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         MUG: {
@@ -20,7 +21,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         BLACKLIST: {
@@ -31,7 +33,8 @@ const COMMANDS = {
           usage: '<add> | <remove> <mention> | <ID> <reason)>',
           example: 'add 810163923391217725',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 3
         },
         BROADCAST: {
@@ -42,7 +45,8 @@ const COMMANDS = {
           usage: '<text>',
           example: 'hello',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         },
         EVAL: {
@@ -53,7 +57,8 @@ const COMMANDS = {
           usage: '<code>',
           example: 'console.log("hello")',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         },
         GUILDINVITE: {
@@ -64,7 +69,8 @@ const COMMANDS = {
           usage: '<guild ID>',
           example: '819233068199837726',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         },
         GUILDLEAVE: {
@@ -75,7 +81,8 @@ const COMMANDS = {
           usage: '<guild ID>',
           example: '819233068199837726',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         },
         RESTART: {
@@ -86,7 +93,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         SPURGE: {
@@ -97,7 +105,8 @@ const COMMANDS = {
           usage: '<amount>',
           example: '5',
           isDevRestricted: true,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         }
       },
@@ -111,7 +120,8 @@ const COMMANDS = {
           usage: '<text>',
           example: 'hello',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         },
         EMOJIFY: {
@@ -122,7 +132,8 @@ const COMMANDS = {
           usage: '<text>',
           example: 'hello',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         },
         EIGHTBALL: {
@@ -133,7 +144,8 @@ const COMMANDS = {
           usage: '<question>',
           example: 'am I a nice person ?',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         },
         GAMER: {
@@ -144,7 +156,8 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           example: '810163923391217725',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         HACK: {
@@ -155,7 +168,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         FBI : {
@@ -166,7 +180,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         MEME: {
@@ -177,7 +192,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         HENTAI: {
@@ -188,7 +204,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         }
       },
@@ -202,7 +219,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         USERINFO: {
@@ -213,7 +231,8 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           example: '810163923391217725',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         BOTINFO: {
@@ -224,7 +243,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         MEMBERCOUNT: {
@@ -235,7 +255,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         PROFILEPICTURE: {
@@ -246,7 +267,8 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           example: '810163923391217725',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         }
       },
@@ -260,7 +282,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         HELP: {
@@ -271,7 +294,8 @@ const COMMANDS = {
           usage: '<command>',
           example: 'config',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },
         INVITE: {
@@ -282,7 +306,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         }
       },
@@ -296,7 +321,8 @@ const COMMANDS = {
           usage: 'encode <text> | decode <base64 text>',
           example: 'encode hello | decode aGVsbG8=',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 2
         },
         PING: {
@@ -307,7 +333,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 0
         },  
         SAY: {
@@ -318,7 +345,8 @@ const COMMANDS = {
           usage: '<text>',
           example: 'hello',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         },
         POLL: {
@@ -329,7 +357,8 @@ const COMMANDS = {
           usage: '<Question> | <Question, answer 1, answer 2, etc> MAX 10',
           example: 'is LockBot a good bot ? | who is better, LockBlock, LockBot',
           isDevRestricted: false,
-          permissionNeeded: 'SEND_MESSAGES',
+          userPermissionNeeded: 'SEND_MESSAGES',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 1
         }
       },
@@ -343,7 +372,8 @@ const COMMANDS = {
           usage: 'prefix <value> | lang <value> | anon <on/off>',
           example: 'lang en',
           isDevRestricted: false,
-          permissionNeeded: 'MANAGE_GUILD',
+          userPermissionNeeded: 'MANAGE_GUILD',
+          botPermissionNeeded: 'SEND_MESSAGES',
           args: 2
         },
         NUKE: {
@@ -354,7 +384,8 @@ const COMMANDS = {
           usage: '',
           example: '',
           isDevRestricted: false,
-          permissionNeeded: 'MANAGE_CHANNELS',
+          userPermissionNeeded: 'MANAGE_CHANNELS',
+          botPermissionNeeded: 'MANAGE_CHANNELS',
           args: 0
         },
         KICK: {
@@ -365,7 +396,8 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           example: '810163923391217725',
           isDevRestricted: false,
-          permissionNeeded: 'KICK_MEMBERS',
+          userPermissionNeeded: 'KICK_MEMBERS',
+          botPermissionNeeded: 'KICK_MEMBERS',
           args: 1
         },
         BAN: {
@@ -376,7 +408,8 @@ const COMMANDS = {
           usage: '<mention> | <ID>',
           example: '810163923391217725',
           isDevRestricted: false,
-          permissionNeeded: 'BAN_MEMBERS',
+          userPermissionNeeded: 'BAN_MEMBERS',
+          botPermissionNeeded: 'BAN_MEMBERS',
           args: 1
         },
         UNBAN: {
@@ -387,7 +420,8 @@ const COMMANDS = {
           usage: '<@ID> | <ID>',
           example: '810163923391217725',
           isDevRestricted: false,
-          permissionNeeded: 'BAN_MEMBERS',
+          userPermissionNeeded: 'BAN_MEMBERS',
+          botPermissionNeeded: 'BAN_MEMBERS',
           args: 1
         },
         SLOWMODE: {
@@ -398,7 +432,8 @@ const COMMANDS = {
           usage: '<duration> | <off>',
           example: '1h2m12s',
           isDevRestricted: false,
-          permissionNeeded: 'MANAGE_CHANNELS',
+          userPermissionNeeded: 'MANAGE_CHANNELS',
+          botPermissionNeeded: 'MANAGE_CHANNELS',
           args: 1
         },
       }

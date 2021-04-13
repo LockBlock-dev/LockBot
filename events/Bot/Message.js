@@ -52,14 +52,14 @@ bot.on("message", async message => {
 
     var errorMessage
 
-    if (commandFile.help.permissionNeeded && !message.member.hasPermission(commandFile.help.permissionNeeded)) {
-      errorMessage = `${lang.messageEventMissingPerm1}\`${commandFile.help.permissionNeeded}\`${lang.messageEventMissingPerm2}`
+    if (commandFile.help.userPermissionNeeded && !message.member.hasPermission(commandFile.help.userPermissionNeeded)) {
+      errorMessage = `${lang.messageEventMissingPerm1}\`${commandFile.help.userPermissionNeeded}\`${lang.messageEventMissingPerm2}`
 
       return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
 
-    if (commandFile.help.permissionNeeded && !message.guild.me.hasPermission(commandFile.help.permissionNeeded)) {
-      errorMessage = `${lang.messageEventBotMissingPerm1}\`${commandFile.help.permissionNeeded}\`${lang.messageEventBotMissingPerm2}`
+    if (commandFile.help.botPermissionNeeded && !message.guild.me.hasPermission(commandFile.help.botPermissionNeeded)) {
+      errorMessage = `${lang.messageEventBotMissingPerm1}\`${commandFile.help.botPermissionNeeded}\`${lang.messageEventBotMissingPerm2}`
 
       return message.channel.send(bot.error(errorMessage, message.author.id, lang))
     }
