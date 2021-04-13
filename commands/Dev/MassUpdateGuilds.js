@@ -9,6 +9,9 @@ module.exports.run = async (bot, message) => {
 
     const guilds = bot.guilds.cache.map(guild => [guild.id, guild.name])
 
+    const param = ""
+    const value = ""
+
     for (const server in guilds) {
         await bot.updateGuild(guilds[server][0], { param: value})
     }
