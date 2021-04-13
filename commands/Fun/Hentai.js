@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args, lang) => {
                             .setImage(hentaiImage)
                             .setURL(hentaiUrl)
                             .setColor("#FF8A33")
-                            .setFooter("👍 " + hentaiUpvotes + " | 💬 " + hentaiNumComments + " | © LockBot")
+                            .setFooter(`👍 ${hentaiUpvotes} | 💬 ${hentaiNumComments} | © LockBot`)
                             .setTimestamp()
 
                             message.channel.send(embed)

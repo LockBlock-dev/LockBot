@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args, lang) => {
                             .setImage(memeImage)
                             .setURL(memeUrl)
                             .setColor("#FF8A33")
-                            .setFooter("👍 " + memeUpvotes + " | 💬 " + memeNumComments + " | © LockBot")
+                            .setFooter(`👍 ${memeUpvotes} | 💬 ${memeNumComments} | © LockBot`)
                             .setTimestamp()
 
                             message.channel.send(embed)
