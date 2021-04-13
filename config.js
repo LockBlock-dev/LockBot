@@ -7,6 +7,6 @@ module.exports = {
   DEFAULT_SETTINGS: {
     prefix: "+",
     lang: "en",
-    anonMode: false
+    anonMode: true
   }
 }
