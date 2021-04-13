@@ -116,12 +116,12 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                 var settings = await bot.getGuild(message.guild.id)
 
                 if (oldAnonMode == true) {
-                    oldAnonMode = "yes"
-                    newAnonMode = "no"
+                    oldAnonMode = "on"
+                    newAnonMode = "off"
 
                 } else if (oldAnonMode == false) {
-                    oldAnonMode = "no"
-                    newAnonMode = "yes"
+                    oldAnonMode = "off"
+                    newAnonMode = "on"
                 }
 
                 const embed = new Discord.MessageEmbed()
