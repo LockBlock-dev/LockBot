@@ -56,22 +56,20 @@
     "pollOptionsListLength": "Maximal 10 Auswahlmöglichkeiten",
     "pollSimpleTitle": "Poll:",
 
-    "configPrefixEmpty": "Das Präfix muss mindestens 1 Zeichen lang sein!",
-    "configPrefixArgs": "Ein Präfix kann nur ein Argument sein!",
     "configPrefixLengthMax": "Das Präfix ist auf 3 Zeichen begrenzt!",
     "configPrefixOld": "Altes Präfix:",
     "configPrefixNew": "Neues Präfix:",
     "configPrefixNotString": "Das Präfix enthält nur Buchstaben oder Symbole!",
-    "configLangArgs": "Sprache ist nur ein Argument!",
     "configLangTooLong": "Sprachen sind nur 2 Zeichen lang!",
     "configLangOld": "Alte Sprache:",
     "configLangNew": "Neue Sprache:",
     "configLangUnknown": "Diese Sprache ist nicht verfügbar!",
     "configLangNotString": "Sprachen können nur Buchstaben enthalten!",
-    "configAnonArgs": "Anonym Modus ist nur ein Argument !",
     "configAnonEmpty": "Anonym Modus muss entweder \"Ja\" oder \"Nein\" entsprechen !",
     "configAnonOld": "Altes anonym Modus :",
     "configAnonNew": "Neues anonym Modus :",
+    "configLogChannelOld": "Alter Protokollkanal :",
+    "configLogChannelNew": "Neuer Protokollkanal :",
     
     "messageEventBotPing": "Hallo, ich bin ein Bot. Ich habe keine Stahlbeine oder Laserstrahlen, aber ich kann Ihnen helfen ! \nMeine aktuelle Präfix auf diesem Server lautet:",
     "messageEventMissingPerm1": "Sie haben nicht die Berechtigung ",
@@ -105,6 +103,8 @@
 
     "errorMessage": "Ein Fehler ist aufgetreten:",
     "errorUserNotFound": "Ich konnte diesen Benutzer nicht finden!",
+    "errorChannelNotFound": "Ich konnte diesen Kanal nicht finden!",
+    "errorChannelLogNotFound": "Ich konnte den Protokollkanal nicht finden! ",
     "errorHarmYourself1": "Sie können sich nicht selbst ",
     "errorHarmYourself2": " !"
 }

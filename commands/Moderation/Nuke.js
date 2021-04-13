@@ -1,7 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = async (bot, message, args, lang) => {
+module.exports.run = async (bot, message, args, lang, settings) => {
 
     message.delete()
 
@@ -46,6 +46,16 @@ module.exports.run = async (bot, message, args, lang) => {
                     setTimeout(() => {
                         newClonedChannel.lockPermissions()
                             .catch(error => "")
+
+                            if (settings.guildLogChannel) {
+                                const channel = message.guild.channels.cache.get(settings.guildLogChannel)
+                    
+                                if (channel) {
+                                    channel.send(bot.log("Nuke", message.author, `<#${newClonedChannelID}>`, lang))
+                                } else {
+                                    return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
+                                }
+                            }
 
                     }, 1000)
                 }, 1000)

@@ -16,6 +16,10 @@ const guildSchema = mongoose.Schema({
     guildAnonMode: {
         "type": Boolean,
         "default": defaults.anonMode
+    },
+    guildLogChannel: {
+        "type": String,
+        "default": undefined
     }
 })
 

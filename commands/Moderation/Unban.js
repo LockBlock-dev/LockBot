@@ -1,7 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = async (bot, message, args, lang) => {
+module.exports.run = async (bot, message, args, lang, settings) => {
 
     const member = args[0]
 
@@ -11,6 +11,10 @@ module.exports.run = async (bot, message, args, lang) => {
         ID = member.replace('@','').replace('<','').replace('>','')
     } else {
         ID = member
+    }
+
+    if (isNaN(ID)) {
+        return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))
     }
 
     const user = await bot.users.fetch(ID)
@@ -36,6 +40,16 @@ module.exports.run = async (bot, message, args, lang) => {
         .setFooter("© LockBot")
             
         message.channel.send(embed)
+
+        if (settings.guildLogChannel) {
+            const channel = message.guild.channels.cache.get(settings.guildLogChannel)
+
+            if (channel) {
+                channel.send(bot.log("Unban", message.author, `<@${user.id}>`, lang))
+            } else {
+                return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
+            }
+        }
 
     } catch (e) {
         const errorMessage = `${lang.unbanFailed}<@${ID}>`

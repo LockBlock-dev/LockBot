@@ -55,22 +55,21 @@
 
     "pollOptionsListLength": "10 choix maximum ",
     "pollSimpleTitle": "Sondage :",
-    "configPrefixEmpty": "Le préfixe doit comporter au moins 1 caractère !",
-    "configPrefixArgs": "Un préfixe ne peut être constituer que d'un argument !",
+
     "configPrefixLengthMax": "Le préfixe est limité à 3 caractères !",
     "configPrefixOld": "Ancien prefix :",
     "configPrefixNew": "Nouveau préfixe :",
     "configPrefixNotString": "Le préfixe ne contient que des lettres ou des symboles !",
-    "configLangArgs": "La langue n'est constituée que d'un argument !",
     "configLangTooLong": "Les langues ne font que 2 caractères de long!",
     "configLangOld": "Ancienne langue :",
     "configLangNew": "Nouvelle langue :",
     "configLangUnknown": "Cette langue n'est pas disponible !",
     "configLangNotString": "Les langues ne contiennent que des lettres !",
-    "configAnonArgs": "Le mode anonyme n'a besoin que d'un argument !",
     "configAnonEmpty": "Le mode anonyme doit être \"yes\" ou \"no\" !",
     "configAnonOld": "Ancien mode anonyme:",
     "configAnonNew": "Nouveau mode anonyme :",
+    "configLogChannelOld": "Ancien channel de logs :",
+    "configLogChannelNew": "Ancien channel de logs :",
 
     "messageEventBotPing": "Bonjour, je suis un robot. Je n'ai pas de jambes en acier, ni de rayons laser, mais je peux vous aider ! \nMon prefix actuel sur ce serveur est :",
     "messageEventMissingPerm1": "Vous n'avez pas la permission ",
@@ -104,6 +103,8 @@
 
     "errorMessage": "Une erreur s'est produite :",
     "errorUserNotFound": "Je n'ai pas pu trouver cet utilisateur !",
+    "errorChannelNotFound": "Je n'ai pas pu trouver ce canal !",
+    "errorChannelLogNotFound": "Je n'ai pas pu trouver le canal de log!",
     "errorHarmYourself1": "Vous ne pouvez pas vous ",
     "errorHarmYourself2": " kicker vous-même !"
 }

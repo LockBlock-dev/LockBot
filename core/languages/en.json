@@ -56,22 +56,20 @@
     "pollOptionsListLength": "10 choices maximum",
     "pollSimpleTitle": "Poll :",
 
-    "configPrefixEmpty": "The prefix must be at least 1 character !",
-    "configPrefixArgs": "A prefix can only be one argument !",
     "configPrefixLengthMax": "The prefix is limited to 3 characters !",
     "configPrefixOld": "Old prefix :",
     "configPrefixNew": "New prefix :",
     "configPrefixNotString": "The prefix contains only letters or symbols !",
-    "configLangArgs": "Language is only an argument !",
     "configLangTooLong": "Languages are only 2 characters long !",
     "configLangOld": "Old language :",
     "configLangNew": "New language :",
     "configLangUnknown": "This language is not available!",
     "configLangNotString": "Languages only contain letters !",
-    "configAnonArgs": "Anonymous mode is only an argument !",
     "configAnonEmpty": "Anonymous mode must be \"yes\" or \"no\" !",
     "configAnonOld": "Old anonymous mode :",
     "configAnonNew": "New anonymous mode :",
+    "configLogChannelOld": "Old log channel :",
+    "configLogChannelNew": "New log channel :",
     
     "messageEventBotPing": "Hello, I am a robot. I don't have steel legs or laser beams, but I can help you ! \nMy current prefix on this server is :",
     "messageEventMissingPerm1": "You do not have the ",
@@ -105,6 +103,8 @@
 
     "errorMessage": "An error happened :",
     "errorUserNotFound": "I couldn't find this user !",
+    "errorChannelNotFound": "I couldn't find this channel !",
+    "errorChannelLogNotFound": "I couldn't find the log channel !",
     "errorHarmYourself1": "You can't ",
     "errorHarmYourself2": " yourself !"
 }

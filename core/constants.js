@@ -369,7 +369,7 @@ const COMMANDS = {
           aliases: ['settings','paramètres','parametres','config'],
           category: 'moderation',
           description: 'Modify guild settings | anonymous mode is for +say command (display username or not)',
-          usage: 'prefix <value> | lang <value> | anon <on/off>',
+          usage: 'prefix <value> | lang <value> | anon <on/off> | log <channel mention/ID>',
           example: 'lang en',
           isDevRestricted: false,
           userPermissionNeeded: 'MANAGE_GUILD',

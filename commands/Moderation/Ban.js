@@ -1,7 +1,7 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 
-module.exports.run = (bot, message, args, lang) => {
+module.exports.run = (bot, message, args, lang, settings) => {
 
     const member = bot.memberFinder(message, args, 0, false)
 
@@ -28,6 +28,16 @@ module.exports.run = (bot, message, args, lang) => {
         .setFooter("© LockBot")
             
         message.channel.send(embed)
+
+        if (settings.guildLogChannel) {
+            const channel = message.guild.channels.cache.get(settings.guildLogChannel)
+
+            if (channel) {
+                channel.send(bot.log("Ban", message.author, `<@${member.id}>`, lang))
+            } else {
+                return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
+            }
+        }
 
     } else {
         const errorMessage = `${lang.banFailed}<@${member.id}>`

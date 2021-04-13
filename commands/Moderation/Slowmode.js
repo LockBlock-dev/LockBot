@@ -2,7 +2,7 @@ const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const parse = require('parse-duration')
 
-module.exports.run = async (bot, message, args, lang) => {
+module.exports.run = async (bot, message, args, lang, settings) => {
 
     var oldDuration
 
@@ -44,6 +44,16 @@ module.exports.run = async (bot, message, args, lang) => {
 	    .setFooter("© LockBot")
         
         message.channel.send(embed)
+
+        if (settings.guildLogChannel) {
+            const channel = message.guild.channels.cache.get(settings.guildLogChannel)
+
+            if (channel) {
+                channel.send(bot.log("Ban", message.author, `<#${message.channel.id}>`, lang))
+            } else {
+                return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
+            }
+        }
     }
 }
 

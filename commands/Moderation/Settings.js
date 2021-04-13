@@ -8,20 +8,13 @@ module.exports.run = async (bot, message, args, lang, settings) => {
     const oldPrefix = settings.guildPrefix
     const oldLang = settings.guildLang
     var oldAnonMode = settings.guildAnonMode
+    var oldLogChannel = settings.guildLogChannel
     const getSetting = args[0]
     const newValue = args[1]
   
     switch(getSetting) {
         case "prefix": {
-
-            if(!args[1]){
-                return message.channel.send(bot.error(lang.configPrefixEmpty, message.author.id, lang))
-            }
-
-            if(args[2]) {
-                return message.channel.send(bot.error(lang.configPrefixArgs, message.author.id, lang))
-            }
-        
+       
             if(args[1].length > 3) {
                 return message.channel.send(bot.error(lang.configPrefixLengthMax, message.author.id, lang))
             }
@@ -43,19 +36,23 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 	                .setFooter("© LockBot")
 
                 message.channel.send(embed)
+
+                if (settings.guildLogChannel) {
+                    const channel = message.guild.channels.cache.get(settings.guildLogChannel)
+        
+                    if (channel) {
+                        channel.send(bot.log("Prefix", message.author, "GuildSettings", lang))
+                    } else {
+                        return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
+                    }
+                }
             }
+
             break
         }
+        case "language":
         case "lang": {
-
-            if (!args[1]){
-                return message.channel.send(bot.error(lang.configLangTooLong, message.author.id, lang))
-            }
-
-            if(args[2]) {
-                return message.channel.send(bot.error(lang.configLangArgs, message.author.id, lang))
-              }
-        
+       
             if(args[1].length > 2) {
                 return message.channel.send(bot.error(lang.configLangTooLong, message.author.id, lang))
             }
@@ -85,35 +82,37 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 	                .setFooter("© LockBot")
 
                     message.channel.send(embed)
+
+                    if (settings.guildLogChannel) {
+                        const channel = message.guild.channels.cache.get(settings.guildLogChannel)
+            
+                        if (channel) {
+                            channel.send(bot.log("Lang", message.author, "GuildSettings", lang))
+                        } else {
+                            return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
+                        }
+                    }
                 }
-              })
+            })
                               
             break
         }
-        case "anon": {
-
-            if (!args[1]){
-                return message.channel.send(bot.error(lang.configAnonEmpty, message.author.id, lang))
-            }
-
-            if(args[2]) {
-                return message.channel.send(bot.error(lang.configAnonArgs, message.author.id, lang))
-              }
-               
+        case "anon" :
+        case "anonmode" :
+        case "anonMode": {
+              
             if(typeof args[1] !== "string"){
                 return message.channel.send(bot.error(lang.configAnonEmpty, message.author.id, lang))
             }
 
             if (newValue) {
 
-                if (newValue == "yes") {
+                if (newValue == "on") {
                     await bot.updateGuild(message.guild.id, { guildAnonMode: true})
 
-                } else if (newValue == "no") {
+                } else if (newValue == "off") {
                     await bot.updateGuild(message.guild.id, { guildAnonMode: false})
                 }
-
-                var settings = await bot.getGuild(message.guild.id)
 
                 if (oldAnonMode == true) {
                     oldAnonMode = "on"
@@ -133,6 +132,58 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 	                .setFooter("© LockBot")
 
                 message.channel.send(embed)
+
+                if (settings.guildLogChannel) {
+                    const channel = message.guild.channels.cache.get(settings.guildLogChannel)
+        
+                    if (channel) {
+                        channel.send(bot.log("AnonMode", message.author, "GuildSettings", lang))
+                    } else {
+                        return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
+                    }
+                }
+            }
+
+            break
+        }
+        case "logChannel":
+        case "logchannel":
+        case "log": {
+             
+            if (newValue) {
+
+                const channel = bot.channelFinder(message, args, 1)
+
+                if (!channel) {
+                    return message.channel.send(bot.error(lang.errorChannelNotFound, message.author.id, lang))
+                }
+
+                if (oldLogChannel == undefined) {
+                    oldLogChannel = "off"
+                }
+
+                await bot.updateGuild(message.guild.id, { guildLogChannel: channel.id})
+                var settings = await bot.getGuild(message.guild.id)
+
+                const embed = new Discord.MessageEmbed()
+                    .setDescription(`<@${message.author.id}>`)
+                    .addField(lang.configLogChannelOld, `<#${oldLogChannel}>`)
+                    .addField(lang.configLogChannelNew, `<#${settings.guildLogChannel}>`)
+                    .setColor("#FF8A33")
+                    .setTimestamp()
+	                .setFooter("© LockBot")
+
+                message.channel.send(embed)
+
+                if (settings.guildLogChannel) {
+                    const channel = message.guild.channels.cache.get(settings.guildLogChannel)
+        
+                    if (channel) {
+                        channel.send(bot.log("LogChannel", message.author, "GuildSettings", lang))
+                    } else {
+                        return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
+                    }
+                }
             }
 
             break

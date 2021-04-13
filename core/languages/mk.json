@@ -56,22 +56,20 @@
     "pollOptionsListLength": "10 choices maximum",
     "pollSimpleTitle": "Poll :",
 
-    "configPrefixEmpty": "Префихот мора да биди барем 1 буква",
-    "configPrefixArgs": "префихот мора да биде интерпукциски знак !",
     "configPrefixLengthMax": "Префихот може да биде махимум 3 букви !",
     "configPrefixOld": "стар префих :",
     "configPrefixNew": "нов префих :",
     "configPrefixNotString": "префиџот се состој од букви и интерпукциски знаци",
-    "configLangArgs": "Language is only an argument !",
     "configLangTooLong": "Languages are only 2 characters long !",
     "configLangOld": "Old language :",
     "configLangNew": "New language :",
     "configLangUnknown": "This language is not available!",
     "configLangNotString": "Languages only contain letters !",
-    "configAnonArgs": "Анонимниот режим е само аргумент!",
     "configAnonEmpty": "Анонимниот режим мора да биде \"да\" или \"не\"!",
     "configAnonOld": "Стариот анонимен режим:",
-    "configAnonNew": "Нов анонимен режим: ",
+    "configAnonNew": "Нов анонимен режим:",
+    "configLogChannelOld": "Стар канал за најавување:",
+    "configLogChannelNew": "Нов канал за најавување:",
     
     "messageEventBotPing": "Здраво, јас сум робот. немам железни нози или ласерски раци, но можам да ти помогнам ! \nмојот префих сега е :",
     "messageEventMissingPerm1": "немаш ",
@@ -105,6 +103,8 @@
 
     "errorMessage": "ерор :",
     "errorUserNotFound": "неможев да го најдам !",
+    "errorChannelNotFound": "Не можев да го најдам овој канал!",
+    "errorChannelLogNotFound": "Не можев да го најдам каналот за најавување! ",
     "errorHarmYourself1": "не можеш ",
     "errorHarmYourself2": " сам !"
 }
