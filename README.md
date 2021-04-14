@@ -26,8 +26,8 @@ Discord Bot made with [![discord.js](https://img.shields.io/github/package-json/
 
 • At the root of the folder, create a `.env` file, and put inside :
 ```dosini
-DISCORD_TOKEN=YOUR_TOKEN_HERE
-MONGODB_ADRESS=YOUR_MONGO_DB_URL_HERE
+DISCORD_TOKEN=BOT_TOKEN_HERE
+MONGODB_ADRESS=MONGO_DB_URL_HERE
 DEV_ID=YOUR_DISCORD_ID_HERE
 ```
 
