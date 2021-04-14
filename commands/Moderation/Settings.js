@@ -167,7 +167,14 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
                 const embed = new Discord.MessageEmbed()
                     .setDescription(`<@${message.author.id}>`)
-                    .addField(lang.configLogChannelOld, `<#${oldLogChannel}>`)
+
+                if (oldLogChannel == "off") {
+                    embed.addField(lang.configLogChannelOld, oldLogChannel)
+
+                } else {
+                    embed.addField(lang.configLogChannelOld, `<#${oldLogChannel}>`)
+                }
+                embed
                     .addField(lang.configLogChannelNew, `<#${settings.guildLogChannel}>`)
                     .setColor("#FF8A33")
                     .setTimestamp()
