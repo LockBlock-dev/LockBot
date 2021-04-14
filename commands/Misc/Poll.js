@@ -19,9 +19,9 @@ module.exports.run = async (bot, message, args, lang) => {
 	    .setFooter("© LockBot")
 
         message.channel.send(embed)
-        .then(async function (message) {
-            await message.react("✔️")
-            await message.react("❌")
+        .then(async (message) => {
+            await message.react("<:LockBot_check:831926276792385586>")
+            await message.react("<:LockBot_cross:831926276935385130>")
         })
     }
 
@@ -29,7 +29,7 @@ module.exports.run = async (bot, message, args, lang) => {
         var optionsText = ""
 
         for (var i = 0; i < optionsList.length; i++) { 
-            optionsText += emojiList[i] + " " + optionsList[i] + "\n"
+            optionsText += `${emojiList[i]} ${optionsList[i]}\n`
         }
 
         const question = optionsList.splice(0, 1)
@@ -43,10 +43,10 @@ module.exports.run = async (bot, message, args, lang) => {
 	        .setFooter("© LockBot")
 
         message.channel.send(embed)
-            .then(async function (message) {
-                var reactionArray = [];
+            .then(async (message) => {
+                var reactionArray = []
                 for (var i = 0; i < optionsList.length; i++) { 
-                    reactionArray[i] = await message.react(emojiList[i]);
+                    reactionArray[i] = await message.react(emojiList[i])
                 }
             })
     }
