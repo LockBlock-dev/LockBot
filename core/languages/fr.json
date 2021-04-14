@@ -69,7 +69,7 @@
     "configAnonOld": "Ancien mode anonyme:",
     "configAnonNew": "Nouveau mode anonyme :",
     "configLogChannelOld": "Ancien channel de logs :",
-    "configLogChannelNew": "Ancien channel de logs :",
+    "configLogChannelNew": "Nouveau channel de logs :",
 
     "messageEventBotPing": "Bonjour, je suis un robot. Je n'ai pas de jambes en acier, ni de rayons laser, mais je peux vous aider ! \nMon prefix actuel sur ce serveur est :",
     "messageEventMissingPerm1": "Vous n'avez pas la permission ",
