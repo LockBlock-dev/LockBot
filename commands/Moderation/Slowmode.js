@@ -35,15 +35,18 @@ module.exports.run = async (bot, message, args, lang, settings) => {
     } else {
         await message.channel.setRateLimitPerUser(duration)
 
-        const embed = new Discord.MessageEmbed()
-        .setDescription(`<@${message.author.id}>`)
-        .addField(lang.slowmodeOldDuration, oldDuration)
-        .addField(lang.slowmodeNewDuration, bot.sToHMS(message.channel.rateLimitPerUser))
-        .setColor("#FF8A33")
-        .setTimestamp()
-	    .setFooter("© LockBot")
-        
-        message.channel.send(embed)
+        setTimeout(() => {
+            const embed = new Discord.MessageEmbed()
+            .setDescription(`<@${message.author.id}>`)
+            .addField(lang.slowmodeOldDuration, oldDuration)
+            .addField(lang.slowmodeNewDuration, bot.sToHMS(message.channel.rateLimitPerUser))
+            .setColor("#FF8A33")
+            .setTimestamp()
+            .setFooter("© LockBot")
+            
+            message.channel.send(embed)
+
+        }, 500)
 
         if (settings.guildLogChannel) {
             const channel = message.guild.channels.cache.get(settings.guildLogChannel)
