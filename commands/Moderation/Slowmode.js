@@ -49,7 +49,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
             const channel = message.guild.channels.cache.get(settings.guildLogChannel)
 
             if (channel) {
-                channel.send(bot.log("Ban", message.author, `<#${message.channel.id}>`, lang))
+                channel.send(bot.log("Slowmode", message.author, `<#${message.channel.id}>`, lang))
             } else {
                 return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
             }
