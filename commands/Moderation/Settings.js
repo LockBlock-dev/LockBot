@@ -41,7 +41,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     const channel = message.guild.channels.cache.get(settings.guildLogChannel)
         
                     if (channel) {
-                        channel.send(bot.log("Prefix", message.author, "GuildSettings", lang))
+                        channel.send(bot.log("Prefix", message.author, "GuildSettings", lang, [oldPrefix, settings.guildPrefix]))
                     } else {
                         return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
                     }
@@ -87,7 +87,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                         const channel = message.guild.channels.cache.get(settings.guildLogChannel)
             
                         if (channel) {
-                            channel.send(bot.log("Lang", message.author, "GuildSettings", lang))
+                            channel.send(bot.log("Lang", message.author, "GuildSettings", lang, [oldLang, settings.guildLang]))
                         } else {
                             return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
                         }
@@ -114,13 +114,20 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     await bot.updateGuild(message.guild.id, { guildAnonMode: false})
                 }
 
+                var settings = await bot.getGuild(message.guild.id)
+
+                if (settings.guildAnonMode == true) {
+                    newAnonMode = "on"
+
+                } else if (settings.guildAnonMode == false) {
+                    newAnonMode = "off"
+                }
+
                 if (oldAnonMode == true) {
                     oldAnonMode = "on"
-                    newAnonMode = "off"
 
                 } else if (oldAnonMode == false) {
                     oldAnonMode = "off"
-                    newAnonMode = "on"
                 }
 
                 const embed = new Discord.MessageEmbed()
@@ -137,7 +144,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     const channel = message.guild.channels.cache.get(settings.guildLogChannel)
         
                     if (channel) {
-                        channel.send(bot.log("AnonMode", message.author, "GuildSettings", lang))
+                        channel.send(bot.log("AnonMode", message.author, "GuildSettings", lang, [oldAnonMode, newAnonMode]))
                     } else {
                         return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
                     }
@@ -148,6 +155,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
         }
         case "logChannel":
         case "logchannel":
+        case "logs":
         case "log": {
              
             if (newValue) {
@@ -173,6 +181,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
                 } else {
                     embed.addField(lang.configLogChannelOld, `<#${oldLogChannel}>`)
+                    oldLogChannel = `<#${oldLogChannel}>`
                 }
                 embed
                     .addField(lang.configLogChannelNew, `<#${settings.guildLogChannel}>`)
@@ -186,7 +195,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     const channel = message.guild.channels.cache.get(settings.guildLogChannel)
         
                     if (channel) {
-                        channel.send(bot.log("LogChannel", message.author, "GuildSettings", lang))
+                        channel.send(bot.log("LogChannel", message.author, "GuildSettings", lang, [oldLogChannel, `<#${settings.guildLogChannel}>`]))
                     } else {
                         return message.channel.send(bot.error(lang.errorChannelLogNotFound, message.author.id, lang))
                     }
