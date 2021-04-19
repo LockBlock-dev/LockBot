@@ -72,15 +72,21 @@ module.exports = bot => {
         return channel
     }
 
-    bot.log = (action, moderator, target, lang) => {
+    bot.log = (action, moderator, target, lang, values) => {
         const embed = new Discord.MessageEmbed()
             .setDescription(`**LockBot Logs**`)
-            .addField("Action :", action, true)
-            .addField("Moderateur :", `<@${moderator.id}>`, true)
-            .addField("Cible :", `${target}`, true)
+            .addField(logAction, action, true)
+            .addField(logMod, `<@${moderator.id}>`, true)
+            .addField(logTarget, `${target}`, true)
             .setColor("#5D4DA0")
             .setTimestamp()
             .setFooter("© LockBot")
+
+        if (values) {
+            embed
+                .addField(logOldValue, values[0], true)
+                .addField(logNewValue, values[1], true)
+        }
 
         if (typeof(target) == Object) {
             embed.setThumbnail(target.avatarURL({ format: 'png', dynamic: true}))

@@ -106,5 +106,11 @@
     "errorChannelNotFound": "Je n'ai pas pu trouver ce canal !",
     "errorChannelLogNotFound": "Je n'ai pas pu trouver le canal de log!",
     "errorHarmYourself1": "Vous ne pouvez pas vous ",
-    "errorHarmYourself2": " kicker vous-même !"
+    "errorHarmYourself2": " kicker vous-même !",
+
+    "logAction": "Action :",
+    "logMod": "Modérateur :",
+    "logTarget": "Cible :",
+    "logOldValue": "Ancienne valeur :",
+    "logNewValue": "Nouvelle valeur :"
 }

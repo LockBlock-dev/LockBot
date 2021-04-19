@@ -106,5 +106,11 @@
     "errorChannelNotFound": "¡No pude encontrar este canal!",
     "errorChannelLogNotFound": "¡No pude encontrar el canal de registro! ",
     "errorHarmYourself1": "¡No puedes ",
-    "errorHarmYourself2": " a ti mismo!"
+    "errorHarmYourself2": " a ti mismo!",
+
+    "logAction": "Acción:",
+    "logMod": "Moderador:",
+    "logTarget": "Objetivo:",
+    "logOldValue": "Valor antiguo:",
+    "logNewValue": "Nuevo valor:"
 }

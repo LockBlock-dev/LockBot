@@ -106,5 +106,11 @@
     "errorChannelNotFound": "Ich konnte diesen Kanal nicht finden!",
     "errorChannelLogNotFound": "Ich konnte den Protokollkanal nicht finden! ",
     "errorHarmYourself1": "Sie können sich nicht selbst ",
-    "errorHarmYourself2": " !"
+    "errorHarmYourself2": " !",
+
+    "logAction": "Aktion :",
+    "logMod": "Moderator :",
+    "logTarget": "Ziel :",
+    "logOldValue": "Alter Wert :",
+    "logNewValue": "Neuer Wert :"
 }

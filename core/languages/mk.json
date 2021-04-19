@@ -106,5 +106,11 @@
     "errorChannelNotFound": "Не можев да го најдам овој канал!",
     "errorChannelLogNotFound": "Не можев да го најдам каналот за најавување! ",
     "errorHarmYourself1": "не можеш ",
-    "errorHarmYourself2": " сам !"
+    "errorHarmYourself2": " сам !",
+
+    "logAction": "Дејство :",
+    "logMod": "Модератор :",
+    "logTarget": "Цел :",
+    "logOldValue": "Стара вредност :",
+    "logNewValue": "Нова вредност :"
 }
