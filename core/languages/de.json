@@ -51,7 +51,7 @@
     "vote": "Stimmen Sie für den Bot, um mir zu helfen! ",
 
     "pingLatencyBot": "Bot-Latenz:",
-    "pingLatencyAPI": " ms, API-Latenz:",
+    "pingLatencyAPI": "API-Latenz:",
 
     "pollOptionsListLength": "Maximal 10 Auswahlmöglichkeiten",
     "pollSimpleTitle": "Poll:",
