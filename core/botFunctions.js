@@ -75,17 +75,17 @@ module.exports = bot => {
     bot.log = (action, moderator, target, lang, values) => {
         const embed = new Discord.MessageEmbed()
             .setDescription(`**LockBot Logs**`)
-            .addField(logAction, action, true)
-            .addField(logMod, `<@${moderator.id}>`, true)
-            .addField(logTarget, `${target}`, true)
+            .addField(lang.logAction, action, true)
+            .addField(lang.logMod, `<@${moderator.id}>`, true)
+            .addField(lang.logTarget, `${target}`, true)
             .setColor("#5D4DA0")
             .setTimestamp()
             .setFooter("© LockBot")
 
         if (values) {
             embed
-                .addField(logOldValue, values[0], true)
-                .addField(logNewValue, values[1], true)
+                .addField(lang.logOldValue, values[0], true)
+                .addField(lang.logNewValue, values[1], true)
         }
 
         if (typeof(target) == Object) {
