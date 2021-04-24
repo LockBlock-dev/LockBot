@@ -1,0 +1,111 @@
+{
+   "eightBallAnswers": ["나중에 다시 시도해주세요!", "다시 시도해주세요!", "아무것도 없어요!", "운명을 받아들이세요...", "주사위는 던져졌습니다..", "둘 중 하나!", "질문을 다시 입력해주세요!", "제 말에 의하면...그래요!", " 이건 확실해요! ", " 물론이에요! ", " 꼭 그러도록 하죠 ", " 의심할 것도 없네요 ", " 그럴 가능성이 커요! ", " 네! ", " 시작이 좋습니다 ", " 그건 아니요 ", " 있을것 같진 않네요.. ", " 꿈꾸지도 마세요.. ", " 세지 마세요 ", " 불가능해요 "],
+    "eightBallYourQuestion": "당신의 질문은 :",
+    "eightBallTheAnswer": "저의 대답은 :",
+
+    "asciiMaxCaracters": "글자는 20자가 최대에요! !",
+
+    "blacklistBanWarning": "다음과 같은 이유로 봇 사용을 금지 당했어요 :",
+
+    "base64ContentLength": "글자수는 50자가 최대에요! !",
+
+    "gamerometer1": " 는(은) ",
+    "gamerometer2": "% 게이머에요! !",
+
+    "hack": "그걸 정말 믿었나요? :joy:",
+
+    "hentaiChannelNotNSFW": "여긴 NSFW 채널이 아니에요 !",
+
+    "botInfoName": "[ 봇 이름 ]",
+    "botInfoServers": "[ 서버 수 ]",
+    "botInfoMembers": "[ 멤버 수 ]",
+    "botInfoCreationDate": "[ 만들어진 날짜 ]",
+    "botInfosLanguages": "[ 지원 언어 ]",
+
+    "profilePicture": "아바타 :",
+
+    "serverInfoName": "[ 서버 이름 ]",
+    "serverInfoMembers": "[ 멤버 수 ]",
+    "serverInfoCreationDate": "[ 만들어진 날짜 ]",
+
+    "userInfoDay": " 일",
+    "userInfoDays": " 일",
+    "userInfoUsername": "[ 이름 ]",
+    "userInfoUserIsNotBot": "사람",
+    "userInfoBoostYes": "네",
+    "userInfoBoostNo": "아니요",
+    "userInfoNickname": "[ 닉네임 ]",
+    "userInfoNoNickname": "닉네임이 아니에요",
+    "userInfoStatus": "[ 상태 ]",
+    "userInfoJoinedDate": "[ 서버 가입일 ]",
+    "userInfoCreatedDate": "[ 계정 생성일 ]",
+
+    "helpSupportServer": "도움이 필요하신가요? :",
+    "helpCommandName": "명령어 이름 :",
+    "helpCommandDescription": "설명 :",
+    "helpCommandUsage": "사용법 :",
+    "helpCommandExample": "예) ",
+    "helpCommandAliases": "단축어 :",
+    "helpCommandPermissions": "권한 :",
+
+    "vote": "봇을 투표하여 절 도와주세요! ! ",
+
+    "pingLatencyBot": "봇 지연 :",
+    "pingLatencyAPI": "API 지연 :",
+
+    "pollOptionsListLength": "선택은 10개가 최대에요!",
+    
+    "pollSimpleTitle": "Poll :",
+
+    "configPrefixLengthMax": "접두사는 3글자까지 가능해요 !",
+    "configPrefixOld": "이전 접두사 :",
+    "configPrefixNew": "현재 접두사 :",
+    "configPrefixNotString": "접두사는 문자 또는 기호만 가능해요 !",
+    "configLangTooLong": "언어는 2글자로만 설정 할 수 있어요 !",
+    "configLangOld": "이전 언어 :",
+    "configLangNew": "현재 언어 :",
+    "configLangUnknown": "그 언어는 아직 불가능해요 !",
+    "configLangNotString": "오직 문자로만 설정 가능해요 !",
+    "configAnonEmpty": "익명 모드는 \"네\" 혹은 \"아니요\" 로만 가능해요 !",
+    "configAnonOld": "이전 익명 모드 :",
+    "configAnonNew": "현재 익명 모드 :",
+    "configLogChannelOld": "이전 로그 채널 :",
+    "configLogChannelNew": "현재 로그 채널 :",
+    
+    "messageEventBotPing": "안녕하세요, 전 로봇이에요!. 전 강철 다리라던가 레이저 빔은 없어요. 하지만 전 당신을 도와드릴 수 있죠 ! \n이곳에서의 접두사 :",
+    "messageEventMissingPerm1": "권한을 가지고 있지 않아요! : ",
+    "messageEventMissingPerm2": " 이 명령어를 사용하는데에는 권한이 필요해요! !",
+    "messageEventBotMissingPerm1": "저에게 권한이 없는것 같아요! : ",
+    "messageEventBotMissingPerm2": " 명령어를 실행하는데 권한이 필요해요 !",
+    "messageEventCommandNeedArg1": "필요한것 : ",
+    "messageEventCommandNeedArg2one": " 이 명령어에는 추가적인 단어가 필요해요 : ",
+    "messageEventCommandNeedArg2multiple": " 이 명령어에서 사용 할 수 있는 단어 : ",
+    "messageEventCommandUsage": "명령어 사용법 :",
+
+    "nukeWarning": "이 채널에...핵을 떨어트리실 건가요 ?",
+    "nukeDescription": "모든 메시지가 핵으로인해 터졌어요!",
+    "nukeAborted": "핵 명령어 중단 :",
+    "nukeAbortedWhy": "답변이 너무 늦은것 같아요",
+
+    "kickSuccess": "멤버 추방 :",
+    "kickFailed": "멤버 추방 실패 : ",
+
+    "banSuccess": "멤버 차단 :",
+    "banFailed": "멤버 차단 실패 : ",
+
+    "unbanSuccess": "멤버 차단 해제 :",
+    "unbanFailed": "멤버 차단 해제 실패 : ",
+
+    "slowmodeWasDisabled": "비활성화",
+    "slowmodeOldDuration": "이전 쿨타임 :",
+    "slowmodeNewDuration": "현재 쿨타임 :",
+    "slowmodeDurationTooBig": "21600초를 초과 할 수는 없어요 !",
+    "slowmodeNotADuration": "숫자로만 지정해주세요 !",
+
+    "errorMessage": "에러 발생 :",
+    "errorUserNotFound": "유저를 찾을 수 없어요 !",
+    "errorChannelNotFound": "채널을 찾을 수 없어요 !",
+    "errorChannelLogNotFound": "로그 채널을 찾을 수 없어요 !",
+    "errorHarmYourself1": "자기 자신을 지정할 수는 없어요 ! ",
+    "errorHarmYourself2": " 당신이에요 !"
+}
