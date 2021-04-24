@@ -58,6 +58,8 @@ I couldn't do this without the help of :
 
 • DV4 who made the [german](/core/languages/de.json) translation
 
+• MCHDF who made the [corean](/core/languages/ko.json) translation
+
 • Friskyyy__ who made the [macedonian](/core/languages/mk.json) translation
 
 • and everyone who invited and used my bot !
