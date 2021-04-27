@@ -62,6 +62,8 @@ I couldn't do this without the help of :
 
 • Friskyyy__ who made the [macedonian](/core/languages/mk.json) translation
 
+• Nerox who made the [romanian](/core/languages/ro.json) translation
+
 • and everyone who invited and used my bot !
 
 
