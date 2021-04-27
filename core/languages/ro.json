@@ -1,0 +1,116 @@
+{
+    "eightBallAnswers": ["Incearca mai tarziu", "Incearca din nou", "Fara opinine", "Este destinul tau", "Moara este aruncat", "Unu in doi", "Intreaba din nou", "Pentru mine da", "Este cert", " Da absoulut ", " Poti conta pe asta", "Fara indoiala", " Foarte probabil ", " Da ", " Este un inecput bun ", " Este nu ", " Nesigur ", " Nu visa ", " Nu conta ", " Imposibil "],
+    "eightBallYourQuestion": "Intrebarea ta era :",
+    "eightBallTheAnswer": "Raspuns :",
+
+    "asciiMaxCaracters": "20 de charactere maxim.",
+
+    "blacklistBanWarning": "Ati fost interzis la acesarea bot pentru urmatorul motiv  :",
+
+    "base64ContentLength": "50 de charactere maxim!",
+
+    "gamerometer1": " este ",
+    "gamerometer2": "% este gamer !",
+
+    "hack": "Chiar ai crezut? :joy:",
+
+    "hentaiChannelNotNSFW": "Canalul asta nu este NSFW !",
+
+    "botInfoName": "Numele la bot",
+    "botInfoServers": "Servare",
+    "botInfoMembers": "Membrii",
+    "botInfoCreationDate": "Data crearii",
+    "botInfosLanguages": "Limbi suportate.",
+
+    "profilePicture": "Avatarul lui",
+
+    "serverInfoName": "Nume",
+    "serverInfoMembers": "Membri",
+    "serverInfoCreationDate": "Data Crearii",
+
+    "userInfoDay": " Zi",
+    "userInfoDays": " Zile",
+    "userInfoUsername": "Nume",
+    "userInfoUserIsNotBot": "Om",
+    "userInfoBoostYes": "Da",
+    "userInfoBoostNo": "Nu",
+    "userInfoNickname": "Porecla",
+    "userInfoNoNickname": "Fara porecla",
+    "userInfoStatus": "Status",
+    "userInfoJoinedDate": "A intrat in server pe",
+    "userInfoCreatedDate": "Contul a fost creat pe",
+
+    "helpSupportServer": "Daca ai nevoie de ajutor intra in servarul de ajutor :",
+    "helpCommandName": "Nume :",
+    "helpCommandDescription": "Descriere :",
+    "helpCommandUsage": "Utilizare :",
+    "helpCommandExample": "Exemplu :",
+    "helpCommandAliases": "Aliasuri :",
+    "helpCommandPermissions": "Permisiuni :",
+
+    "vote": "Voteaza botul ca sa ma ajuti ! ",
+
+    "pingLatencyBot": "latenta bot :",
+    "pingLatencyAPI": "latenta API:",
+
+    "pollOptionsListLength": "10 alegeri maxim",
+    "pollSimpleTitle": "Intrebare :",
+
+    "configPrefixLengthMax": "Prefixul este doar 3 charactere maxim !",
+    "configPrefixOld": "Prefix vechi :",
+    "configPrefixNew": "Prefix nou:",
+    "configPrefixNotString": "Prefixul poate contine doar litere si simboluri !",
+    "configLangTooLong": "Limbele sunt doar 2 litere !",
+    "configLangOld": "Vechea limba :",
+    "configLangNew": "Noua limba :",
+    "configLangUnknown": "Limba asta nu este valabila!",
+    "configLangNotString": "Limbele pot contine litere doar !",
+    "configAnonEmpty": " Modul anonim trebuie sa fie \"da\" sau \"nu\" !",
+    "configAnonOld": "Vechiul mod anonim :",
+    "configAnonNew": "Noul mod anonim :",
+    "configLogChannelOld": "Vechiul canal de loguri :",
+    "configLogChannelNew": "Noul canal de loguri :",
+    
+    "messageEventBotPing": "Bună, sunt un robot. Nu am picioare de oțel sau raze laser, dar te pot ajuta! \nPrefixul meu in acest server este :",
+    "messageEventMissingPerm1": "Tu nu ai ",
+    "messageEventMissingPerm2": " permisune sa folosesti comanda asta !",
+    "messageEventBotMissingPerm1": "Eu nu am ",
+    "messageEventBotMissingPerm2": " permisune sa fac comanda asta",
+    "messageEventCommandNeedArg1": "Ai nevoie ",
+    "messageEventCommandNeedArg2one": " de un argument pentru comanda asta, ",
+    "messageEventCommandNeedArg2multiple": " argumente pentru comanda asta, ",
+    "messageEventCommandUsage": "Asa se foloseste comanda :",
+
+    "nukeWarning": "Esti sigur ca vrei sa stergi canalul asta ?",
+    "nukeDescription": "Toate mesajele vor fi sterse",
+    "nukeAborted": "Comanda oprita :",
+    "nukeAbortedWhy": "Ti-a luat prea mult sa raspunzi",
+
+    "kickSuccess": "Member kicked :",
+    "kickFailed": "Nu am putut sa dau kick la acest membru : ",
+
+    "banSuccess": "Member banned :",
+    "banFailed": "Nu am putut sa dau ban la acest membru : ",
+
+    "unbanSuccess": "Member unbanned :",
+    "unbanFailed": "Nu am putut sa dau unban la acest membru : ",
+
+    "slowmodeWasDisabled": "Dezactivat",
+    "slowmodeOldDuration": "Durata veche :",
+    "slowmodeNewDuration": "Durata noua :",
+    "slowmodeDurationTooBig": "Durata nu poate fi mai mare de 21600 de secunde !",
+    "slowmodeNotADuration": "Aceasta nu este o durată valida !",
+
+    "errorMessage": "O eroare s-a intamplat :",
+    "errorUserNotFound": "Nu am gasit acest utilizator !",
+    "errorChannelNotFound": "Nu am gasit acest canal !",
+    "errorChannelLogNotFound": "Nu pot gasi canalul de loguri !",
+    "errorHarmYourself1": "Nu poti ",
+    "errorHarmYourself2": " tu !",
+
+    "logAction": "Actiune :",
+    "logMod": "Moderator :",
+    "logTarget": "Target :",
+    "logOldValue": "Valuarea veche :",
+    "logNewValue": "Valuarea noua :"
+}
