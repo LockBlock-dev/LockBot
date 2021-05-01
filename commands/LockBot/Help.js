@@ -3,6 +3,15 @@ const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args, lang, settings) => {
 
+	const joinHelp = (array, separator) => {
+        var joined = ""
+
+        for (e in array) {
+            joined += `\`${array[e]}\`${separator}`
+        }
+        return joined.slice(0, -2)
+    }
+
 	const getCommands = (category) => {
 		var commands = []
 		for (cmd in COMMANDS[category]) {
@@ -38,7 +47,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 				case "MODERATION": {catName = "Moderation 🔧"; break}
 			}
 
-			embed.addField(`${catName}`,`\`${getNames(cat).join(', ')}\``)
+			embed.addField(`${catName}`,`${joinHelp(getNames(cat), ', ')}`)
 		}
 
 	} else {
@@ -58,7 +67,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 		.addField(lang.helpCommandDescription,`${commandFile.help.description}`)
 		.addField(lang.helpCommandUsage,`${settings.guildPrefix}${commandFile.help.name} ${commandFile.help.usage}`)
 		.addField(lang.helpCommandExample,`${settings.guildPrefix}${commandFile.help.name} ${commandFile.help.example}`)
-		.addField(lang.helpCommandAliases,`${commandFile.help.aliases.join(', ')}`)
+		.addField(lang.helpCommandAliases,`${joinHelp(commandFile.help.aliases, ', ')}`)
 
 		if (commandFile.help.isUserAdmin) {
 			embed.addField(lang.helpCommandPermissions,`\`MANAGE_GUILD\``)
