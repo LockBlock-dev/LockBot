@@ -66,9 +66,9 @@ bot.on("message", async message => {
 
     if (commandFile.help.args > 0 && args.length < commandFile.help.args) {
       if (commandFile.help.args < 2) {
-        errorMessage = `${lang.messageEventCommandNeedArg1}${commandFile.help.args}${lang.messageEventCommandNeedArg2one} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
+        errorMessage = `${lang.messageEventCommandNeedArg1}${commandFile.help.args}${lang.messageEventCommandNeedArg2one} <@${message.author.id}> !\n${lang.messageEventCommandUsage} ${prefix}${commandFile.help.name} ${commandFile.help.usage}`
       } else {
-        errorMessage = `${lang.messageEventCommandNeedArg1}${commandFile.help.args}${lang.messageEventCommandNeedArg2multiple} <@${message.author.id}> !\n${lang.messageEventCommandUsage} \`${prefix}${commandFile.help.name} ${commandFile.help.usage}\``
+        errorMessage = `${lang.messageEventCommandNeedArg1}${commandFile.help.args}${lang.messageEventCommandNeedArg2multiple} <@${message.author.id}> !\n${lang.messageEventCommandUsage} ${prefix}${commandFile.help.name} ${commandFile.help.usage}`
       }
       
    
