@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args, lang) => {
         for (e in array) {
             joined += `${numbers[e]}. ${array[e]}${separator}`
         }
-        return joined
+        return joined.slice(0, -1)
     }
 
     var optionsList = args.join(" ").split(",")
