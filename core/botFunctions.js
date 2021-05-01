@@ -41,9 +41,11 @@ module.exports = bot => {
 
             if (message.mentions.members.first()) {
                 member = message.mentions.members.first().user
-            }
-    
-            if (message.guild.members.cache.get(args[pos])) {
+
+            } else if (isNaN(args[pos])) {
+                member = bot.users.cache.find(user => user.username == args.join(" "))
+
+            } else if (message.guild.members.cache.get(args[pos])) {
                 member = message.guild.members.cache.get(args[pos]).user
             }       
         }
