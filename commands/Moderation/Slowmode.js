@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
         duration = 0
     
     } else {
-        duration = parse(duration, format='s')
+        duration = parse(duration, 's')
 
         if (duration < 1) {
             duration = args[0]

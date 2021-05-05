@@ -25,11 +25,11 @@ module.exports.run = async (bot, message, args, lang, settings) => {
         
         switch (reaction.emoji.name) {
             case "✔️":
-                const parentid = message.channel.parentID
-                const nukedchannel = message.channel
-                const nukedchannelname = message.channel.name
-                const position = message.channel.position
-                const guild = message.guild
+                var parentid = message.channel.parentID
+                var nukedchannel = message.channel
+                var nukedchannelname = message.channel.name
+                var position = message.channel.position
+                var guild = message.guild
 
                 nukedchannel.clone().then(nukedchannel.delete())
 
@@ -45,7 +45,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
                     setTimeout(() => {
                         newClonedChannel.lockPermissions()
-                            .catch(error => "")
+                            .catch()
 
                             if (settings.guildLogChannel) {
                                 const channel = message.guild.channels.cache.get(settings.guildLogChannel)
@@ -64,7 +64,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
             case "❌":
                 break
         }
-    }).catch(error => "")
+    }).catch()
 
     setTimeout(() => {
         reactionMessage.delete()

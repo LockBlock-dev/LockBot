@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args, lang) => {
         got(`https://www.reddit.com/r/hentai/random/.json?sort=top&t=week`).then(response => {
             try {
                         const content = JSON.parse(response.body)
-                        const hentaiType = content[0].data.children[0].data.post_hint
+                        //const hentaiType = content[0].data.children[0].data.post_hint
                         const permalink = content[0].data.children[0].data.permalink
                         const hentaiUrl = `https://reddit.com${permalink}`
                         const hentaiImage = content[0].data.children[0].data.url

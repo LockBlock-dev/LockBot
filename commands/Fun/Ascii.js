@@ -1,5 +1,4 @@
 const { COMMANDS } = require("../../core/constants.js")
-const Discord = require("discord.js")
 const figlet = require("figlet")
 
 module.exports.run = (bot, message, args, lang) => {

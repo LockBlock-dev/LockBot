@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
             if (newValue) {
                 await bot.updateGuild(message.guild.id, { guildPrefix: newValue})
-                var settings = await bot.getGuild(message.guild.id)
+                settings = await bot.getGuild(message.guild.id)
 
                 const embed = new Discord.MessageEmbed()
                     .setDescription(`<@${message.author.id}>`)
@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     .addField(lang.configPrefixNew, settings.guildPrefix)
                     .setColor("#FF8A33")
                     .setTimestamp()
-	                .setFooter("© LockBot")
+                    .setFooter("© LockBot")
 
                 message.channel.send(embed)
 
@@ -79,7 +79,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     .addField(lang.configLangNew, settings.guildLang)
                     .setColor("#FF8A33")
                     .setTimestamp()
-	                .setFooter("© LockBot")
+                    .setFooter("© LockBot")
 
                     message.channel.send(embed)
 
@@ -114,7 +114,8 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     await bot.updateGuild(message.guild.id, { guildAnonMode: false})
                 }
 
-                var settings = await bot.getGuild(message.guild.id)
+                settings = await bot.getGuild(message.guild.id)
+                var newAnonMode
 
                 if (settings.guildAnonMode == true) {
                     newAnonMode = "on"
@@ -136,7 +137,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     .addField(lang.configAnonNew, newAnonMode)
                     .setColor("#FF8A33")
                     .setTimestamp()
-	                .setFooter("© LockBot")
+                    .setFooter("© LockBot")
 
                 message.channel.send(embed)
 
@@ -171,7 +172,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                 }
 
                 await bot.updateGuild(message.guild.id, { guildLogChannel: channel.id})
-                var settings = await bot.getGuild(message.guild.id)
+                settings = await bot.getGuild(message.guild.id)
 
                 const embed = new Discord.MessageEmbed()
                     .setDescription(`<@${message.author.id}>`)
@@ -187,7 +188,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
                     .addField(lang.configLogChannelNew, `<#${settings.guildLogChannel}>`)
                     .setColor("#FF8A33")
                     .setTimestamp()
-	                .setFooter("© LockBot")
+                    .setFooter("© LockBot")
 
                 message.channel.send(embed)
 

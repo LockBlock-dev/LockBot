@@ -22,7 +22,7 @@ module.exports = bot => {
     }
 
     bot.sToHMS = (time) => {
-        t = Number(time)
+        const t = Number(time)
         var h = Math.floor(t / 3600)
         var m = Math.floor(t % 3600 / 60)
         var s = Math.floor(t % 3600 % 60)

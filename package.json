@@ -39,5 +39,10 @@
   "bugs": {
     "url": "https://github.com/LockBlock-dev/LockBot/issues"
   },
-  "homepage": "https://github.com/LockBlock-dev/LockBot#readme"
+  "homepage": "https://github.com/LockBlock-dev/LockBot#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }

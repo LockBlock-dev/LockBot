@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args, lang) => {
 		.addField(`${lang.pingLatencyAPI}`, `${Math.round(bot.ws.ping)} ms`)
         .setColor("#FF8A33")
         .setTimestamp()
-	    .setFooter("© LockBot")
+        .setFooter("© LockBot")
 
     message.channel.send(embed)
 

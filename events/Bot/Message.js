@@ -1,5 +1,4 @@
 const bot = require("../../index.js")
-const chalk = require("chalk")
 require('dotenv').config()
 
 bot.on("message", async message => {
@@ -46,7 +45,7 @@ bot.on("message", async message => {
       
       if (message.author.id !== process.env.DEV_ID) {
 
-        return message.channel.send(bot.error("LockBot isn\'t your bot !", message.author.id, lang))
+        return message.channel.send(bot.error("LockBot isn't your bot !", message.author.id, lang))
       }
     }
 

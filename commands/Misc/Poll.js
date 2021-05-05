@@ -1,6 +1,5 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
-const { serialize } = require("superagent")
 
 module.exports.run = async (bot, message, args, lang) => {
     
@@ -10,7 +9,7 @@ module.exports.run = async (bot, message, args, lang) => {
     const joinPoll = (array, separator) => {
         var joined = ""
 
-        for (e in array) {
+        for (var e in array) {
             joined += `${numbers[e]}. ${array[e]}${separator}`
         }
         return joined.slice(0, -1)
@@ -27,7 +26,7 @@ module.exports.run = async (bot, message, args, lang) => {
         .addField(lang.pollSimpleTitle, args.join(" "))
         .setColor("#FF8A33")
         .setTimestamp()
-	    .setFooter("© LockBot")
+        .setFooter("© LockBot")
 
         message.channel.send(embed)
         .then(async (message) => {
@@ -37,21 +36,15 @@ module.exports.run = async (bot, message, args, lang) => {
     }
 
     if (optionsList.length >= 2) {
-        var optionsText = ""
-
-        for (var i = 0; i < optionsList.length; i++) { 
-            optionsText += `${emojiList[i]} ${optionsList[i]}\n`
-        }
-
         const question = optionsList.splice(0, 1)
-        const optionsArgs = joinPoll(optionsList, "\n")
+        const optionsText = joinPoll(optionsList, "\n")
 
         const embed = new Discord.MessageEmbed()
             .setDescription(`<@${message.author.id}>`)
-            .addField(`${question} :`, `${optionsArgs}`)
+            .addField(`${question} :`, `${optionsText}`)
             .setColor("#FF8A33")
             .setTimestamp()
-	        .setFooter("© LockBot")
+            .setFooter("© LockBot")
 
         message.channel.send(embed)
             .then(async (message) => {

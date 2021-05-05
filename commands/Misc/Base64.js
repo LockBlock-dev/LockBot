@@ -28,7 +28,7 @@ module.exports.run = (bot, message, args, lang, settings) => {
                 .addField(`Base64 :`, encoded)
                 .setColor("#FF8A33")
                 .setTimestamp()
-	            .setFooter("© LockBot")
+                .setFooter("© LockBot")
         
             message.channel.send(embed)
            
@@ -44,7 +44,7 @@ module.exports.run = (bot, message, args, lang, settings) => {
                 .addField(`Text :`, decoded)
                 .setColor("#FF8A33")
                 .setTimestamp()
-	            .setFooter("© LockBot")
+                .setFooter("© LockBot")
         
             message.channel.send(embed)
                                           

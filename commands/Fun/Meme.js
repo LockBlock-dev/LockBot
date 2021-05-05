@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args, lang) => {
     got(`https://www.reddit.com/r/dankmemes/random/.json?sort=top&t=week`).then(response => {
             try {
                         const content = JSON.parse(response.body)
-                        const memeType = content[0].data.children[0].data.post_hint
+                        //const memeType = content[0].data.children[0].data.post_hint
                         const permalink = content[0].data.children[0].data.permalink
                         const memeUrl = `https://reddit.com${permalink}`
                         const memeImage = content[0].data.children[0].data.url

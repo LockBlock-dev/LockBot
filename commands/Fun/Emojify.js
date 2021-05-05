@@ -1,9 +1,8 @@
 const { COMMANDS } = require("../../core/constants.js")
-const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args) => {
 
-	str = args.join(' ')
+	const str = args.join(' ')
 	var ones = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 	if (typeof str === 'string') {
 		var content = Array.prototype.map.call(str, (e, i, a) => {

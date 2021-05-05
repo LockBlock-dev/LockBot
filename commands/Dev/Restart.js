@@ -1,4 +1,5 @@
 const { COMMANDS } = require("../../core/constants.js")
+const chalk = require("chalk")
 require('dotenv').config()
 
 module.exports.run = async (bot, message) => {

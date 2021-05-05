@@ -1,6 +1,5 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
-const fs = require("fs")
 
 module.exports.run = async (bot, message, args, lang) => {
 
@@ -17,7 +16,7 @@ module.exports.run = async (bot, message, args, lang) => {
         .addField(`${member.username} ${lang.gamerometer1} **${gamer}** ${lang.gamerometer2} 🎮`, '\u200b')
         .setColor("#FF8A33")
         .setTimestamp()
-	    .setFooter("© LockBot")
+        .setFooter("© LockBot")
         
     message.channel.send(embed)
 }

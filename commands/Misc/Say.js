@@ -1,5 +1,4 @@
 const { COMMANDS } = require("../../core/constants.js")
-const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args, lang, settings) => {
    

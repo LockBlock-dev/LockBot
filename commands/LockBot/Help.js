@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 	const joinHelp = (array, separator) => {
         var joined = ""
 
-        for (e in array) {
+        for (var e in array) {
             joined += `\`${array[e]}\`${separator}`
         }
         return joined.slice(0, -2)
@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
 	const getCommands = (category) => {
 		var commands = []
-		for (cmd in COMMANDS[category]) {
+		for (var cmd in COMMANDS[category]) {
 			commands.push(COMMANDS[category][cmd])
 		}
 		return commands
@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
 	const getNames = (cat) => {
 		var names = []
-		for (cmd of getCommands(cat)) {
+		for (var cmd of getCommands(cat)) {
 			names.push(cmd.name)
 		}
 		return names
@@ -38,7 +38,9 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
 		categories.splice(pos, 1)
 
-		for (cat of categories) {
+		var catName
+
+		for (var cat of categories) {
 			switch(cat) {
 				case "FUN": {catName = "Fun 🎉"; break}
 				case "INFOS": {catName = "Infos 🔎"; break}
@@ -57,10 +59,10 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 		const commandFile = bot.commands.get(command) || bot.commands.find(cmd => cmd.help.aliases.includes(command))
 
 		if (!commandFile)
-      		return
+			return
 
-    	if (commandFile.help.isDevRestricted)
-  			return
+		if (commandFile.help.isDevRestricted)
+			return
 
 		embed
 		.addField(lang.helpCommandName,`${commandFile.help.name}`)

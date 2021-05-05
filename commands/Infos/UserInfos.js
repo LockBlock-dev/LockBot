@@ -9,11 +9,15 @@ module.exports.run = (bot, message, args, lang) => {
     return message.channel.send(bot.error(lang.errorUserNotFound, message.author.id, lang))
   }
 
+  var isBot
+
   if (member.bot) {
     isBot = "Bot"
   } else {
     isBot = lang.userInfoUserIsNotBot
   }
+
+  var boost
 
   if (member.premiumSince) {
     boost = lang.userInfoBoostYes
