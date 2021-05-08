@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
     const anonMode = settings.guildAnonMode
 
-    if(anonMode == true) {
+    if(anonMode) {
         return message.channel.send(args.join(" "))
 
     } else {
