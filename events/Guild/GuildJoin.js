@@ -20,16 +20,16 @@ bot.on("guildCreate", async guild => {
 
   var found = false
 
-  guild.channels.cache.forEach = channel => {
-      if(found == true || channel.type != "text") {
-        return
-      }
-      if(guild.me.permissionsIn(channel).has("SEND_MESSAGES") && guild.me.permissionsIn(channel).has("VIEW_CHANNEL")) {
-        found = true
-        return channel.send("🇺🇸 Hello !\nTo get started you can do +help in your server ! If you want to configure the bot do +help config !\n\n🇫🇷 Bonjour !\nPour commencer vous pouvez faire +help dans votre serveur ! Si vous voulez configurer le bot faîtes +help config !")
-      
-      } else {
-        return guild.owner.send("🇺🇸 Hello !\nTo get started you can do +help in your server ! If you want to configure the bot do +help config !\n\n🇫🇷 Bonjour !\nPour commencer vous pouvez faire +help dans votre serveur ! Si vous voulez configurer le bot faîtes +help config")
-      }
-  }
+  guild.channels.cache.each(channel => {
+    if(found == true || channel.type != "text") {
+      return
+    }
+    if(guild.me.permissionsIn(channel).has("SEND_MESSAGES") && guild.me.permissionsIn(channel).has("VIEW_CHANNEL")) {
+      found = true
+      return channel.send("🇺🇸 Hello !\nTo get started you can do +help in your server ! If you want to configure the bot do +help config !\n\n🇫🇷 Bonjour !\nPour commencer vous pouvez faire +help dans votre serveur ! Si vous voulez configurer le bot faîtes +help config !")
+    
+    } else {
+      return guild.owner.send("🇺🇸 Hello !\nTo get started you can do +help in your server ! If you want to configure the bot do +help config !\n\n🇫🇷 Bonjour !\nPour commencer vous pouvez faire +help dans votre serveur ! Si vous voulez configurer le bot faîtes +help config")
+    }
+  })
 })
