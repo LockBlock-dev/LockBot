@@ -1,5 +1,6 @@
 const bot = require("../../index.js")
 require('dotenv').config()
+const { DEFAULT_SETTINGS: defaults } = require("../../config.js")
 
 bot.on("message", async message => {
 
@@ -8,9 +9,17 @@ bot.on("message", async message => {
   }
 
   var settings = await bot.getGuild(message.guild.id)
- 
-  const lang = require(`../../core/languages/${settings.guildLang}.json`)
-  const prefix = settings.guildPrefix
+
+  var lang, prefix
+
+  if (settings) {
+    lang = require(`../../core/languages/${settings.guildLang}.json`)
+    prefix = settings.guildPrefix
+
+  } else {
+    lang = defaults.lang
+    prefix = defaults.prefix
+  }
 
   const mentionArgs = message.content.split(" ")
 
