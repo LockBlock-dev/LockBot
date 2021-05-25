@@ -45,7 +45,7 @@ module.exports.run = async (bot, message, args, lang, settings) => {
 
                     setTimeout(() => {
                         newClonedChannel.lockPermissions()
-                            .catch()
+                            .catch(err => console.log(err))
 
                             if (settings.guildLogChannel) {
                                 const channel = message.guild.channels.cache.get(settings.guildLogChannel)
