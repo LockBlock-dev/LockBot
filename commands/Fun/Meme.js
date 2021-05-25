@@ -1,10 +1,15 @@
 const { COMMANDS } = require("../../core/constants.js")
 const Discord = require("discord.js")
 const got = require("got")
+const pkg = require("../../package.json")
 
 module.exports.run = async (bot, message, args, lang) => {
 
-    got(`https://www.reddit.com/r/dankmemes/random/.json?sort=top&t=week`).then(response => {
+    got(`https://www.reddit.com/r/dankmemes/random/.json?sort=top&t=week`, {
+        headers: {
+            "user-agent": `LockBot ${pkg.version} (https://github.com/LockBlock-dev/LockBot)`
+        }
+    }).then(response => {
             try {
                         const content = JSON.parse(response.body)
                         //const memeType = content[0].data.children[0].data.post_hint
