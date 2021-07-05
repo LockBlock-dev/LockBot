@@ -1,10 +1,13 @@
 # LockBot
-Discord Bot made with [![discord.js](https://img.shields.io/github/package-json/dependency-version/LockBlock-dev/LockBot/discord.js)](https://discord.js.org)
+
+[![discord.js](https://img.shields.io/github/package-json/dependency-version/LockBlock-dev/LockBot/discord.js)](https://discord.js.org)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/LockBlock-dev/LockBot)](https://github.com/LockBlock-dev/LockBot/releases/latest)
 [![GitHub stars](https://img.shields.io/github/stars/LockBlock-dev/LockBot.svg)](https://github.com/LockBlock-dev/LockBot/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/LockBlock-dev/LockBot)](https://github.com/LockBlock-dev/LockBot/issues)
 ![GitHub all releases](https://img.shields.io/github/downloads/LockBlock-dev/LockBot/total)
+
+My own Discord Bot.
 
 ![Bot preview](/preview.jpg)
 
