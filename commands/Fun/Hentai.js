@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args, lang) => {
 
     if (message.channel.nsfw) {
 
-        got(`https://www.reddit.com/r/dankmemes/random/.json?sort=top&t=week`, {
+        got(`https://www.reddit.com/r/hentai/random/.json?sort=top&t=week`, {
             headers: {
                 "user-agent": `LockBot ${pkg.version} (https://github.com/LockBlock-dev/LockBot)`
             }
