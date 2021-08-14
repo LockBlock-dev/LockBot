@@ -1,0 +1,27 @@
+{
+    "name": "lockbot",
+    "version": "3.0.0",
+    "description": "Discord Bot made by LockBlock",
+    "main": "index.js",
+    "dependencies": {
+        "discord.js": "^13.0.0",
+        "dotenv": "^10.0.0",
+        "figlet": "^1.5.0",
+        "got": "^11.8.2",
+        "mongoose": "^5.13.5",
+        "parse-duration": "^1.0.0"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LockBlock-dev/LockBot.git"
+    },
+    "author": "LockBlock",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LockBlock-dev/LockBot/issues"
+    },
+    "homepage": "https://github.com/LockBlock-dev/LockBot#readme"
+}
