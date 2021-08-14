@@ -5,7 +5,6 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/LockBlock-dev/LockBot)](https://github.com/LockBlock-dev/LockBot/releases/latest)
 [![GitHub stars](https://img.shields.io/github/stars/LockBlock-dev/LockBot.svg)](https://github.com/LockBlock-dev/LockBot/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/LockBlock-dev/LockBot)](https://github.com/LockBlock-dev/LockBot/issues)
-![GitHub all releases](https://img.shields.io/github/downloads/LockBlock-dev/LockBot/total)
 
 My own Discord Bot.
 
@@ -32,18 +31,17 @@ My own Discord Bot.
 DISCORD_TOKEN=BOT_TOKEN_HERE
 MONGODB_ADRESS=MONGO_DB_URL_HERE
 DEV_ID=YOUR_DISCORD_ID_HERE
+PRODUCTION=true
 ```
 
-• Run the bot by doing `node index.js`
+• Run the bot by doing `node index.js` or `npm start`
 
 • You can configure default prefix and default language in [config.js](/config.js)
-
-• To add any language, just go to [languages](/core/languages) folder, create a .json file and name it with the ISO 3166-1 norm. Exemple : [en.json](/core/languages/en.json) for the international english.
 
 
 ## Potential bugs
 
-• Some languages are app translated and can contains errors.
+This is a dev version, bugs can occur
 
 
 ## Contributing
@@ -55,20 +53,9 @@ See the [CONTRIBUTING.md](/CONTRIBUTING.md).
 
 I couldn't do this without the help of :
 
-• MasterIO, DeXoZ, Hawked who supported me in this project
+• JunkMeal, DV4, MCHDF, Friskyyy__, Nerox (who helped in the v2)
 
-• JunkMeal who helped me with the [meme](/commands/Fun/Meme.js) command
-
-• DV4 who made the [german](/core/languages/de.json) translation
-
-• MCHDF who made the [korean](/core/languages/ko.json) translation
-
-• Friskyyy__ who made the [macedonian](/core/languages/mk.json) translation
-
-• Nerox who made the [romanian](/core/languages/ro.json) translation
-
-• and everyone who invited and used my bot !
-
+• Everyone who invited and used the bot
 
 ## Copyright
 
