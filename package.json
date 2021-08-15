@@ -1,14 +1,14 @@
 {
     "name": "lockbot",
-    "version": "3.0.0",
+    "version": "2.0.0",
     "description": "Discord Bot made by LockBlock",
     "main": "index.js",
     "dependencies": {
-        "discord.js": "^13.0.0",
+        "discord.js": "^13.1.0",
         "dotenv": "^10.0.0",
-        "figlet": "^1.5.0",
+        "figlet": "^1.5.2",
         "got": "^11.8.2",
-        "mongoose": "^5.13.5",
+        "mongoose": "^5.13.7",
         "parse-duration": "^1.0.0"
     },
     "scripts": {

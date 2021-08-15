@@ -46,7 +46,7 @@ This is a dev version, bugs can occur
 
 ## Contributing
 
-See the [CONTRIBUTING.md](/CONTRIBUTING.md).
+Take a look [here](/CONTRIBUTING.md).
 
 
 ## Credits
