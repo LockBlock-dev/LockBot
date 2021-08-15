@@ -9,7 +9,7 @@ module.exports = {
             .setDescription(`🔎 Information on <@${client.user.id}>`)
             .setThumbnail(client.user.displayAvatarURL())
             .addField('Owner', `<@${process.env.DEV_ID}>`, true)
-            .addField('Version', '3.0', true)
+            .addField('Version', '2.0', true)
             .addField('API', 'Discord.js V13', true)
             .addField('Servers', `${client.guilds.cache.size}`, true)
             .addField('Channels', `${client.channels.cache.size}`, true)
