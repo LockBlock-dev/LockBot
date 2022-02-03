@@ -1,5 +1,7 @@
 # LockBot
 
+## This repository is archived as I lost interest in working on this bot.
+
 [![discord.js](https://img.shields.io/github/package-json/dependency-version/LockBlock-dev/LockBot/discord.js)](https://discord.js.org)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/LockBlock-dev/LockBot)](https://github.com/LockBlock-dev/LockBot/releases/latest)
